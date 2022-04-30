@@ -31,7 +31,7 @@
     "dotenv": "^16.0.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.16",
-    "prettier": "^2.6.2"
+    "nodemon": "2.0.16",
+    "prettier": "2.6.2"
   }
 }
