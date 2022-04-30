@@ -24,7 +24,20 @@ it would be.
 * Make commits of logical units.
 * Check for unnecessary whitespace with `git diff --check` before committing.
 * Please follow the prevailing code conventions in the repository. Differences in style make the code harder to understand for everyone.
+* Make sure you have added all the necessary unit tests for your changes.
+* Run _all_ unit tests to assure nothing else was accidentally broken.
 * Make sure your commit messages are in the proper format.
+  * The first line of the commit message should be a short description around 50 characters in length and be prefixed with the GitHub issue it refers to with parentheses surrounding that. If the GitHub issue is #25, you should have `(#25)` prefixed to the message.
+  * If the commit is about documentation, the message should be prefixed with `(doc)`.
+  * If it is a trivial commit or one of formatting/spaces fixes, it should be prefixed with `(maint)`.
+  * After the subject, skip one line and fill out a body if the subject line is not informative enough.
+  * Sometimes you will find that even a tiny code change has a commit body that needs to be very detailed and make take more time to do than the actual change itself!
+  * The body:
+    * Should wrap at `72` characters.
+    * Explains more fully the reason(s) for the change and contrasts with previous behavior.
+    * Uses present tense. "Fix" versus "Fixed".
+
+A good example of a commit message is as follows:
 
   ````text
   (#123) Add more cowbell to Get-Something
@@ -34,9 +47,6 @@ it would be.
   shown in studies to both increase one's mojo, and cement one's status
   as a rock legend.
   ````
-
-* Make sure you have added all the necessary unit tests for your changes.
-* Run _all_ unit tests to assure nothing else was accidentally broken.
 
 ## Documentation
 
