@@ -1,4 +1,4 @@
-# CPR
+# Nick Nelson
 
 [![Discord Bots](https://top.gg/api/widget/servers/969889333156937740.svg)](https://top.gg/bot/969889333156937740)
 
