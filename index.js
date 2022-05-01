@@ -13,7 +13,7 @@ const client = new Client({
 
 // Commands Setup
 client.commands = new Collection();
-const commandFiles = fs.readdirSync('./src/commands').filter(file => file.endsWith('.js'));
+const commandFiles = fs.readdirSync('./src/commands').filter((file) => file.endsWith('.js'));
 
 for (const file of commandFiles) {
 	const command = require(`./src/commands/${file}`);
@@ -21,7 +21,7 @@ for (const file of commandFiles) {
 }
 
 // Executing commands
-client.on('interactionCreate', async interaction => {
+client.on('interactionCreate', async (interaction) => {
 	if (!interaction.isCommand()) return;
 
 	const command = client.commands.get(interaction.commandName);
@@ -37,7 +37,7 @@ client.on('interactionCreate', async interaction => {
 });
 
 // Events setup
-const eventFiles = fs.readdirSync('./src/events').filter(file => file.endsWith('.js'));
+const eventFiles = fs.readdirSync('./src/events').filter((file) => file.endsWith('.js'));
 
 for (const file of eventFiles) {
 	const event = require(`./src/events/${file}`);
@@ -46,7 +46,7 @@ for (const file of eventFiles) {
 	} else {
 		client.on(event.name, (...args) => event.execute(...args));
 	}
-};
+}
 
 // Login
 client.login(TOKEN);

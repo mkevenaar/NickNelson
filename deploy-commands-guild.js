@@ -8,7 +8,7 @@ const { CLIENT_ID, GUILD_ID, TOKEN } = process.env;
 // Command handling
 const commands = [];
 
-const commandFiles = fs.readdirSync('./src/commands').filter(file => file.endsWith('.js'));
+const commandFiles = fs.readdirSync('./src/commands').filter((file) => file.endsWith('.js'));
 
 for (const file of commandFiles) {
 	const command = require(`./src/commands/${file}`);
