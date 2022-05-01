@@ -5,21 +5,9 @@
   "assignees": ["mkevenaar"],
   "labels": ["renovate"],
   "packageRules": [
-    {
-      "matchDatasources": ["docker"],
-      "matchUpdateTypes": ["major"],
-      "matchPackageNames": ["node"],
-      "enabled": false
-    },
-    {
-      "matchDatasources": ["docker"],
-      "matchUpdateTypes": ["minor", "patch", "bump", "digest", "rollback"],
-      "enabled": true
-    },
-    {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "enabled": true,
-      "automerge": true
-    }
-  ]
+  {
+    "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+    "automerge": true
+  }
+ ]
 }
