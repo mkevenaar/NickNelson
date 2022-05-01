@@ -1,5 +1,7 @@
 {
     "recommendations": [
-        "whosydd.prettier-config"
+      "arcanis.vscode-zipfs",
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode"
     ]
 }
