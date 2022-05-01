@@ -53,19 +53,19 @@ module.exports = {
 			await data.save();
 		}
 
-        if (typeof image !== 'undefined' && image !== null) {
+		if (typeof image !== 'undefined' && image !== null) {
 			data.addons.welcome.image = image;
 			data.markModified('addons.welcome');
 			await data.save();
 		}
 
-        if (typeof title !== 'undefined' && title !== null) {
+		if (typeof title !== 'undefined' && title !== null) {
 			data.addons.welcome.title = title;
 			data.markModified('addons.welcome');
 			await data.save();
 		}
 
-        if (typeof message !== 'undefined' && message !== null) {
+		if (typeof message !== 'undefined' && message !== null) {
 			data.addons.welcome.message = message;
 			data.markModified('addons.welcome');
 			await data.save();

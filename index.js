@@ -17,12 +17,11 @@ client.commands = new Collection();
 client.database = require('./src/database/mongoose.js');
 client.tools = require('./src/tools/tools.js');
 
-
 async function init() {
 	// Commands Setup
 	let folders = await readdir('./src/commands/');
 	folders.forEach((direct) => {
-		const commandFiles = fs.readdirSync('./src/commands/' + direct + '/').filter(file => file.endsWith('.js'));
+		const commandFiles = fs.readdirSync('./src/commands/' + direct + '/').filter((file) => file.endsWith('.js'));
 
 		for (const file of commandFiles) {
 			const command = require(`./src/commands/${direct}/${file}`);
@@ -59,22 +58,25 @@ async function init() {
 	}
 
 	// Connect to the database
-	mongoose.connect(MONGODB, {
-		useNewUrlParser: true,
-		useUnifiedTopology: true
-	}).then(() => {
-		console.log('Connected to MongoDB')
-	}).catch((err) => {
-		console.log('Unable to connect to MongoDB Database.\nError: ' + err)
-	})
+	mongoose
+		.connect(MONGODB, {
+			useNewUrlParser: true,
+			useUnifiedTopology: true,
+		})
+		.then(() => {
+			console.log('Connected to MongoDB');
+		})
+		.catch((err) => {
+			console.log('Unable to connect to MongoDB Database.\nError: ' + err);
+		});
 
 	// Login
 	await client.login(TOKEN);
-};
+}
 
 init();
 
-process.on('unhandledRejection', err =>{
-    console.log('Unknown error occured:\n')
-    console.log(err)
-})
+process.on('unhandledRejection', (err) => {
+	console.log('Unknown error occured:\n');
+	console.log(err);
+});

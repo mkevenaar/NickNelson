@@ -7,8 +7,7 @@ const { CLIENT_ID, GUILD_ID, TOKEN } = process.env;
 const util = require('util');
 const readdir = util.promisify(fs.readdir);
 
-
-async function init_commands(){
+async function init_commands() {
 	// Command handling
 	const commands = [];
 
@@ -44,11 +43,11 @@ async function init_commands(){
 	// 		console.log(result)
 	// 	})
 	// 	.catch(console.error);
-};
+}
 
 init_commands();
 
-process.on('unhandledRejection', err =>{
-    console.log('Unknown error occured:\n')
-    console.log(err)
-})
+process.on('unhandledRejection', (err) => {
+	console.log('Unknown error occured:\n');
+	console.log(err);
+});
