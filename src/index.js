@@ -19,8 +19,8 @@ const client = new Client({
 	],
 });
 client.commands = new Collection();
-client.database = require('./src/database/mongoose.js');
-client.tools = require('./src/tools/tools.js');
+client.database = require('./database/mongoose.js');
+client.tools = require('./tools/tools.js');
 
 async function init() {
 	// Commands Setup
@@ -31,7 +31,7 @@ async function init() {
 			.filter((file) => file.endsWith('.js'));
 
 		for (const file of commandFiles) {
-			const command = require(`./src/commands/${direct}/${file}`);
+			const command = require(`./commands/${direct}/${file}`);
 			client.commands.set(command.data.name, command);
 		}
 	});
@@ -59,7 +59,7 @@ async function init() {
 	const eventFiles = fs.readdirSync('./src/events').filter((file) => file.endsWith('.js'));
 
 	for (const file of eventFiles) {
-		const event = require(`./src/events/${file}`);
+		const event = require(`./events/${file}`);
 		if (event.once) {
 			client.once(event.name, (...args) => event.execute(...args, client));
 		} else {
