@@ -1,4 +1,4 @@
-const guildSchema = require('./schema/guild.js');
+const guildSchema = require('./models/guild.js');
 
 //Create/find Guilds Database
 module.exports.fetchGuild = async function (key) {
