@@ -6,23 +6,43 @@ module.exports = {
 		.setName('welcome')
 		.setDescription('Sets the welcome message (admin only)')
 		.addChannelOption((channel) => {
-			return channel.setName('channel').setDescription('Channel you want Nick to send the welcome message in').setRequired(false);
+			return channel
+				.setName('channel')
+				.setDescription('Channel you want Nick to send the welcome message in')
+				.setRequired(false);
 		})
 		.addStringOption((title) => {
-			return title.setName('title').setDescription('Title of the welcome message you want Nick to respond with').setRequired(false);
+			return title
+				.setName('title')
+				.setDescription('Title of the welcome message you want Nick to respond with')
+				.setRequired(false);
 		})
 		.addStringOption((message) => {
-			return message.setName('body').setDescription('Body of the welcome message you want Nick to respond with').setRequired(false);
+			return message
+				.setName('body')
+				.setDescription('Body of the welcome message you want Nick to respond with')
+				.setRequired(false);
 		})
 		.addStringOption((url) => {
-			return url.setName('image').setDescription('Image of the welcome message you want Nick to respond with').setRequired(false);
+			return url
+				.setName('image')
+				.setDescription('Image of the welcome message you want Nick to respond with')
+				.setRequired(false);
 		})
 		.addBooleanOption((enable) => {
-			return enable.setName('enable').setDescription('Enable (true) or disable (false) the welcome message, default enabled').setRequired(false);
+			return enable
+				.setName('enable')
+				.setDescription(
+					'Enable (true) or disable (false) the welcome message, default enabled'
+				)
+				.setRequired(false);
 		}),
 	async execute(interaction, client) {
 		if (!interaction.member.permissions.has(Permissions.FLAGS.ADMINISTRATOR)) {
-			await interaction.reply({ content: "You don't have permission to do that!", ephemeral: true });
+			await interaction.reply({
+				content: "You don't have permission to do that!",
+				ephemeral: true,
+			});
 			return;
 		}
 
@@ -36,7 +56,14 @@ module.exports = {
 
 		// If addon for welcome is missing create it
 		if (!data.addons.welcome) {
-			data.addons.welcome = { enabled: true, channel: '', title: '', message: '', image: false, embed: false };
+			data.addons.welcome = {
+				enabled: true,
+				channel: '',
+				title: '',
+				message: '',
+				image: false,
+				embed: false,
+			};
 			data.markModified('addons.welcome');
 			await data.save();
 		}

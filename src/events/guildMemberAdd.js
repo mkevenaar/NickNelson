@@ -9,14 +9,21 @@ module.exports = {
 			let guildData = await client.database.fetchGuild(guild.id); // Get guild document from database
 			if (!guildData.addons.welcome.enabled) return; // Welcome messages aren't enabled
 
-			let welcomeChannel = await client.tools.resolveChannel(guildData.addons.welcome.channel, guild); // Try find the welcome channel
+			let welcomeChannel = await client.tools.resolveChannel(
+				guildData.addons.welcome.channel,
+				guild
+			); // Try find the welcome channel
 
 			let welcomeTitle =
-				guildData.addons.welcome.tite === null || guildData.addons.welcome.message === '' || guildData.addons.welcome.title === ' '
+				guildData.addons.welcome.title === null ||
+				guildData.addons.welcome.title === '' ||
+				guildData.addons.welcome.title === ' '
 					? '** {user.name} ** is now a HeartStopper and member number **{guild.totalUser}**'
 					: guildData.addons.welcome.title; // Get the custom title or use the preset one
 			let welcomeMsg =
-				guildData.addons.welcome.message === null || guildData.addons.welcome.message === '' || guildData.addons.welcome.message === ' '
+				guildData.addons.welcome.message === null ||
+				guildData.addons.welcome.message === '' ||
+				guildData.addons.welcome.message === ' '
 					? 'Welcome {user.ping} to {guild.name}!'
 					: guildData.addons.welcome.message; // Get the custom message or use the preset one
 
@@ -39,9 +46,18 @@ module.exports = {
 				.replace(/{guild.id}/g, `${guild.id}`)
 				.replace(/{guild.totalUser}/g, `${guild.memberCount}`);
 
-			const welcomeEmbed = new Discord.MessageEmbed().setColor('#538079').setTitle(finalTitle).setDescription(finalMsg);
+			const welcomeEmbed = new Discord.MessageEmbed()
+				.setColor('#538079')
+				.setTitle(finalTitle)
+				.setDescription(finalMsg);
 
-			if (!(guildData.addons.welcome.image === null || guildData.addons.welcome.image === '' || guildData.addons.welcome.image === ' ')) {
+			if (
+				!(
+					guildData.addons.welcome.image === null ||
+					guildData.addons.welcome.image === '' ||
+					guildData.addons.welcome.image === ' '
+				)
+			) {
 				welcomeEmbed.setImage(guildData.addons.welcome.image);
 			}
 

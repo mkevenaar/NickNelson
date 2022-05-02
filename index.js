@@ -11,7 +11,12 @@ const readdir = util.promisify(fs.readdir);
 const mongoose = require('mongoose');
 
 const client = new Client({
-	intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_PRESENCES, Intents.FLAGS.GUILD_MEMBERS],
+	intents: [
+		Intents.FLAGS.GUILDS,
+		Intents.FLAGS.GUILD_MESSAGES,
+		Intents.FLAGS.GUILD_PRESENCES,
+		Intents.FLAGS.GUILD_MEMBERS,
+	],
 });
 client.commands = new Collection();
 client.database = require('./src/database/mongoose.js');
@@ -21,7 +26,9 @@ async function init() {
 	// Commands Setup
 	let folders = await readdir('./src/commands/');
 	folders.forEach((direct) => {
-		const commandFiles = fs.readdirSync('./src/commands/' + direct + '/').filter((file) => file.endsWith('.js'));
+		const commandFiles = fs
+			.readdirSync('./src/commands/' + direct + '/')
+			.filter((file) => file.endsWith('.js'));
 
 		for (const file of commandFiles) {
 			const command = require(`./src/commands/${direct}/${file}`);
@@ -41,7 +48,10 @@ async function init() {
 			await command.execute(interaction, client);
 		} catch (error) {
 			console.error(error);
-			await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
+			await interaction.reply({
+				content: 'There was an error while executing this command!',
+				ephemeral: true,
+			});
 		}
 	});
 
@@ -77,6 +87,6 @@ async function init() {
 init();
 
 process.on('unhandledRejection', (err) => {
-	console.log('Unknown error occured:\n');
+	console.log('Unknown error occurred:\n');
 	console.log(err);
 });

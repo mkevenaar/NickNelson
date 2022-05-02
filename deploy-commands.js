@@ -13,7 +13,9 @@ async function init_commands() {
 
 	let folders = await readdir('./src/commands/');
 	folders.forEach((direct) => {
-		const commandFiles = fs.readdirSync('./src/commands/' + direct + '/').filter((file) => file.endsWith('.js'));
+		const commandFiles = fs
+			.readdirSync('./src/commands/' + direct + '/')
+			.filter((file) => file.endsWith('.js'));
 
 		for (const file of commandFiles) {
 			const command = require(`./src/commands/${direct}/${file}`);
@@ -31,6 +33,6 @@ async function init_commands() {
 init_commands();
 
 process.on('unhandledRejection', (err) => {
-	console.log('Unknown error occured:\n');
+	console.log('Unknown error occurred:\n');
 	console.log(err);
 });
