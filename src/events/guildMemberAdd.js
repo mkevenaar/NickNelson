@@ -1,3 +1,5 @@
+import {MessageEmbed} from "discord.js";
+
 export const name = 'guildMemberAdd';
 export const once = false;
 
@@ -44,7 +46,7 @@ export async function execute(member, client) {
             .replace(/{guild.id}/g, `${guild.id}`)
             .replace(/{guild.totalUser}/g, `${guild.memberCount}`);
 
-        const welcomeEmbed = new Discord.MessageEmbed()
+        const welcomeEmbed = new MessageEmbed()
             .setColor('#538079')
             .setTitle(finalTitle)
             .setDescription(finalMsg);

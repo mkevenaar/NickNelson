@@ -28,7 +28,9 @@ function createDiscordClient() {
     client.database = {
         fetchGuild
     };
-    client.tools = resolveChannel;
+    client.tools = {
+        resolveChannel
+    };
 
     return client;
 }
