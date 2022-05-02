@@ -4,9 +4,11 @@ export const name = 'guildMemberAdd';
 export const once = false;
 
 export async function execute(member, client) {
+    const guildService = client.database.GuildService;
     try {
         let guild = member.guild;
-        let guildData = await client.database.fetchGuild(guild.id); // Get guild document from database
+        let guildData = await guildService.fetchGuild(guild.id); // Get guild document from database
+        
         if (!guildData.addons.welcome.enabled) return; // Welcome messages aren't enabled
 
         let welcomeChannel = await client.tools.resolveChannel(
