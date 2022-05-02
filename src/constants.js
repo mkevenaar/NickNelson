@@ -5,7 +5,7 @@ export const AppModes = {
     guild: "guild"
 };
 
-const defaultDatabase = "nickdb";
+const defaultDatabase = "NickNelson";
 
 export const Constants = {
     defaultMongoString: `mongodb://localhost:27017/${defaultDatabase}`,

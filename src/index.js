@@ -1,7 +1,7 @@
 import {configure, getEnvConfig, processArgs} from "./shared.js";
-import {deployCommands, purgeCommands} from "./nick-bot-commands.js";
+import {deployCommands, purgeCommands} from "./bot-commands.js";
 import {AppModes } from "./constants.js";
-import {initBot} from "./nick-bot.js";
+import {initBot} from "./bot.js";
 
 // Command-line processing
 const argv = processArgs();

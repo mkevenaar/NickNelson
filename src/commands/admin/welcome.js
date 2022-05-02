@@ -1,4 +1,5 @@
 import {SlashCommandBuilder} from "@discordjs/builders";
+import {Permissions} from "discord.js";
 
 export const data = new SlashCommandBuilder()
     .setName('welcome')

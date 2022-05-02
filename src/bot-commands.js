@@ -3,6 +3,8 @@ import {Routes} from "discord-api-types/v9";
 
 /**
  * Purge all guild specific commands
+ * @param {string} clientId provide the clientId to purge commands for
+ * @param {string} guildId filter on specifically a guild with its ID
  * @returns {Promise<void>}
  */
 export async function purgeCommands(clientId, guildId) {

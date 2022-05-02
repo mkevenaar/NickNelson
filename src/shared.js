@@ -38,7 +38,7 @@ export function getEnvConfig() {
     let {CLIENT_ID, GUILD_ID, TOKEN, MONGODB} = process.env;
 
     if (!MONGODB) {
-        MONGODB = "mongodb://127.0.0.1:27017/nickdb";
+        MONGODB = Constants.defaultMongoString;
     }
 
     // Do any validation, default correction etc here

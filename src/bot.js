@@ -10,7 +10,11 @@ const eventsFolder = Constants.eventsFolder;
 const commandsFolder = Constants.commandsFolder;
 const jsExt = Constants.jsExt;
 
-function createDatabaseClient() {
+/**
+ * Creates the discord client with interface hooks
+ * @returns {Client<boolean>}
+ */
+function createDiscordClient() {
     const client = new Client({
         intents: [
             Intents.FLAGS.GUILDS,
@@ -26,12 +30,16 @@ function createDatabaseClient() {
     return client;
 }
 
+/**
+ * Initiate the bot with hooks configured
+ * @returns {Promise<void>}
+ */
 export async function initBot() {
     const { TOKEN, MONGODB } = getEnvConfig();
-    const client = createDatabaseClient();
+    const client = createDiscordClient();
 
     // Commands Setup
-    let folders = readdirSync(`${sourceFolder}/${commandsFolder}/`);
+    let folders = readdirSync(`./${sourceFolder}/${commandsFolder}/`);
     for (const folder of folders) {
         const commandFiles = readdirSync(`${sourceFolder}/${commandsFolder}/${folder}/`)
             .filter((file) => file.endsWith(jsExt));
@@ -61,7 +69,8 @@ export async function initBot() {
     });
 
     // Events setup
-    const eventFiles = readdirSync(`./${sourceFolder}/${eventsFolder}`).filter((file) => file.endsWith('.js'));
+    const eventFiles = readdirSync(`./${sourceFolder}/${eventsFolder}`)
+        .filter((file) => file.endsWith(jsExt));
 
     for (const file of eventFiles) {
         const event = await import(`./${eventsFolder}/${file}`);
