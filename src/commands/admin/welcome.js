@@ -1,5 +1,6 @@
 import {SlashCommandBuilder} from "@discordjs/builders";
 import {Permissions} from "discord.js";
+import {GuildService} from "../../database/guild.service.js";
 
 export const data = new SlashCommandBuilder()
     .setName('welcome')
@@ -38,6 +39,8 @@ export const data = new SlashCommandBuilder()
     });
 
 export async function execute(interaction, client) {
+    const guildService = client.database.GuildService;
+
     if (!interaction.member.permissions.has(Permissions.FLAGS.ADMINISTRATOR)) {
         await interaction.reply({
             content: "You don't have permission to do that!",
@@ -52,7 +55,7 @@ export async function execute(interaction, client) {
     const image = interaction.options.getString('image');
     const enable = interaction.options.getBoolean('enable');
 
-    let data = await client.database.fetchGuild(interaction.guild.id);
+    let data = await guildService.fetchGuild(interaction.guild.id);
 
     // If addon for welcome is missing create it
     if (!data.addons.welcome) {

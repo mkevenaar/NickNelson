@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from "mongoose";
 
 const GuildSchema = new mongoose.Schema({
     id: {type: String}, //ID of the guild
