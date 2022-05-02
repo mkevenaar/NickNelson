@@ -35,16 +35,16 @@ export function processArgs() {
 export function getEnvConfig() {
     validateEnvConfigState();
 
-    let {CLIENT_ID, GUILD_ID, TOKEN} = process.env;
+    let {CLIENT_ID, GUILD_ID, TOKEN, MONGODB} = process.env;
 
-    if (!TOKEN) {
-        TOKEN = "mongodb://localhost:27017/nickdb";
+    if (!MONGODB) {
+        MONGODB = "mongodb://127.0.0.1:27017/nickdb";
     }
 
     // Do any validation, default correction etc here
     // ...
 
-    return {CLIENT_ID, GUILD_ID, TOKEN};
+    return {CLIENT_ID, GUILD_ID, TOKEN, MONGODB};
 }
 
 export function getRestInstance() {
