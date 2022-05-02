@@ -14,7 +14,8 @@
     "start": "node src/index.js",
     "dev": "nodemon src/index.js --mode=dev",
     "commands": "node src/index.js --mode=global",
-    "commands-guild": "node src/index.js --mode=guild"
+    "commands:guild": "node src/index.js --mode=guild",
+    "commands:purge": "node src/index.js --mode=purgeCommands"
   },
   "author": {
     "name": "mkevenaar"
