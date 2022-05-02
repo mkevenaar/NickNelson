@@ -1,0 +1,47 @@
+import {findCommandFiles, getRestInstance} from "./shared.js";
+import {Routes} from "discord-api-types/v9";
+
+/**
+ * Purge all guild specific commands
+ * @returns {Promise<void>}
+ */
+export async function purgeCommands(clientId, guildId) {
+    const restClient = getRestInstance();
+    restClient.get(Routes.applicationGuildCommands(clientId, guildId))
+        .then(function (result) {
+            console.log(result);
+            result.forEach(command => {
+                restClient.delete(Routes.applicationGuildCommand(clientId, guildId, command.id))
+            });
+        })
+        .catch(console.error);
+
+    // Debug the list of commands
+    restClient.get(Routes.applicationGuildCommands(clientId, guildId))
+        .then(function (result) {
+            console.log(result)
+        })
+        .catch(console.error);
+}
+
+/**
+ * Deploy the commands globally for all guilds or a specific guild ID
+ * @param clientId specify the client to identify with
+ * @param guildId filter on a specific guildId
+ * @returns {Promise<void>}
+ */
+export async function deployCommands(clientId, guildId = null) {
+    const commands = await findCommandFiles();
+
+    // Publish commands
+    const restClient = getRestInstance();
+    if (!guildId) {
+        await restClient.put(Routes.applicationCommands(clientId), {body: commands})
+            .then(() => console.log('Successfully registered global application commands.'))
+            .catch(console.error);
+    } else {
+        await restClient.put(Routes.applicationGuildCommands(clientId, guildId), {body: commands})
+            .then(() => console.log('Successfully registered application commands.'))
+            .catch(console.error);
+    }
+}

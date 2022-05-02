@@ -9,11 +9,12 @@
     "node": ">=16.0.0",
     "yarn": ">=1.22.15"
   },
+  "type": "module",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
-    "commands": "node src/deploy-commands.js",
-    "commands-guild": "node src/deploy-commands-guild.js"
+    "dev": "nodemon src/index.js --mode=dev",
+    "commands": "node src/index.js --mode=global",
+    "commands-guild": "node src/index.js --mode=guild"
   },
   "author": {
     "name": "mkevenaar"
@@ -29,7 +30,8 @@
     "discord-api-types": "^0.32.0",
     "discord.js": "^13.6.0",
     "dotenv": "^16.0.0",
-    "mongoose": "^6.3.1"
+    "mongoose": "^6.3.2",
+    "yargs": "^17.4.1"
   },
   "devDependencies": {
     "nodemon": "2.0.16",

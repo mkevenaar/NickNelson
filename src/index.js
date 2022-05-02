@@ -1,92 +1,35 @@
-require('dotenv').config();
+import {configure, getEnvConfig, processArgs} from "./shared.js";
+import {deployCommands, purgeCommands} from "./nick-bot-commands.js";
+import {AppModes } from "./constants.js";
+import {initBot} from "./nick-bot.js";
 
-// Deploy commands on startup
-require('./deploy-commands.js');
+// Command-line processing
+const argv = processArgs();
+console.log("Starting in mode:", argv.mode);
+// Configure environment
+configure();
 
-const fs = require('node:fs');
-const { Client, Collection, Intents } = require('discord.js');
-const { TOKEN, MONGODB } = process.env;
-const util = require('util');
-const readdir = util.promisify(fs.readdir);
-const mongoose = require('mongoose');
+const {CLIENT_ID, GUILD_ID} = getEnvConfig();
+if (!CLIENT_ID) throw new Error("Please specify a valid CLIENT_ID");
 
-const client = new Client({
-	intents: [
-		Intents.FLAGS.GUILDS,
-		Intents.FLAGS.GUILD_MESSAGES,
-		Intents.FLAGS.GUILD_PRESENCES,
-		Intents.FLAGS.GUILD_MEMBERS,
-	],
-});
-client.commands = new Collection();
-client.database = require('./database/mongoose.js');
-client.tools = require('./tools/tools.js');
+switch (argv.mode) {
+	case AppModes.guild:
+		if (!GUILD_ID) throw new Error("Please specify a valid guildId to purge with GUILD_ID");
 
-async function init() {
-	// Commands Setup
-	let folders = await readdir('./src/commands/');
-	folders.forEach((direct) => {
-		const commandFiles = fs
-			.readdirSync('./src/commands/' + direct + '/')
-			.filter((file) => file.endsWith('.js'));
+		await deployCommands(CLIENT_ID, GUILD_ID);
+		break;
+	case AppModes.purgeCommands:
+		if (!GUILD_ID) throw new Error("Please specify a guildId to purge with GUILD_ID");
 
-		for (const file of commandFiles) {
-			const command = require(`./commands/${direct}/${file}`);
-			client.commands.set(command.data.name, command);
-		}
-	});
-
-	// Executing commands
-	client.on('interactionCreate', async (interaction) => {
-		if (!interaction.isCommand()) return;
-
-		const command = client.commands.get(interaction.commandName);
-
-		if (!command) return;
-
-		try {
-			await command.execute(interaction, client);
-		} catch (error) {
-			console.error(error);
-			await interaction.reply({
-				content: 'There was an error while executing this command!',
-				ephemeral: true,
-			});
-		}
-	});
-
-	// Events setup
-	const eventFiles = fs.readdirSync('./src/events').filter((file) => file.endsWith('.js'));
-
-	for (const file of eventFiles) {
-		const event = require(`./events/${file}`);
-		if (event.once) {
-			client.once(event.name, (...args) => event.execute(...args, client));
-		} else {
-			client.on(event.name, (...args) => event.execute(...args, client));
-		}
-	}
-
-	// Connect to the database
-	mongoose
-		.connect(MONGODB, {
-			useNewUrlParser: true,
-			useUnifiedTopology: true,
-		})
-		.then(() => {
-			console.log('Connected to MongoDB');
-		})
-		.catch((err) => {
-			console.log('Unable to connect to MongoDB Database.\nError: ' + err);
-		});
-
-	// Login
-	await client.login(TOKEN);
+		await purgeCommands(CLIENT_ID, GUILD_ID);
+		break;
+	case AppModes.global:
+		await deployCommands(CLIENT_ID);
+		break;
+	case AppModes.dev:
+	default:
+		// Only here do we init the bot
+		await deployCommands(CLIENT_ID);
+		await initBot();
+		break;
 }
-
-init();
-
-process.on('unhandledRejection', (err) => {
-	console.log('Unknown error occurred:\n');
-	console.log(err);
-});
