@@ -1,6 +1,5 @@
 import {SlashCommandBuilder} from "@discordjs/builders";
 import {Permissions} from "discord.js";
-import {GuildService} from "../../database/guild.service.js";
 
 export const data = new SlashCommandBuilder()
     .setName('welcome')

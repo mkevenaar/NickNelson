@@ -8,7 +8,7 @@ export async function execute(member, client) {
     try {
         let guild = member.guild;
         let guildData = await guildService.fetchGuild(guild.id); // Get guild document from database
-        
+
         if (!guildData.addons.welcome.enabled) return; // Welcome messages aren't enabled
 
         let welcomeChannel = await client.tools.resolveChannel(
