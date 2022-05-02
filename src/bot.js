@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 import {resolveChannel} from "./tools/tools.js";
 import {Constants} from "./constants.js";
 import {readdirSync} from "fs";
+import {fetchGuild} from "./database/guild.service.js";
 
 const sourceFolder = Constants.sourceFolder;
 const eventsFolder = Constants.eventsFolder;
@@ -24,7 +25,9 @@ function createDiscordClient() {
         ],
     });
     client.commands = new Collection();
-    client.database = mongoose;
+    client.database = {
+        fetchGuild
+    };
     client.tools = resolveChannel;
 
     return client;
