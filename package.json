@@ -15,7 +15,9 @@
     "dev": "nodemon src/index.js --mode=dev",
     "commands": "node src/index.js --mode=global",
     "commands:guild": "node src/index.js --mode=guild",
-    "commands:purge": "node src/index.js --mode=purgeCommands"
+    "commands:purge": "node src/index.js --mode=purgeCommands",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --forceExit",
+    "test:cov": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --forceExit --coverage"
   },
   "author": {
     "name": "mkevenaar"
@@ -35,6 +37,10 @@
     "yargs": "^17.4.1"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^28.0.3",
+    "jest-util": "^28.0.2",
+    "mongodb-memory-server": "^8.5.2",
     "nodemon": "2.0.16",
     "prettier": "2.6.2"
   }
