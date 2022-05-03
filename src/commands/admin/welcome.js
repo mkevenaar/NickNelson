@@ -68,31 +68,31 @@ export async function execute(interaction, client) {
 		await data.save();
 	}
 
-	if (typeof enable !== 'undefined' && enable !== null) {
+	if (!!enable?.length) {
 		data.addons.welcome.enabled = enable;
 		data.markModified('addons.welcome');
 		await data.save();
 	}
 
-	if (typeof channel !== 'undefined' && channel !== null) {
+	if (!!channel?.length) {
 		data.addons.welcome.channel = channel.id;
 		data.markModified('addons.welcome');
 		await data.save();
 	}
 
-	if (typeof image !== 'undefined' && image !== null) {
+	if (!!image?.length) {
 		data.addons.welcome.image = image;
 		data.markModified('addons.welcome');
 		await data.save();
 	}
 
-	if (typeof title !== 'undefined' && title !== null) {
+	if (!!title?.length) {
 		data.addons.welcome.title = title;
 		data.markModified('addons.welcome');
 		await data.save();
 	}
 
-	if (typeof message !== 'undefined' && message !== null) {
+	if (!!message?.length) {
 		data.addons.welcome.message = message;
 		data.markModified('addons.welcome');
 		await data.save();

@@ -13,6 +13,8 @@ export const Constants = {
 	commandsFolder: 'commands',
 	eventsFolder: 'events',
 	jsExt: '.js',
+	defaultWelcomeTitle: '** {user.name} ** is now a HeartStopper and member number **{guild.totalUser}**',
+	defaultWelcomeMessage: 'Welcome {user.ping} to {guild.name}!'
 };
 
 export const DefaultRestOptions = { version: '9' };
