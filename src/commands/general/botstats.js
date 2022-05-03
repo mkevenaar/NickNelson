@@ -8,11 +8,8 @@ export const data = new SlashCommandBuilder()
 export async function execute(interaction, client) {
 	try {
 		let uptime = await client.tools.convertTime(client.uptime);
-        const memory = process.memoryUsage()
-		let ram = (
-			memory.heapUsed / 1024 / 1024 +
-			memory.heapTotal / 1024 / 1024
-		).toFixed(2);
+		const memory = process.memoryUsage();
+		let ram = (memory.heapUsed / 1024 / 1024 + memory.heapTotal / 1024 / 1024).toFixed(2);
 
 		const botStatsEmbed = new MessageEmbed()
 			.setColor('#538079')
