@@ -1,70 +1,73 @@
-import { MessageEmbed } from 'discord.js';
+import {MessageEmbed} from 'discord.js';
+import {Constants} from "../constants.js";
 
 export const name = 'guildMemberAdd';
 export const once = false;
 
 export async function execute(member, client) {
-	const guildService = client.database.GuildService;
-	try {
-		let guild = member.guild;
-		let guildData = await guildService.fetchGuild(guild.id); // Get guild document from database
+    const guildService = client.database.GuildService;
+    try {
+        let guild = member.guild;
+        let guildData = await guildService.fetchGuild(guild.id); // Get guild document from database
 
-		if (!guildData.addons.welcome.enabled) return; // Welcome messages aren't enabled
+        // Ensure welcome messages enabled
+        const welcomeProp = guildData?.addons?.welcome;
+        if (!welcomeProp?.enabled) return;
 
-		let welcomeChannel = await client.tools.resolveChannel(
-			guildData.addons.welcome.channel,
-			guild
-		); // Try find the welcome channel
+        // Gather the data
+        const channelName = welcomeProp.channel;
+        const welcomeTitleProp = welcomeProp.title;
+        const welcomeMessageProp = welcomeProp.message;
+        const welcomeImage = welcomeProp.image;
 
-		let welcomeTitle =
-			guildData.addons.welcome.title === null ||
-			guildData.addons.welcome.title === '' ||
-			guildData.addons.welcome.title === ' '
-				? '** {user.name} ** is now a HeartStopper and member number **{guild.totalUser}**'
-				: guildData.addons.welcome.title; // Get the custom title or use the preset one
-		let welcomeMsg =
-			guildData.addons.welcome.message === null ||
-			guildData.addons.welcome.message === '' ||
-			guildData.addons.welcome.message === ' '
-				? 'Welcome {user.ping} to {guild.name}!'
-				: guildData.addons.welcome.message; // Get the custom message or use the preset one
+        // Try find the welcome channel
+        let welcomeChannel = await client.tools.resolveChannel(
+            channelName,
+            guild
+        );
 
-		// Replace all valid tags
-		let finalTitle = welcomeTitle
-			.replace(/{user.ping}/g, `${member.user}`)
-			.replace(/{user.name}/g, `${member.user.username}`)
-			.replace(/{user.id}/g, `${member.user.id}`)
-			.replace(/{user.tag}/g, `${member.user.tag}`)
-			.replace(/{guild.name}/g, `${guild.name}`)
-			.replace(/{guild.id}/g, `${guild.id}`)
-			.replace(/{guild.totalUser}/g, `${guild.memberCount}`);
+        // Get the custom title or use default
+        let welcomeTitle =
+            !welcomeTitleProp?.trim()?.length
+                ? Constants.defaultWelcomeTitle
+                : guildData.addons.welcome.title;
+        // Get the custom message or use default
+        let welcomeMsg =
+            !welcomeMessageProp?.trim()?.length
+                ? Constants.defaultWelcomeMessage
+                : guildData.addons.welcome.message;
 
-		let finalMsg = welcomeMsg
-			.replace(/{user.ping}/g, `${member.user}`)
-			.replace(/{user.name}/g, `${member.user.username}`)
-			.replace(/{user.id}/g, `${member.user.id}`)
-			.replace(/{user.tag}/g, `${member.user.tag}`)
-			.replace(/{guild.name}/g, `${guild.name}`)
-			.replace(/{guild.id}/g, `${guild.id}`)
-			.replace(/{guild.totalUser}/g, `${guild.memberCount}`);
+        // Replace all valid tags using regex
+        let finalTitle = welcomeTitle
+            .replace(/{user.ping}/g, `${member.user}`)
+            .replace(/{user.name}/g, `${member.user.username}`)
+            .replace(/{user.id}/g, `${member.user.id}`)
+            .replace(/{user.tag}/g, `${member.user.tag}`)
+            .replace(/{guild.name}/g, `${guild.name}`)
+            .replace(/{guild.id}/g, `${guild.id}`)
+            .replace(/{guild.totalUser}/g, `${guild.memberCount}`);
 
-		const welcomeEmbed = new MessageEmbed()
-			.setColor('#538079')
-			.setTitle(finalTitle)
-			.setDescription(finalMsg);
+        let finalMsg = welcomeMsg
+            .replace(/{user.ping}/g, `${member.user}`)
+            .replace(/{user.name}/g, `${member.user.username}`)
+            .replace(/{user.id}/g, `${member.user.id}`)
+            .replace(/{user.tag}/g, `${member.user.tag}`)
+            .replace(/{guild.name}/g, `${guild.name}`)
+            .replace(/{guild.id}/g, `${guild.id}`)
+            .replace(/{guild.totalUser}/g, `${guild.memberCount}`);
 
-		if (
-			!(
-				guildData.addons.welcome.image === null ||
-				guildData.addons.welcome.image === '' ||
-				guildData.addons.welcome.image === ' '
-			)
-		) {
-			welcomeEmbed.setImage(guildData.addons.welcome.image);
-		}
+        const welcomeEmbed = new MessageEmbed()
+            .setColor('#538079')
+            .setTitle(finalTitle)
+            .setDescription(finalMsg);
 
-		return welcomeChannel.send({ embeds: [welcomeEmbed] });
-	} catch (e) {
-		console.log(e);
-	}
+        const trimmedImagePath = welcomeImage?.trim();
+        if (!!trimmedImagePath?.length) {
+            welcomeEmbed.setImage(trimmedImagePath);
+        }
+
+        return welcomeChannel.send({embeds: [welcomeEmbed]});
+    } catch (e) {
+        console.log(e);
+    }
 }
