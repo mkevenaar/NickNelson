@@ -1,4 +1,4 @@
-module.exports.resolveChannel = async function (search, guild) {
+export async function resolveChannel(search, guild) {
 	let channel = null;
 	if (!search || typeof search !== 'string') return;
 	//Try to search using ID
@@ -20,4 +20,4 @@ module.exports.resolveChannel = async function (search, guild) {
 
 	channel = guild.channels.cache.get(search);
 	return channel;
-};
+}
