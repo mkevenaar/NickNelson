@@ -1,6 +1,6 @@
 import {GuildModel} from "./models/guild.js";
 
-export class DatabaseService {
+export class GuildService {
     /**
      * Get or Create a Guild entry based on its ID
      */
