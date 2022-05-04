@@ -108,7 +108,7 @@ export async function initBot() {
 
 	// Top.gg AutoPoster; only do this when we have a token setup
 	if (TOPGG_TOKEN) {
-		const poster = AutoPoster('TOPGG_TOKEN', client); // your discord.js or eris client
+		const poster = AutoPoster(TOPGG_TOKEN, client); // your discord.js or eris client
 
 		// optional
 		poster.on('posted', (stats) => {
