@@ -773,7 +773,7 @@ agent-base@6:
   dependencies:
     debug "4"
 
-all-contributors-cli@^6.20.0:
+all-contributors-cli@6.20.0:
   version "6.20.0"
   resolved "https://registry.yarnpkg.com/all-contributors-cli/-/all-contributors-cli-6.20.0.tgz#9bc98dda38cb29cfe8afc8a78c004e14af25d2f6"
   integrity sha512-trEQlL1s1u8FSWSwY2w9uL4GCG7Fo9HIW5rm5LtlE0SQHSolfXQBzJib07Qes5j52/t72wjuE6sEKkuRrwiuuQ==
@@ -1222,7 +1222,7 @@ convert-source-map@^1.4.0, convert-source-map@^1.6.0, convert-source-map@^1.7.0:
   dependencies:
     safe-buffer "~5.1.1"
 
-cross-env@^7.0.3:
+cross-env@7.0.3:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-7.0.3.tgz#865264b29677dc015ba8418918965dd232fc54cf"
   integrity sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==
@@ -2227,7 +2227,7 @@ jest-snapshot@^28.0.3:
     pretty-format "^28.0.2"
     semver "^7.3.5"
 
-jest-util@^28.0.2:
+jest-util@28.0.2, jest-util@^28.0.2:
   version "28.0.2"
   resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-28.0.2.tgz#8e22cdd6e0549e0a393055f0e2da7eacc334b143"
   integrity sha512-EVdpIRCC8lzqhp9A0u0aAKlsFIzufK6xKxNK7awsnebTdOP4hpyQW5o6Ox2qPl8gbeUKYF+POLyItaND53kpGA==
@@ -2274,7 +2274,7 @@ jest-worker@^28.0.2:
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
 
-jest@^28.0.3:
+jest@28.0.3:
   version "28.0.3"
   resolved "https://registry.yarnpkg.com/jest/-/jest-28.0.3.tgz#92a7d6ee097b61de4ba2db7f3ab723e81a99b32d"
   integrity sha512-uS+T5J3w5xyzd1KSJCGKhCo8WTJXbNl86f5SW11wgssbandJOVLRKKUxmhdFfmKxhPeksl1hHZ0HaA8VBzp7xA==
@@ -2489,7 +2489,7 @@ mongodb-memory-server-core@8.5.2:
     uuid "^8.3.1"
     yauzl "^2.10.0"
 
-mongodb-memory-server@^8.5.2:
+mongodb-memory-server@8.5.2:
   version "8.5.2"
   resolved "https://registry.yarnpkg.com/mongodb-memory-server/-/mongodb-memory-server-8.5.2.tgz#b643e9ef1ec97045dfbcf9bae3eeffdf9c69856f"
   integrity sha512-+4/zxz9TxpPMxaUEm0axQvSf+tS6GtPyc5MEjwkiprBGsH7aTe9GEjuHKnXGP8ObarHFpgW3kV4C4oEzYvxQIQ==
