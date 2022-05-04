@@ -74,7 +74,7 @@ export async function execute(interaction, client) {
 		await data.save();
 	}
 
-	if (!!channel?.length) {
+	if (!!channel?.id) {
 		data.addons.welcome.channel = channel.id;
 		data.markModified('addons.welcome');
 		await data.save();

@@ -15,22 +15,23 @@ export async function execute(member, client) {
 		if (!welcomeProp?.enabled) return;
 
 		// Gather the data
-		const channelName = welcomeProp.channel;
+		const channelId = welcomeProp.channel;
 		const welcomeTitleProp = welcomeProp.title;
 		const welcomeMessageProp = welcomeProp.message;
 		const welcomeImage = welcomeProp.image;
 
 		// Try find the welcome channel
-		let welcomeChannel = await client.tools.resolveChannel(channelName, guild);
+		let welcomeChannel = await client.tools.resolveChannel(channelId, guild);
+        if(!welcomeChannel) return; // Unable to find channel in guild
 
 		// Get the custom title or use default
 		let welcomeTitle = !welcomeTitleProp?.trim()?.length
 			? Constants.defaultWelcomeTitle
-			: guildData.addons.welcome.title;
+			: welcomeTitleProp.trim();
 		// Get the custom message or use default
 		let welcomeMsg = !welcomeMessageProp?.trim()?.length
 			? Constants.defaultWelcomeMessage
-			: guildData.addons.welcome.message;
+			: welcomeMessageProp.trim();
 
 		// Replace all valid tags using regex
 		let finalTitle = welcomeTitle
@@ -52,7 +53,7 @@ export async function execute(member, client) {
 			.replace(/{guild.totalUser}/g, `${guild.memberCount}`);
 
 		const welcomeEmbed = new MessageEmbed()
-			.setColor('#538079')
+			.setColor('#2d4d58')
 			.setTitle(finalTitle)
 			.setDescription(finalMsg);
 
