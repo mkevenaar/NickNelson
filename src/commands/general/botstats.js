@@ -12,9 +12,8 @@ export async function execute(interaction, client) {
 		let ram = (memory.heapUsed / 1024 / 1024 + memory.heapTotal / 1024 / 1024).toFixed(2);
 
 		const botStatsEmbed = new MessageEmbed()
-			.setColor('#538079')
+			.setColor('#2d4d58')
 			.setTitle('Botstats')
-			.setDescription('Botstats')
 			.addFields(
 				{ name: 'Developers', value: '```Dyrant#4095, Ludoviko#0001, davidzwa#6298```' },
 				{
