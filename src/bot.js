@@ -15,7 +15,7 @@ const jsExt = Constants.jsExt;
  * Creates the discord client with interface hooks
  * @returns {Client<boolean>}
  */
-function createDiscordClient() {
+export function createDiscordClient() {
 	const client = new Client({
 		intents: [
 			Intents.FLAGS.GUILDS,
