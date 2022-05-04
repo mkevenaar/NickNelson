@@ -8,8 +8,8 @@ const UserSchema = new mongoose.Schema({
 	reason: [
 		{
 			type: mongoose.Schema.Types.ObjectId,
-			ref: "reason"
-		  }
+			ref: 'reason',
+		},
 	],
 });
 
