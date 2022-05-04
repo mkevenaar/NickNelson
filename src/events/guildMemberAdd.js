@@ -22,7 +22,7 @@ export async function execute(member, client) {
 
 		// Try find the welcome channel
 		let welcomeChannel = await client.tools.resolveChannel(channelId, guild);
-        if(!welcomeChannel) return; // Unable to find channel in guild
+		if (!welcomeChannel) return; // Unable to find channel in guild
 
 		// Get the custom title or use default
 		let welcomeTitle = !welcomeTitleProp?.trim()?.length
