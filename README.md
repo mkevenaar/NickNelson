@@ -22,7 +22,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://ludoviko.ch"><img src="https://avatars.githubusercontent.com/u/4950364?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ludoviko</b></sub></a><br /><a href="#ideas-Lucxjo" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://ludoviko.ch"><img src="https://avatars.githubusercontent.com/u/4950364?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ludoviko</b></sub></a><br /><a href="#ideas-Lucxjo" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/mkevenaar/NickNelson/pulls?q=is%3Apr+reviewed-by%3ALucxjo" title="Reviewed Pull Requests">👀</a></td>
   </tr>
 </table>
 
