@@ -1,6 +1,7 @@
 # Nick Nelson
 
 [![Discord Bots](https://top.gg/api/widget/servers/969889333156937740.svg)](https://top.gg/bot/969889333156937740)
+[![codecov](https://codecov.io/gh/mkevenaar/NickNelson/branch/develop/graph/badge.svg?token=fq98k1DrDV)](https://codecov.io/gh/mkevenaar/NickNelson)
 
 A Discord bot written in NodeJS
 
