@@ -1,6 +1,7 @@
 import { getEnvConfig } from './shared.js';
 import { Client, Collection, Intents } from 'discord.js';
 import mongoose from 'mongoose';
+import { AutoPoster } from 'topgg-autoposter';
 import { resolveChannel, convertTime } from './tools/tools.js';
 import { Constants } from './constants.js';
 import { readdirSync } from 'fs';
@@ -41,7 +42,7 @@ export function createDiscordClient() {
  * @returns {Promise<void>}
  */
 export async function initBot() {
-	const { TOKEN, MONGODB } = getEnvConfig();
+	const { TOKEN, MONGODB, TOPGG_TOKEN } = getEnvConfig();
 	const client = createDiscordClient();
 
 	// Commands Setup
@@ -104,4 +105,15 @@ export async function initBot() {
 
 	// Login
 	await client.login(TOKEN);
+
+	// Top.gg AutoPoster; only do this when we have a token setup
+	if (TOPGG_TOKEN) {
+		const poster = AutoPoster('TOPGG_TOKEN', client); // your discord.js or eris client
+
+		// optional
+		poster.on('posted', (stats) => {
+			// ran when successfully posted
+			console.log(`Posted stats to Top.gg | ${stats.serverCount} servers`);
+		});
+	}
 }

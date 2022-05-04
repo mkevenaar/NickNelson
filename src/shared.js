@@ -36,7 +36,7 @@ export function processArgs() {
 export function getEnvConfig() {
 	validateEnvConfigState();
 
-	let { CLIENT_ID, GUILD_ID, TOKEN, MONGODB } = process.env;
+	let { CLIENT_ID, GUILD_ID, TOKEN, MONGODB, TOPGG_TOKEN } = process.env;
 
 	if (!MONGODB) {
 		MONGODB = Constants.defaultMongoString;
@@ -45,7 +45,7 @@ export function getEnvConfig() {
 	// Do any validation, default correction etc here
 	// ...
 
-	return { CLIENT_ID, GUILD_ID, TOKEN, MONGODB };
+	return { CLIENT_ID, GUILD_ID, TOKEN, MONGODB, TOPGG_TOKEN };
 }
 
 export function getRestInstance() {
