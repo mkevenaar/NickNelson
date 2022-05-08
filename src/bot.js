@@ -17,24 +17,24 @@ const jsExt = Constants.jsExt;
  * @returns {Client<boolean>}
  */
 export function createDiscordClient() {
-	const client = new Client({
-		intents: [
-			Intents.FLAGS.GUILDS,
-			Intents.FLAGS.GUILD_MESSAGES,
-			Intents.FLAGS.GUILD_PRESENCES,
-			Intents.FLAGS.GUILD_MEMBERS,
-		],
-	});
-	client.commands = new Collection();
-	client.database = {
-		GuildService: GuildService,
-	};
-	client.tools = {
-		convertTime,
-		resolveChannel,
-	};
+  const client = new Client({
+    intents: [
+      Intents.FLAGS.GUILDS,
+      Intents.FLAGS.GUILD_MESSAGES,
+      Intents.FLAGS.GUILD_PRESENCES,
+      Intents.FLAGS.GUILD_MEMBERS,
+    ],
+  });
+  client.commands = new Collection();
+  client.database = {
+    GuildService: GuildService,
+  };
+  client.tools = {
+    convertTime,
+    resolveChannel,
+  };
 
-	return client;
+  return client;
 }
 
 /**
@@ -42,78 +42,78 @@ export function createDiscordClient() {
  * @returns {Promise<void>}
  */
 export async function initBot() {
-	const { TOKEN, MONGODB, TOPGG_TOKEN } = getEnvConfig();
-	const client = createDiscordClient();
+  const { TOKEN, MONGODB, TOPGG_TOKEN } = getEnvConfig();
+  const client = createDiscordClient();
 
-	// Commands Setup
-	let folders = readdirSync(`./${sourceFolder}/${commandsFolder}/`);
-	for (const folder of folders) {
-		const commandFiles = readdirSync(`${sourceFolder}/${commandsFolder}/${folder}/`).filter(
-			(file) => file.endsWith(jsExt)
-		);
+  // Commands Setup
+  let folders = readdirSync(`./${sourceFolder}/${commandsFolder}/`);
+  for (const folder of folders) {
+    const commandFiles = readdirSync(`${sourceFolder}/${commandsFolder}/${folder}/`).filter(
+      (file) => file.endsWith(jsExt)
+    );
 
-		for (const file of commandFiles) {
-			const command = await import(`./${commandsFolder}/${folder}/${file}`);
-			await client.commands.set(command.data.name, command);
-		}
-	}
+    for (const file of commandFiles) {
+      const command = await import(`./${commandsFolder}/${folder}/${file}`);
+      await client.commands.set(command.data.name, command);
+    }
+  }
 
-	// Executing commands
-	client.on('interactionCreate', async (interaction) => {
-		if (!interaction.isCommand()) return;
+  // Executing commands
+  client.on('interactionCreate', async (interaction) => {
+    if (!interaction.isCommand()) return;
 
-		const command = client.commands.get(interaction.commandName);
-		if (!command) return;
+    const command = client.commands.get(interaction.commandName);
+    if (!command) return;
 
-		try {
-			await command.execute(interaction, client);
-		} catch (error) {
-			console.error(error);
-			await interaction.reply({
-				content: 'There was an error while executing this command!',
-				ephemeral: true,
-			});
-		}
-	});
+    try {
+      await command.execute(interaction, client);
+    } catch (error) {
+      console.error(error);
+      await interaction.reply({
+        content: 'There was an error while executing this command!',
+        ephemeral: true,
+      });
+    }
+  });
 
-	// Events setup
-	const eventFiles = readdirSync(`./${sourceFolder}/${eventsFolder}`).filter((file) =>
-		file.endsWith(jsExt)
-	);
+  // Events setup
+  const eventFiles = readdirSync(`./${sourceFolder}/${eventsFolder}`).filter((file) =>
+    file.endsWith(jsExt)
+  );
 
-	for (const file of eventFiles) {
-		const event = await import(`./${eventsFolder}/${file}`);
-		if (event.once) {
-			client.once(event.name, (...args) => event.execute(...args, client));
-		} else {
-			client.on(event.name, (...args) => event.execute(...args, client));
-		}
-	}
+  for (const file of eventFiles) {
+    const event = await import(`./${eventsFolder}/${file}`);
+    if (event.once) {
+      client.once(event.name, (...args) => event.execute(...args, client));
+    } else {
+      client.on(event.name, (...args) => event.execute(...args, client));
+    }
+  }
 
-	// Connect to the database
-	mongoose
-		.connect(MONGODB, {
-			useNewUrlParser: true,
-			useUnifiedTopology: true,
-		})
-		.then((_) => {
-			console.log('Connected to MongoDB');
-		})
-		.catch((err) => {
-			console.log('Unable to connect to MongoDB Database.\nError: ' + err);
-		});
+  // Connect to the database
+  mongoose
+    .connect(MONGODB, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    })
+    .then((_) => {
+      console.log('Connected to MongoDB');
+    })
+    .catch((err) => {
+      console.log('Unable to connect to MongoDB Database.\nError: ' + err);
+    });
 
-	// Login
-	await client.login(TOKEN);
+  // Login
+  await client.login(TOKEN);
 
-	// Top.gg AutoPoster; only do this when we have a token setup
-	if (TOPGG_TOKEN) {
-		const poster = AutoPoster(TOPGG_TOKEN, client); // your discord.js or eris client
+  // Top.gg AutoPoster; only do this when we have a token setup
+  if (TOPGG_TOKEN) {
+    const poster = AutoPoster(TOPGG_TOKEN, client); // your discord.js or eris client
 
-		// optional
-		poster.on('posted', (stats) => {
-			// ran when successfully posted
-			console.log(`Posted stats to Top.gg | ${stats.serverCount} servers`);
-		});
-	}
+    // optional
+    poster.on('posted', (stats) => {
+      // ran when successfully posted
+      console.log(`Posted stats to Top.gg | ${stats.serverCount} servers`);
+    });
+  }
 }
