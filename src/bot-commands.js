@@ -7,25 +7,31 @@ import { Routes } from 'discord-api-types/v9';
  * @param {string} guildId filter on specifically a guild with its ID
  * @returns {Promise<void>}
  */
-export async function purgeCommands(clientId, guildId) {
+export async function purgeCommands(clientId, guildId = null) {
 	const restClient = getRestInstance();
-	restClient
-		.get(Routes.applicationGuildCommands(clientId, guildId))
-		.then(function (result) {
-			console.log(result);
-			result.forEach((command) => {
-				restClient.delete(Routes.applicationGuildCommand(clientId, guildId, command.id));
-			});
-		})
-		.catch(console.error);
-
-	// Debug the list of commands
-	restClient
-		.get(Routes.applicationGuildCommands(clientId, guildId))
-		.then(function (result) {
-			console.log(result);
-		})
-		.catch(console.error);
+	if (!guildId) {
+		restClient
+			.get(Routes.applicationCommands(clientId))
+			.then(function (result) {
+				console.log(result);
+				result.forEach((command) => {
+					restClient.delete(Routes.applicationCommand(clientId, command.id));
+				});
+			})
+			.catch(console.error);
+	} else {
+		restClient
+			.get(Routes.applicationGuildCommands(clientId, guildId))
+			.then(function (result) {
+				console.log(result);
+				result.forEach((command) => {
+					restClient.delete(
+						Routes.applicationGuildCommand(clientId, guildId, command.id)
+					);
+				});
+			})
+			.catch(console.error);
+	}
 }
 
 /**

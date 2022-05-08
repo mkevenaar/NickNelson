@@ -23,6 +23,9 @@ switch (argv.mode) {
 
 		await purgeCommands(CLIENT_ID, GUILD_ID);
 		break;
+	case AppModes.purgeGlobalCommands:
+		await purgeCommands(CLIENT_ID);
+		break;
 	case AppModes.global:
 		await deployCommands(CLIENT_ID);
 		break;

@@ -1,6 +1,7 @@
 export const AppModes = {
 	dev: 'dev',
 	purgeCommands: 'purgeCommands',
+	purgeGlobalCommands: 'purgeGlobalCommands',
 	global: 'global',
 	guild: 'guild',
 };

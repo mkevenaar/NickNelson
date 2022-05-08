@@ -1,5 +1,5 @@
 {
-  "name": "cpr",
+  "name": "nicknelson",
   "version": "0.1.0-dev",
   "description": "A discord bot for our HeartStopper server",
   "main": "src/index.js",
@@ -16,6 +16,7 @@
     "commands": "node src/index.js --mode=global",
     "commands:guild": "node src/index.js --mode=guild",
     "commands:purge": "node src/index.js --mode=purgeCommands",
+    "commands:purgeGlobal": "node src/index.js --mode=purgeGlobalCommands",
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --forceExit",
     "test:cov": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --forceExit --coverage"
   },
