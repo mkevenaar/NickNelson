@@ -31,8 +31,9 @@ switch (argv.mode) {
     break;
   case AppModes.dev:
   default:
+    // do not await here, just start the bot, sometimes it takes a while...
+    deployCommands(CLIENT_ID);
     // Only here do we init the bot
-    await deployCommands(CLIENT_ID);
     await initBot();
     break;
 }

@@ -90,18 +90,7 @@ export async function initBot() {
     }
   }
 
-  // Connect to the database
-  mongoose
-    .connect(MONGODB, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    })
-    .then((_) => {
-      console.log('Connected to MongoDB');
-    })
-    .catch((err) => {
-      console.log('Unable to connect to MongoDB Database.\nError: ' + err);
-    });
+  connectWithRetry(MONGODB);
 
   // Login
   await client.login(TOKEN);
@@ -116,4 +105,20 @@ export async function initBot() {
       console.log(`Posted stats to Top.gg | ${stats.serverCount} servers`);
     });
   }
+}
+
+// Connect to the database
+async function connectWithRetry(MONGODB) {
+  return mongoose
+    .connect(MONGODB, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    })
+    .then(() => {
+      console.log('Connected to MongoDB');
+    })
+    .catch((err) => {
+      console.log('Unable to connect to MongoDB Database.\nError: ' + err);
+      setTimeout(connectWithRetry, 5000, MONGODB);
+    });
 }
