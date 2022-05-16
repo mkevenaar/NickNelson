@@ -26,4 +26,3 @@ export const DevBots = ['970254018268004403', '970253083718344704'];
 export const DevEmoji = '975854179073556500';
 
 export const ProdEmoji = '975854074836701204';
-
