@@ -1,5 +1,12 @@
 import { SlashCommandBuilder } from '@discordjs/builders';
 import { Permissions } from 'discord.js';
+import { botPermissions } from '../../tools/botPermissions.js';
+
+export const permission = new botPermissions()
+  .setUserPerms(Permissions.FLAGS.ADMINISTRATOR)
+  .setUserMessage("You don't have permission configure the welcome message!")
+  .setBotPerms([Permissions.FLAGS.SEND_MESSAGES])
+  .setBotMessage("It seems that I don't have permission to send messages!");
 
 export const data = new SlashCommandBuilder()
   .setName('welcome')
@@ -37,14 +44,6 @@ export const data = new SlashCommandBuilder()
 
 export async function execute(interaction, client) {
   const guildService = client.database.GuildService;
-
-  if (!interaction.member.permissions.has(Permissions.FLAGS.ADMINISTRATOR)) {
-    await interaction.reply({
-      content: "You don't have permission to do that!",
-      ephemeral: true,
-    });
-    return;
-  }
 
   const channel = interaction.options.getChannel('channel');
   const title = interaction.options.getString('title');
