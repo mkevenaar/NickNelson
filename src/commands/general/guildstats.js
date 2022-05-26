@@ -41,7 +41,7 @@ export async function execute(interaction, client) {
       .setTitle('Guild Stats')
       .setAuthor({
         name: interaction.guild.name,
-        icon_url: interaction.guild.iconURL({ dynamic: true }),
+        iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .addFields(
         { name: `Server ID`, value: `${interaction.guild.id}`, inline: false },
