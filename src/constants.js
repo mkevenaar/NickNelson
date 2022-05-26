@@ -17,6 +17,9 @@ export const Constants = {
   defaultWelcomeTitle:
     '** {user.name} ** is now a HeartStopper and member number **{guild.totalUser}**',
   defaultWelcomeMessage: 'Welcome {user.ping} to {guild.name}!',
+  defaultGoodbyeTitle:
+    '** {user.name} ** has left the guild, we now have **{guild.totalUser}** members',
+  defaultGoodbyeMessage: 'Goodbye {user.name}!',
 };
 
 export const DefaultRestOptions = { version: '9' };

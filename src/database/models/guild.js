@@ -9,14 +9,14 @@ const GuildSchema = new mongoose.Schema({
     default: {
       // Extra features data
       welcome: {
-        enabled: true, // Welcome features are enabled
+        enabled: false, // Welcome features are enabled
         channel: null, // ID for the channel to send messages to
         title: null, // Custom title
         message: null, // Custom message
         image: null, // URL of image
       },
       goodbye: {
-        enabled: true, // Goodbye features are enabled
+        enabled: false, // Goodbye features are enabled
         channel: null, // ID for channel to send messages to
         title: null, // Custom title
         message: null, // Custom message
