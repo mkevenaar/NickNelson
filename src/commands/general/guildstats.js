@@ -2,7 +2,6 @@ import { SlashCommandBuilder } from '@discordjs/builders';
 import { MessageEmbed } from 'discord.js';
 import { Permissions } from 'discord.js';
 import { botPermissions } from '../../tools/botPermissions.js';
-import moment from 'moment';
 
 export const permission = new botPermissions()
   .setBotPerms([Permissions.FLAGS.SEND_MESSAGES, Permissions.FLAGS.EMBED_LINKS])
@@ -14,7 +13,7 @@ export const data = new SlashCommandBuilder()
 
 export async function execute(interaction, client) {
   try {
-    let createDate = await moment(interaction.guild.createdAt).format('MMMM Do YYYY, HH:mm:ss');
+    let createDate = Math.floor(interaction.guild.createdTimestamp / 1000);
 
     let owner = await interaction.guild.fetchOwner();
 
@@ -52,7 +51,7 @@ export async function execute(interaction, client) {
           value: `${owner.user} [${owner.user.id}]`,
           inline: true,
         },
-        { name: `Guild Created`, value: `${createDate}`, inline: false },
+        { name: `Guild Created`, value: `<t:${createDate}:F>`, inline: false },
         {
           name: `Channels [${textChannels + voiceChannels + catCount}]`,
           value: `Category: ${catCount}\nText: ${textChannels}\nVoice: ${voiceChannels}`,
