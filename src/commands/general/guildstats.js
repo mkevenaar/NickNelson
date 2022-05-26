@@ -4,7 +4,6 @@ import { Permissions } from 'discord.js';
 import { botPermissions } from '../../tools/botPermissions.js';
 import moment from 'moment';
 
-
 export const permission = new botPermissions()
   .setBotPerms([Permissions.FLAGS.SEND_MESSAGES, Permissions.FLAGS.EMBED_LINKS])
   .setBotMessage("It seems that I don't have permission to send messages or embed links!");
@@ -20,11 +19,14 @@ export async function execute(interaction, client) {
     let owner = await interaction.guild.fetchOwner();
 
     // Get the amount of text and voice channels
-    let textChannels = await interaction.guild.channels.cache.filter((x) => x.type === 'GUILD_TEXT').size;
-    let voiceChannels = await interaction.guild.channels.cache.filter((x) => x.type === 'GUILD_VOICE')
+    let textChannels = await interaction.guild.channels.cache.filter((x) => x.type === 'GUILD_TEXT')
       .size;
+    let voiceChannels = await interaction.guild.channels.cache.filter(
+      (x) => x.type === 'GUILD_VOICE'
+    ).size;
     // Get the amount of categories
-    let catCount = await interaction.guild.channels.cache.filter((x) => x.type === 'GUILD_CATEGORY').size;
+    let catCount = await interaction.guild.channels.cache.filter((x) => x.type === 'GUILD_CATEGORY')
+      .size;
     // Get the amount of role
     let roleCount = await interaction.guild.roles.cache.size;
 
