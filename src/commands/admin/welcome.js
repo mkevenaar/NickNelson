@@ -38,7 +38,7 @@ export const data = new SlashCommandBuilder()
   .addBooleanOption((enable) => {
     return enable
       .setName('enable')
-      .setDescription('Enable (true) or disable (false) the welcome message, default enabled')
+      .setDescription('Enable (true) or disable (false) the welcome message, default disabled')
       .setRequired(false);
   });
 
