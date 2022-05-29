@@ -74,8 +74,11 @@ export async function execute(interaction, client) {
   }
 
   if (!!channel?.id) {
-    if(channel.type !== 'GUILD_TEXT') {
-      return await interaction.reply({ content: 'Only text channels are allowed', ephemeral: true });
+    if (channel.type !== 'GUILD_TEXT') {
+      return await interaction.reply({
+        content: 'Only text channels are allowed',
+        ephemeral: true,
+      });
     }
     data.addons.goodbye.channel = channel.id;
     data.markModified('addons.goodbye');
