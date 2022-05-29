@@ -36,11 +36,9 @@ export const BotColors = {
   failed: '#e01e01',
 };
 
-const botPermissions = '414531931206';
-
 export const HelpUrls = {
   supportServer: 'https://nickandcharliebots.net/support/',
   gitHubUrl: 'https://github.com/mkevenaar/NickNelson/issues',
   websiteUrl: 'https://nickandcharliebots.net/nick-nelson/',
-  inviteUrl: `https://nickandcharliebots.net/nick/`,
+  inviteUrl: 'https://nickandcharliebots.net/nick/',
 };
