@@ -1,0 +1,5 @@
+{
+  "label": "Admin commands",
+  "description": "Admin commands, only available for users with ADMINISTRATOR permissions",
+  "value": "admin"
+}

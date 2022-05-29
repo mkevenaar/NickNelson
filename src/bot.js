@@ -10,6 +10,7 @@ import { GuildService } from './database/guild.service.js';
 const sourceFolder = Constants.sourceFolder;
 const eventsFolder = Constants.eventsFolder;
 const commandsFolder = Constants.commandsFolder;
+const selectMenuFolder = Constants.selectMenuFolder;
 const jsExt = Constants.jsExt;
 
 /**
@@ -26,6 +27,7 @@ export function createDiscordClient() {
     ],
   });
   client.commands = new Collection();
+  client.selectMenu = new Collection();
   client.database = {
     GuildService: GuildService,
   };
@@ -58,6 +60,15 @@ export async function initBot() {
     }
   }
 
+  // SelectMenu Setup
+  const menuFiles = readdirSync(`./${sourceFolder}/${selectMenuFolder}/`).filter((file) =>
+    file.endsWith(jsExt)
+  );
+  for (const menuFile of menuFiles) {
+    const menu = await import(`./${selectMenuFolder}/${menuFile}`);
+    await client.selectMenu.set(menu.data.name, menu);
+  }
+
   // Executing commands
   client.on('interactionCreate', async (interaction) => {
     if (!interaction.isCommand()) return;
@@ -69,7 +80,7 @@ export async function initBot() {
       await command.permission.checkUserPerms(interaction);
       await command.permission.checkBotPerms(interaction);
     } catch (error) {
-      // console.error(error);
+      console.error(error);
       await interaction.reply({
         content: 'There was an error while executing this command! \n ' + error.message,
         ephemeral: true,
@@ -79,6 +90,24 @@ export async function initBot() {
 
     try {
       await command.execute(interaction, client);
+    } catch (error) {
+      console.error(error);
+      await interaction.reply({
+        content: 'There was an error while executing this command!',
+        ephemeral: true,
+      });
+    }
+  });
+
+  // Executing Select Menus
+  client.on('interactionCreate', async (interaction) => {
+    if (!interaction.isSelectMenu()) return;
+
+    const menu = client.selectMenu.get(interaction.customId);
+    if (!menu) return;
+
+    try {
+      await menu.execute(interaction, client);
     } catch (error) {
       console.error(error);
       await interaction.reply({

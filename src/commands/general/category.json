@@ -1,0 +1,5 @@
+{
+  "label": "General Commands",
+  "description": "General commands, available for anyone in the guild. Contains statistics and health check commands",
+  "value": "general"
+}

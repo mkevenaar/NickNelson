@@ -12,6 +12,7 @@ export const Constants = {
   defaultMongoString: `mongodb://localhost:27017/${defaultDatabase}`,
   sourceFolder: 'src',
   commandsFolder: 'commands',
+  selectMenuFolder: 'selectmenu',
   eventsFolder: 'events',
   jsExt: '.js',
   defaultWelcomeTitle:
@@ -33,4 +34,13 @@ export const ProdEmoji = '975854074836701204';
 export const BotColors = {
   default: '#2d4d58',
   failed: '#e01e01',
+};
+
+const botPermissions = '414531931206';
+
+export const HelpUrls = {
+  supportServer: 'https://nickandcharliebots.net/support/',
+  gitHubUrl: 'https://github.com/mkevenaar/NickNelson/issues',
+  websiteUrl: 'https://nickandcharliebots.net/nick-nelson/',
+  inviteUrl: `https://nickandcharliebots.net/nick/`,
 };
