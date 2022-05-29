@@ -7,3 +7,5 @@ trim_trailing_whitespace = true
 
 [*.{js,json,yml}]
 charset = utf-8
+indent_style = space
+indent_size = 2

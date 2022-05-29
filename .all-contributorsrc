@@ -37,6 +37,16 @@
         "review",
         "code"
       ]
+    },
+    {
+      "login": "Stones8000",
+      "name": "Stones8000",
+      "avatar_url": "https://avatars.githubusercontent.com/u/79322708?v=4",
+      "profile": "https://github.com/Stones8000",
+      "contributions": [
+        "bug",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -45,5 +55,6 @@
   "projectOwner": "mkevenaar",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "skipCi": true
+  "skipCi": true,
+  "commitConvention": "none"
 }
