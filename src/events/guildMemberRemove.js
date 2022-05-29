@@ -1,5 +1,5 @@
 import { MessageEmbed } from 'discord.js';
-import { Constants } from '../constants.js';
+import { BotColors, Constants } from '../constants.js';
 
 export const name = 'guildMemberRemove';
 export const once = false;
@@ -53,7 +53,7 @@ export async function execute(member, client) {
       .replace(/{guild.totalUser}/g, `${guild.memberCount}`);
 
     const goodbyeEmbed = new MessageEmbed()
-      .setColor('#2d4d58')
+      .setColor(BotColors.default)
       .setTitle(finalTitle)
       .setDescription(finalMsg);
 

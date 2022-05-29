@@ -2,6 +2,7 @@ import { SlashCommandBuilder } from '@discordjs/builders';
 import { MessageEmbed } from 'discord.js';
 import { Permissions } from 'discord.js';
 import { botPermissions } from '../../tools/botPermissions.js';
+import { BotColors } from '../../constants.js';
 
 export const permission = new botPermissions()
   .setBotPerms([Permissions.FLAGS.SEND_MESSAGES, Permissions.FLAGS.EMBED_LINKS])
@@ -36,7 +37,7 @@ export async function execute(interaction, client) {
     let banCount = await interaction.guild.bans.fetch();
 
     const guildStatsEmbed = new MessageEmbed()
-      .setColor('#2d4d58')
+      .setColor(BotColors.default)
       .setTitle('Guild Stats')
       .setAuthor({
         name: interaction.guild.name,

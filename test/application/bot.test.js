@@ -1,5 +1,4 @@
-import { closeDatabase, connect } from '../db-handler.js';
-import { GuildModel } from '../../src/database/models/guild.js';
+import { clearDatabase, closeDatabase, connect } from '../db-handler.js';
 import { createDiscordClient } from '../../src/bot.js';
 import { expectArraysIntersect } from '../utils/test.utils.js';
 
@@ -7,7 +6,7 @@ beforeAll(async () => {
   await connect();
 });
 afterEach(async () => {
-  await GuildModel.deleteMany();
+  await clearDatabase();
 });
 afterAll(async () => {
   await closeDatabase();

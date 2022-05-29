@@ -1,7 +1,7 @@
 import { SlashCommandBuilder } from '@discordjs/builders';
-import { MessageEmbed } from 'discord.js';
-import { Permissions } from 'discord.js';
+import { MessageEmbed, Permissions } from 'discord.js';
 import { botPermissions } from '../../tools/botPermissions.js';
+import { BotColors } from '../../constants.js';
 
 export const permission = new botPermissions()
   .setBotPerms([Permissions.FLAGS.SEND_MESSAGES])
@@ -18,7 +18,7 @@ export async function execute(interaction, client) {
     let ram = (memory.heapUsed / 1024 / 1024 + memory.heapTotal / 1024 / 1024).toFixed(2);
 
     const botStatsEmbed = new MessageEmbed()
-      .setColor('#2d4d58')
+      .setColor(BotColors.default)
       .setTitle('Botstats')
       .addFields(
         { name: 'Developers', value: '```Dyrant#4095, Ludoviko#0001, davidzwa#6298```' },

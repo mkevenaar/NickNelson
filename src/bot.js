@@ -69,7 +69,7 @@ export async function initBot() {
       await command.permission.checkUserPerms(interaction);
       await command.permission.checkBotPerms(interaction);
     } catch (error) {
-      console.error(error);
+      // console.error(error);
       await interaction.reply({
         content: 'There was an error while executing this command! \n ' + error.message,
         ephemeral: true,
