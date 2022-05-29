@@ -20,7 +20,26 @@ export async function execute(interaction, client) {
   );
 
   commands.forEach((command) => {
-    help.addField(`/${command.name}`, command.description, true);
+    const filteredOptions = command.options.filter(
+      (option) => option.type === 1 || option.type === 2
+    );
+    if (filteredOptions.length) {
+      filteredOptions.forEach((option) => {
+        if (option.type === 1) {
+          help.addField(`/${command.name} ${option.name}`, option.description, true);
+        } else if (option.type === 2) {
+          option.options.forEach((subOption) => {
+            help.addField(
+              `/${command.name} ${option.name} ${subOption.name}`,
+              subOption.description,
+              true
+            );
+          });
+        }
+      });
+    } else {
+      help.addField(`/${command.name}`, command.description, true);
+    }
   });
 
   const selectRow = new MessageActionRow().addComponents(
