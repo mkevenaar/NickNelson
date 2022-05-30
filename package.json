@@ -1,6 +1,6 @@
 {
   "name": "nicknelson",
-  "version": "0.1.0-dev",
+  "version": "0.1.0",
   "description": "A discord bot for our HeartStopper server",
   "main": "src/index.js",
   "private": "true",

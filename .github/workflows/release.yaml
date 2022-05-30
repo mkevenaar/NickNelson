@@ -1,5 +1,4 @@
 ---
-
 name: Release
 on:
   push:
@@ -19,13 +18,13 @@ jobs:
         run: git fetch --prune --unshallow
 
       - name: Zip Release
-        run: zip -x '*.git*' -r release.zip . 
+        run: zip -x '*.git*' -r release.zip .
 
       - name: Extract owner and repo
-        uses: jungwinter/split@v1.1.0
+        uses: jungwinter/split@v2
         id: repo
         with:
-          seperator: '/'
+          separator: '/'
           msg: ${{ github.repository }}
 
       - name: Install GitVersion
@@ -45,7 +44,7 @@ jobs:
       - name: Create release with GitReleaseManager
         uses: gittools/actions/gitreleasemanager/create@v0.9.13
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
           owner: ${{ steps.repo.outputs._0 }}
           repository: ${{ steps.repo.outputs._1 }}
           milestone: ${{ steps.gitversion.outputs.majorMinorPatch }}
@@ -56,7 +55,7 @@ jobs:
       - name: Publish release with GitReleaseManager
         uses: gittools/actions/gitreleasemanager/publish@v0.9.13
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
           owner: ${{ steps.repo.outputs._0 }}
           repository: ${{ steps.repo.outputs._1 }}
           tagName: ${{ steps.gitversion.outputs.majorMinorPatch }}
@@ -64,7 +63,7 @@ jobs:
       - name: Close release with GitReleaseManager
         uses: gittools/actions/gitreleasemanager/close@v0.9.13
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
           owner: ${{ steps.repo.outputs._0 }}
           repository: ${{ steps.repo.outputs._1 }}
           milestone: ${{ steps.gitversion.outputs.majorMinorPatch }}
