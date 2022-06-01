@@ -36,6 +36,9 @@ export async function execute(interaction, client) {
     // Get the amount of banned users
     let banCount = await interaction.guild.bans.fetch();
 
+    let humanCount = interaction.guild.members.cache.filter((member) => !member.user.bot).size;
+    let botCount = interaction.guild.members.cache.filter((member) => member.user.bot).size;
+
     const guildStatsEmbed = new MessageEmbed()
       .setColor(BotColors.default)
       .setTitle('Guild Stats')
@@ -43,10 +46,21 @@ export async function execute(interaction, client) {
         name: interaction.guild.name,
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
+      .setThumbnail(interaction.guild.iconURL({ dynamic: true }))
       .addFields(
-        { name: `Server ID`, value: `${interaction.guild.id}`, inline: false },
+        { name: `Server ID`, value: `${interaction.guild.id}`, inline: true },
+        {
+          name: `Server logo`,
+          value: `[Click here!](${interaction.guild.iconURL({ dynamic: true })}?size=1024)`,
+          inline: true,
+        },
+        { name: '\u200B', value: '\u200B', inline: true },
         { name: `Verification Level`, value: `${verifyLevel}`, inline: true },
-        { name: `Members`, value: `${interaction.guild.memberCount}`, inline: true },
+        {
+          name: `Members`,
+          value: `Total: ${interaction.guild.memberCount}\nHumans: ${humanCount}\nBots: ${botCount}`,
+          inline: true,
+        },
         {
           name: `Server Owner`,
           value: `${owner.user} [${owner.user.id}]`,
