@@ -67,7 +67,7 @@ export async function execute(interaction, client) {
     await data.save();
   }
 
-  if (enable) {
+  if (typeof enable === 'boolean') {
     data.addons.goodbye.enabled = enable;
     data.markModified('addons.goodbye');
     await data.save();
