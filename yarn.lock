@@ -322,24 +322,22 @@
   resolved "https://registry.yarnpkg.com/@discordjs/collection/-/collection-0.6.0.tgz#ee9c7b349a61d081fcdbda36df4187e575510952"
   integrity sha512-Ieaetb36l0nmAS5X9Upqk4W7euAO6FdXPxn3I8vBAKEcoIzEZI1mcVcPfCfagGJZSgBKpENnAnKkP4GAn+MV8w==
 
-"@discordjs/collection@^0.7.0-dev":
-  version "0.7.0-dev.1651493036-4ba0f56"
-  resolved "https://registry.yarnpkg.com/@discordjs/collection/-/collection-0.7.0-dev.1651493036-4ba0f56.tgz#9d3ff2dd9e3eb21a754b4d54ead686750b117f42"
-  integrity sha512-/6eYweo3mprHqYO+DTM89mZNp1AdvZelMZGSeiCUtMadhsdjycR1cfA08fRtivDGaRnvmecDaKIEfig9mXaRxw==
+"@discordjs/collection@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@discordjs/collection/-/collection-0.7.0.tgz#1a6c00198b744ba2b73a64442145da637ac073b8"
+  integrity sha512-R5i8Wb8kIcBAFEPLLf7LVBQKBDYUL+ekb23sOgpkpyGT+V4P7V83wTxcsqmX+PbqHt4cEHn053uMWfRqh/Z/nA==
 
-"@discordjs/rest@0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@discordjs/rest/-/rest-0.4.1.tgz#d0a7e79df7a7f59bd01630013b3c70231e22a31d"
-  integrity sha512-rtWy+AIfNlfjGkAgA2TJLASdqli07aTNQceVGT6RQQiQaEqV0nsfBO4WtDlDzk7PmO3w+InP3dpwEolJI5jz0A==
+"@discordjs/rest@0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@discordjs/rest/-/rest-0.5.0.tgz#dc5bd68e33bf8dd1cf08cf3c55b2901deb92eb5d"
+  integrity sha512-S4E1YNz1UxgUfMPpMeqzPPkCfXE877zOsvKM5WEmwIhcpz1PQV7lzqlEOuz194UuwOJLLjQFBgQELnQfCX9UfA==
   dependencies:
-    "@discordjs/collection" "^0.7.0-dev"
+    "@discordjs/collection" "^0.7.0"
     "@sapphire/async-queue" "^1.3.1"
-    "@sapphire/snowflake" "^3.2.1"
-    "@types/node-fetch" "^2.6.1"
-    discord-api-types "^0.29.0"
-    form-data "^4.0.0"
-    node-fetch "^2.6.7"
-    tslib "^2.3.1"
+    "@sapphire/snowflake" "^3.2.2"
+    discord-api-types "^0.33.3"
+    tslib "^2.4.0"
+    undici "^5.4.0"
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
@@ -600,7 +598,7 @@
   resolved "https://registry.yarnpkg.com/@sapphire/shapeshift/-/shapeshift-3.1.0.tgz#e4719fd03ab1d3ea01170f9c37b9cb64f5794759"
   integrity sha512-PkxFXd3QJ1qAPS05Dy2UkVGYPm/asF1Ugt2Xyzmv4DHzO3+G7l+873C4XFFcJ9M5Je+eCMC7SSifgPTSur5QuA==
 
-"@sapphire/snowflake@^3.2.1":
+"@sapphire/snowflake@^3.2.2":
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/@sapphire/snowflake/-/snowflake-3.2.2.tgz#faacdc1b5f7c43145a71eddba917de2b707ef780"
   integrity sha512-ula2O0kpSZtX9rKXNeQMrHwNd7E4jPDJYUXmEGTFdMRfyfMw+FPyh04oKMjAiDuOi64bYgVkOV3MjK+loImFhQ==
@@ -1330,11 +1328,6 @@ discord-api-types@0.33.3, discord-api-types@^0.33.3:
   version "0.33.3"
   resolved "https://registry.yarnpkg.com/discord-api-types/-/discord-api-types-0.33.3.tgz#882c39331871f619035917a1f80d486f605b3e7a"
   integrity sha512-P3A1RJXKEDmGPHrFTN5+gYLsBPGUVGj+D3+fa3m0K/umc+LMfqGuEad+p7cNq7ry/icReVhS3bz9jvBvne/BRA==
-
-discord-api-types@^0.29.0:
-  version "0.29.0"
-  resolved "https://registry.yarnpkg.com/discord-api-types/-/discord-api-types-0.29.0.tgz#8346352b623ddd8d8eed386b6eb758e2d82d6005"
-  integrity sha512-Ekq1ICNpOTVajXKZguNFrsDeTmam+ZeA38txsNLZnANdXUjU6QBPIZLUQTC6MzigFGb0Tt8vk4xLnXmzv0shNg==
 
 discord-api-types@^0.30.0:
   version "0.30.0"
@@ -2569,7 +2562,7 @@ new-find-package-json@^1.1.0:
     debug "^4.3.2"
     tslib "^2.3.0"
 
-node-fetch@^2.6.0, node-fetch@^2.6.1, node-fetch@^2.6.7:
+node-fetch@^2.6.0, node-fetch@^2.6.1:
   version "2.6.7"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
   integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
@@ -3305,6 +3298,11 @@ undefsafe@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/undefsafe/-/undefsafe-2.0.5.tgz#38733b9327bdcd226db889fb723a6efd162e6e2c"
   integrity sha512-WxONCrssBM8TSPRqN5EmsjVrsv4A8X12J4ArBiiayv3DyyG3ZlIg6yysuuSYdZsVz3TKcTg2fd//Ujd4CHV1iA==
+
+undici@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-5.4.0.tgz#c474fae02743d4788b96118d46008a24195024d2"
+  integrity sha512-A1SRXysDg7J+mVP46jF+9cKANw0kptqSFZ8tGyL+HBiv0K1spjxPX8Z4EGu+Eu6pjClJUBdnUPlxrOafR668/g==
 
 unique-string@^2.0.0:
   version "2.0.0"
