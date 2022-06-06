@@ -52,7 +52,6 @@ export async function convertTime(milliseconds) {
 }
 
 export async function swapPages(client, message, description, TITLE) {
-
   //has the interaction already been deferred? If not, defer the reply.
   if (message.deferred == false) {
     await message.deferReply();
@@ -122,12 +121,7 @@ export async function swapPages(client, message, description, TITLE) {
     .setEmoji('🛑')
     .setLabel('Stop');
   const allButtons = [
-    new MessageActionRow().addComponents([
-      button_back,
-      button_home,
-      button_forward,
-      button_stop,
-    ]),
+    new MessageActionRow().addComponents([button_back, button_home, button_forward, button_stop]),
   ];
   //Send message with buttons
   let swapMsg = await message.reply({
