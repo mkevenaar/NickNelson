@@ -41,8 +41,8 @@
   "devDependencies": {
     "all-contributors-cli": "6.20.0",
     "cross-env": "7.0.3",
-    "jest": "28.1.0",
-    "jest-util": "28.1.0",
+    "jest": "28.1.1",
+    "jest-util": "28.1.1",
     "mongodb-memory-server": "8.6.0",
     "nodemon": "2.0.16",
     "prettier": "2.6.2"
