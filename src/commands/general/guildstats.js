@@ -5,8 +5,14 @@ import { botPermissions } from '../../tools/botPermissions.js';
 import { BotColors } from '../../constants.js';
 
 export const permission = new botPermissions()
-  .setBotPerms([Permissions.FLAGS.SEND_MESSAGES, Permissions.FLAGS.EMBED_LINKS])
-  .setBotMessage("It seems that I don't have permission to send messages or embed links!");
+  .setBotPerms([
+    Permissions.FLAGS.SEND_MESSAGES,
+    Permissions.FLAGS.EMBED_LINKS,
+    Permissions.FLAGS.BAN_MEMBERS,
+  ])
+  .setBotMessage(
+    "It seems that I don't have permission to send messages, embed links or ban members!\nThese are required for this function to work"
+  );
 
 export const data = new SlashCommandBuilder()
   .setName('guildstats')
