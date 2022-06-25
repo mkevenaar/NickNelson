@@ -1,5 +1,5 @@
 export const name = 'ready';
-export const once = true;
+export const once = false;
 
 export function execute(client) {
   console.log('Logged as:', client.user.tag);
