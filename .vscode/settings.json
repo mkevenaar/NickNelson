@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
         "autoposter",
+        "bannable",
         "botstats",
         "crey",
         "davidzwa",
@@ -11,7 +12,8 @@
         "Ludoviko",
         "mkevenaar",
         "nicknelson",
-        "topgg"
+        "topgg",
+        "unban"
     ],
     "jest.jestCommandLine": "yarn run test:cov"
 }

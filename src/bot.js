@@ -2,7 +2,7 @@ import { getEnvConfig } from './shared.js';
 import { Client, Collection, Intents } from 'discord.js';
 import mongoose from 'mongoose';
 import { AutoPoster } from 'topgg-autoposter';
-import { resolveChannel, convertTime } from './tools/tools.js';
+import { resolveChannel, convertTime, swapPages } from './tools/tools.js';
 import { Constants } from './constants.js';
 import { readdirSync } from 'fs';
 import { GuildService } from './database/guild.service.js';
@@ -34,6 +34,7 @@ export function createDiscordClient() {
   client.tools = {
     convertTime,
     resolveChannel,
+    swapPages,
   };
 
   return client;
