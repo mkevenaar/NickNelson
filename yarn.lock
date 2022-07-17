@@ -318,17 +318,23 @@
   resolved "https://registry.yarnpkg.com/@discordjs/collection/-/collection-0.7.0.tgz#1a6c00198b744ba2b73a64442145da637ac073b8"
   integrity sha512-R5i8Wb8kIcBAFEPLLf7LVBQKBDYUL+ekb23sOgpkpyGT+V4P7V83wTxcsqmX+PbqHt4cEHn053uMWfRqh/Z/nA==
 
-"@discordjs/rest@0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@discordjs/rest/-/rest-0.5.0.tgz#dc5bd68e33bf8dd1cf08cf3c55b2901deb92eb5d"
-  integrity sha512-S4E1YNz1UxgUfMPpMeqzPPkCfXE877zOsvKM5WEmwIhcpz1PQV7lzqlEOuz194UuwOJLLjQFBgQELnQfCX9UfA==
+"@discordjs/collection@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@discordjs/collection/-/collection-0.8.0.tgz#bdc41e27ce97a509030fbb95a65e9f61ed0cc8e3"
+  integrity sha512-TFsm3ZPXnASn/9qlCLPTYHIuP9awO20MSFtjVcS5TO/7KnRPdBv02++1LV59GCaY64lVP2NgOhRrNBLPHsGeBA==
+
+"@discordjs/rest@0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@discordjs/rest/-/rest-0.6.0.tgz#af94124b4a342a8fe800cfe34ec74d74b7573a0e"
+  integrity sha512-7J+uzf0fYhEyIObHUSG/YKjeJGsfNqjoDwiUy0HntN+M2IMjzdrtuNpmVJW8qR8rZTMg5cXy215yKeY/eCISeg==
   dependencies:
-    "@discordjs/collection" "^0.7.0"
-    "@sapphire/async-queue" "^1.3.1"
+    "@discordjs/collection" "^0.8.0"
+    "@sapphire/async-queue" "^1.3.2"
     "@sapphire/snowflake" "^3.2.2"
-    discord-api-types "^0.33.3"
+    discord-api-types "^0.36.2"
+    file-type "^17.1.2"
     tslib "^2.4.0"
-    undici "^5.4.0"
+    undici "^5.7.0"
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
@@ -589,6 +595,11 @@
   resolved "https://registry.yarnpkg.com/@sapphire/async-queue/-/async-queue-1.3.1.tgz#9d861e626dbffae02d808e13f823d4510e450a78"
   integrity sha512-FFTlPOWZX1kDj9xCAsRzH5xEJfawg1lNoYAA+ecOWJMHOfiZYb1uXOI3ne9U4UILSEPwfE68p3T9wUHwIQfR0g==
 
+"@sapphire/async-queue@^1.3.2":
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/@sapphire/async-queue/-/async-queue-1.3.2.tgz#befe5f5025e2e317a9eba2d1a24ca5d2e4576f86"
+  integrity sha512-rUpMLATsoAMnlN3gecAcr9Ecnw1vG7zi5Xr+IX22YzRzi1k9PF9vKzoT8RuEJbiIszjcimu3rveqUnvwDopz8g==
+
 "@sapphire/shapeshift@^3.5.1":
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/@sapphire/shapeshift/-/shapeshift-3.5.1.tgz#3bfd0e6bcfdced4ac26a6f450b5f7b8e49f4f2cc"
@@ -620,6 +631,11 @@
   integrity sha512-BPS4ynJW/o92PUR4wgriz2Ud5gpST5vz6GQfMixEDK0Z8ZCUv2M7SkBLykH56T++Xs+8ln9zTGbOvNGIe02/jw==
   dependencies:
     "@sinonjs/commons" "^1.7.0"
+
+"@tokenizer/token@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@tokenizer/token/-/token-0.3.0.tgz#fe98a93fe789247e998c75e74e9c7c63217aa276"
+  integrity sha512-OvjF+z51L3ov0OyAU0duzsYuvO01PH7x4t6DJx+guahgTnBHkhJdG7soQeTSFLWN3efnHyibZ4Z8l2EuWwJN3A==
 
 "@top-gg/sdk@^3.1.3":
   version "3.1.3"
@@ -1370,6 +1386,15 @@ figures@^3.0.0:
   dependencies:
     escape-string-regexp "^1.0.5"
 
+file-type@^17.1.2:
+  version "17.1.2"
+  resolved "https://registry.yarnpkg.com/file-type/-/file-type-17.1.2.tgz#9257437a64e0c3623f70d9f27430522d978b1384"
+  integrity sha512-3thBUSfa9YEUEGO/NAAiQGvjujZxZiJTF6xNwyDn6kB0NcEtwMn5ttkGG9jGwm/Nt/t8U1bpBNqyBNZCz4F4ig==
+  dependencies:
+    readable-web-to-node-stream "^3.0.2"
+    strtok3 "^7.0.0-alpha.7"
+    token-types "^5.0.0-alpha.2"
+
 fill-range@^7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/fill-range/-/fill-range-7.0.1.tgz#1919a6a7c75fe38b2c7c77e5198535da9acdda40"
@@ -1539,7 +1564,7 @@ iconv-lite@0.4.24, iconv-lite@^0.4.24:
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
 
-ieee754@^1.1.13:
+ieee754@^1.1.13, ieee754@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
   integrity sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==
@@ -2426,6 +2451,11 @@ path-parse@^1.0.7:
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
   integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
+peek-readable@^5.0.0-alpha.5:
+  version "5.0.0-alpha.5"
+  resolved "https://registry.yarnpkg.com/peek-readable/-/peek-readable-5.0.0-alpha.5.tgz#ace5dfedf7bc33f17c9b5170b9d54f69a4fba79b"
+  integrity sha512-pJohF/tDwV3ntnT5+EkUo4E700q/j/OCDuPxtM+5/kFGjyOai/sK4/We4Cy1MB2OiTQliWU5DxPvYIKQAdPqAA==
+
 pegjs@^0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/pegjs/-/pegjs-0.10.0.tgz#cf8bafae6eddff4b5a7efb185269eaaf4610ddbd"
@@ -2511,7 +2541,7 @@ react-is@^18.0.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
-readable-stream@^3.1.1, readable-stream@^3.4.0:
+readable-stream@^3.1.1, readable-stream@^3.4.0, readable-stream@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-3.6.0.tgz#337bbda3adc0706bd3e024426a286d4b4b2c9198"
   integrity sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA==
@@ -2519,6 +2549,13 @@ readable-stream@^3.1.1, readable-stream@^3.4.0:
     inherits "^2.0.3"
     string_decoder "^1.1.1"
     util-deprecate "^1.0.1"
+
+readable-web-to-node-stream@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/readable-web-to-node-stream/-/readable-web-to-node-stream-3.0.2.tgz#5d52bb5df7b54861fd48d015e93a2cb87b3ee0bb"
+  integrity sha512-ePeK6cc1EcKLEhJFt/AebMCLL+GgSKhuygrZ/GLaKZYEecIgIECf4UaUuaByiGtzckwR4ain9VzUh95T1exYGw==
+  dependencies:
+    readable-stream "^3.6.0"
 
 readdirp@~3.6.0:
   version "3.6.0"
@@ -2784,6 +2821,14 @@ strip-json-comments@^3.1.1:
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-3.1.1.tgz#31f1281b3832630434831c310c01cccda8cbe006"
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
 
+strtok3@^7.0.0-alpha.7:
+  version "7.0.0-alpha.8"
+  resolved "https://registry.yarnpkg.com/strtok3/-/strtok3-7.0.0-alpha.8.tgz#23a7870974e0494b58b14af6dd1c2c67cf13314d"
+  integrity sha512-u+k19v+rTxBjGYxncRQjGvZYwYvEd0uP3D+uHKe/s4WB1eXS5ZwpZsTlBu5xSS4zEd89mTXECXg6WW3FSeV8cA==
+  dependencies:
+    "@tokenizer/token" "^0.3.0"
+    peek-readable "^5.0.0-alpha.5"
+
 supports-color@^5.3.0, supports-color@^5.5.0:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.5.0.tgz#e2e69a44ac8772f78a1ec0b35b689df6530efc8f"
@@ -2887,6 +2932,14 @@ toidentifier@1.0.1:
   resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.1.tgz#3be34321a88a820ed1bd80dfaa33e479fbb8dd35"
   integrity sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==
 
+token-types@^5.0.0-alpha.2:
+  version "5.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/token-types/-/token-types-5.0.0-alpha.2.tgz#e43d63b2a8223a593d1c782a5149bec18f1abf97"
+  integrity sha512-EsG9UxAW4M6VATrEEjhPFTKEUi1OiJqTUMIZOGBN49fGxYjZB36k0p7to3HZSmWRoHm1QfZgrg3e02fpqAt5fQ==
+  dependencies:
+    "@tokenizer/token" "^0.3.0"
+    ieee754 "^1.2.1"
+
 topgg-autoposter@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/topgg-autoposter/-/topgg-autoposter-2.0.1.tgz#321d295836743cb19b90a434e7cbb319f9f3cc69"
@@ -2950,10 +3003,10 @@ undefsafe@^2.0.5:
   resolved "https://registry.yarnpkg.com/undefsafe/-/undefsafe-2.0.5.tgz#38733b9327bdcd226db889fb723a6efd162e6e2c"
   integrity sha512-WxONCrssBM8TSPRqN5EmsjVrsv4A8X12J4ArBiiayv3DyyG3ZlIg6yysuuSYdZsVz3TKcTg2fd//Ujd4CHV1iA==
 
-undici@^5.4.0:
-  version "5.5.1"
-  resolved "https://registry.yarnpkg.com/undici/-/undici-5.5.1.tgz#baaf25844a99eaa0b22e1ef8d205bffe587c8f43"
-  integrity sha512-MEvryPLf18HvlCbLSzCW0U00IMftKGI5udnjrQbC5D4P0Hodwffhv+iGfWuJwg16Y/TK11ZFK8i+BPVW2z/eAw==
+undici@^5.7.0:
+  version "5.7.0"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-5.7.0.tgz#979f89229c01505573cb274d0e11ea8d82b4004f"
+  integrity sha512-ORgxwDkiPS+gK2VxE7iyVeR7JliVn5DqhZ4LgQqYLBXsuK+lwOEmnJ66dhvlpLM0tC3fC7eYF1Bti2frbw2eAA==
 
 unpipe@1.0.0:
   version "1.0.0"
