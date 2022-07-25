@@ -18,7 +18,7 @@
       "enabled": true
     },
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "lockFileMaintenance"],
       "enabled": true,
       "automerge": true
     }
