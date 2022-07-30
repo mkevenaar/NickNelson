@@ -1,4 +1,4 @@
-import { SlashCommandBuilder, EmbedBuilder, PermissionsBitField, ChannelType} from 'discord.js';
+import { SlashCommandBuilder, EmbedBuilder, PermissionsBitField, ChannelType } from 'discord.js';
 import { botPermissions } from '../../tools/botPermissions.js';
 import { BotColors } from '../../constants.js';
 
@@ -23,14 +23,16 @@ export async function execute(interaction, client) {
     let owner = await interaction.guild.fetchOwner();
 
     // Get the amount of text and voice channels
-    let textChannels = await interaction.guild.channels.cache.filter((x) => x.type === ChannelType.GuildText)
-      .size;
+    let textChannels = await interaction.guild.channels.cache.filter(
+      (x) => x.type === ChannelType.GuildText
+    ).size;
     let voiceChannels = await interaction.guild.channels.cache.filter(
       (x) => x.type === ChannelType.GuildVoice
     ).size;
     // Get the amount of categories
-    let catCount = await interaction.guild.channels.cache.filter((x) => x.type === ChannelType.GuildCategory)
-      .size;
+    let catCount = await interaction.guild.channels.cache.filter(
+      (x) => x.type === ChannelType.GuildCategory
+    ).size;
     // Get the amount of role
     let roleCount = await interaction.guild.roles.cache.size;
 

@@ -25,7 +25,12 @@ export const Constants = {
 
 export const DefaultRestOptions = { version: '10' };
 
-export const DevBots = ['970254018268004403', '970253083718344704', '980926350057672735', '980925033599889470'];
+export const DevBots = [
+  '970254018268004403',
+  '970253083718344704',
+  '980926350057672735',
+  '980925033599889470',
+];
 
 export const DevEmoji = '975854179073556500';
 

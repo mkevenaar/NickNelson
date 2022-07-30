@@ -3,7 +3,7 @@ import { GuildModel } from './models/guild.js';
 export class GuildService {
   static async get(guildId) {
     const filter = { id: guildId };
-    let guildEntry = await GuildModel.findOne(filter)
+    let guildEntry = await GuildModel.findOne(filter);
 
     if (!guildEntry) {
       guildEntry = await this.create(guildId);
