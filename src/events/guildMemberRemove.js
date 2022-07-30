@@ -1,4 +1,4 @@
-import { MessageEmbed } from 'discord.js';
+import { EmbedBuilder } from 'discord.js';
 import { BotColors, Constants } from '../constants.js';
 
 export const name = 'guildMemberRemove';
@@ -8,7 +8,7 @@ export async function execute(member, client) {
   const guildService = client.database.GuildService;
   try {
     let guild = member.guild;
-    let guildData = await guildService.fetchGuild(guild.id); // Get guild document from database
+    let guildData = await guildService.get(guild.id); // Get guild document from database
 
     // Ensure goodbye messages enabled
     const goodbyeProp = guildData?.addons?.goodbye;
@@ -52,7 +52,7 @@ export async function execute(member, client) {
       .replace(/{guild.id}/g, `${guild.id}`)
       .replace(/{guild.totalUser}/g, `${guild.memberCount}`);
 
-    const goodbyeEmbed = new MessageEmbed()
+    const goodbyeEmbed = new EmbedBuilder()
       .setColor(BotColors.default)
       .setTitle(finalTitle)
       .setDescription(finalMsg);

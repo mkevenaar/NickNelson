@@ -45,7 +45,7 @@ export class botPermissions {
   }
 
   checkBotPerms(interaction) {
-    if (this.botPerms.length && !interaction.guild.me.permissions.has(this.botPerms)) {
+    if (this.botPerms.length && !interaction.guild.members.me.permissions.has(this.botPerms)) {
       throw new InvalidPermissionException(
         this.botMessage ? this.botMessage : 'I do not have enough permissions to do that!'
       );

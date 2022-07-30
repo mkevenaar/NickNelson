@@ -1,11 +1,10 @@
-import { SlashCommandBuilder } from '@discordjs/builders';
-import { Permissions } from 'discord.js';
+import { SlashCommandBuilder, PermissionsBitField } from 'discord.js';
 import { botPermissions } from '../../tools/botPermissions.js';
 
 export const permission = new botPermissions()
-  .setUserPerms(Permissions.FLAGS.ADMINISTRATOR)
+  .setUserPerms(PermissionsBitField.Flags.Administrator)
   .setUserMessage("You don't have permission configure the goodbye message!")
-  .setBotPerms([Permissions.FLAGS.SEND_MESSAGES])
+  .setBotPerms([PermissionsBitField.Flags.SendMessages])
   .setBotMessage("It seems that I don't have permission to send messages!");
 
 export const data = new SlashCommandBuilder()
@@ -51,7 +50,7 @@ export async function execute(interaction, client) {
   const image = interaction.options.getString('image');
   const enable = interaction.options.getBoolean('enable');
 
-  let data = await guildService.fetchGuild(interaction.guild.id);
+  let data = await guildService.get(interaction.guild.id);
 
   // If addon for goodbye is missing create it
   if (!data.addons.goodbye) {

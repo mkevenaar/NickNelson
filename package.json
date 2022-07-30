@@ -6,7 +6,7 @@
   "private": "true",
   "license": "MIT",
   "engines": {
-    "node": ">=16.0.0",
+    "node": ">=16.9.0",
     "yarn": ">=1.22.15"
   },
   "type": "module",
@@ -26,13 +26,13 @@
   "contributors": [
     {
       "name": "Lucxjo"
+    },
+    {
+      "name": "davidzwa"
     }
   ],
   "dependencies": {
-    "@discordjs/builders": "1.1.0",
-    "@discordjs/rest": "1.0.1",
-    "discord-api-types": "0.37.1",
-    "discord.js": "13.9.2",
+    "discord.js": "14.1.1",
     "dotenv": "16.0.1",
     "mongoose": "6.5.1",
     "topgg-autoposter": "2.0.1",

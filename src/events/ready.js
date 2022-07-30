@@ -1,3 +1,5 @@
+import { ActivityType } from 'discord.js';
+
 export const name = 'ready';
 export const once = false;
 
@@ -7,7 +9,7 @@ export function execute(client) {
     activities: [
       {
         name: 'I like Charlie Spring! In a romantic way not just a friend way!',
-        type: 'WATCHING',
+        type: ActivityType.Watching,
       },
     ],
     status: 'online',
