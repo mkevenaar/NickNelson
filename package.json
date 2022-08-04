@@ -31,7 +31,7 @@
   "dependencies": {
     "@discordjs/builders": "1.1.0",
     "@discordjs/rest": "1.0.1",
-    "discord-api-types": "0.37.0",
+    "discord-api-types": "0.37.1",
     "discord.js": "13.9.2",
     "dotenv": "16.0.1",
     "mongoose": "6.5.1",
