@@ -1,14 +1,12 @@
-import { SlashCommandBuilder } from '@discordjs/builders';
-import { MessageEmbed } from 'discord.js';
-import { Permissions } from 'discord.js';
+import { SlashCommandBuilder, EmbedBuilder, PermissionsBitField, ChannelType } from 'discord.js';
 import { botPermissions } from '../../tools/botPermissions.js';
 import { BotColors } from '../../constants.js';
 
 export const permission = new botPermissions()
   .setBotPerms([
-    Permissions.FLAGS.SEND_MESSAGES,
-    Permissions.FLAGS.EMBED_LINKS,
-    Permissions.FLAGS.BAN_MEMBERS,
+    PermissionsBitField.Flags.SendMessages,
+    PermissionsBitField.Flags.EmbedLinks,
+    PermissionsBitField.Flags.BanMembers,
   ])
   .setBotMessage(
     "It seems that I don't have permission to send messages, embed links or ban members!\nThese are required for this function to work"
@@ -25,19 +23,21 @@ export async function execute(interaction, client) {
     let owner = await interaction.guild.fetchOwner();
 
     // Get the amount of text and voice channels
-    let textChannels = await interaction.guild.channels.cache.filter((x) => x.type === 'GUILD_TEXT')
-      .size;
+    let textChannels = await interaction.guild.channels.cache.filter(
+      (x) => x.type === ChannelType.GuildText
+    ).size;
     let voiceChannels = await interaction.guild.channels.cache.filter(
-      (x) => x.type === 'GUILD_VOICE'
+      (x) => x.type === ChannelType.GuildVoice
     ).size;
     // Get the amount of categories
-    let catCount = await interaction.guild.channels.cache.filter((x) => x.type === 'GUILD_CATEGORY')
-      .size;
+    let catCount = await interaction.guild.channels.cache.filter(
+      (x) => x.type === ChannelType.GuildCategory
+    ).size;
     // Get the amount of role
     let roleCount = await interaction.guild.roles.cache.size;
 
     // Get server verification level
-    let verifyLevel = await interaction.guild.verificationLevel.toLowerCase();
+    let verifyLevel = await interaction.guild.verificationLevel.toString().toLowerCase();
     verifyLevel = verifyLevel.charAt(0).toUpperCase() + verifyLevel.slice(1);
     // Get the amount of banned users
     let banCount = await interaction.guild.bans.fetch();
@@ -45,7 +45,7 @@ export async function execute(interaction, client) {
     let humanCount = interaction.guild.members.cache.filter((member) => !member.user.bot).size;
     let botCount = interaction.guild.members.cache.filter((member) => member.user.bot).size;
 
-    const guildStatsEmbed = new MessageEmbed()
+    const guildStatsEmbed = new EmbedBuilder()
       .setColor(BotColors.default)
       .setTitle('Guild Stats')
       .setAuthor({

@@ -1,5 +1,5 @@
 import { findCommandFiles, getRestInstance } from './shared.js';
-import { Routes } from 'discord-api-types/v9';
+import { Routes } from 'discord.js';
 
 /**
  * Purge all guild specific commands

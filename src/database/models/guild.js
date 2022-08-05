@@ -1,9 +1,15 @@
 import mongoose from 'mongoose';
 
 const GuildSchema = new mongoose.Schema({
-  id: { type: String }, //ID of the guild
-  registeredAt: { type: Number, default: Date.now() },
-
+  id: {
+    type: String,
+    unique: true,
+    required: true,
+  }, //ID of the guild
+  registeredAt: {
+    type: Number,
+    default: Date.now,
+  },
   addons: {
     type: Object,
     default: {

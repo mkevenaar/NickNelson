@@ -1,10 +1,9 @@
-import { SlashCommandBuilder } from '@discordjs/builders';
-import { MessageEmbed, Permissions } from 'discord.js';
+import { SlashCommandBuilder, EmbedBuilder, PermissionsBitField } from 'discord.js';
 import { botPermissions } from '../../tools/botPermissions.js';
 import { BotColors } from '../../constants.js';
 
 export const permission = new botPermissions()
-  .setBotPerms([Permissions.FLAGS.SEND_MESSAGES])
+  .setBotPerms([PermissionsBitField.Flags.SendMessages])
   .setBotMessage("It seems that I don't have permission to send messages!");
 
 export const data = new SlashCommandBuilder()
@@ -17,7 +16,7 @@ export async function execute(interaction, client) {
     const memory = process.memoryUsage();
     let ram = (memory.heapUsed / 1024 / 1024 + memory.heapTotal / 1024 / 1024).toFixed(2);
 
-    const botStatsEmbed = new MessageEmbed()
+    const botStatsEmbed = new EmbedBuilder()
       .setColor(BotColors.default)
       .setTitle('Botstats')
       .addFields(

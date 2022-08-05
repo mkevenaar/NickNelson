@@ -1,3 +1,7 @@
+/**
+ * Disabled due to issues with Discord.JS v14.
+ * TODO: rework this so it will work with Discord.JS v14!
+ */
 import { clearDatabase, closeDatabase, connect } from '../db-handler.js';
 import { createDiscordClient } from '../../src/bot.js';
 import { expectArraysIntersect } from '../utils/test.utils.js';

@@ -1,4 +1,4 @@
-import { MessageEmbed } from 'discord.js';
+import { EmbedBuilder } from 'discord.js';
 import { BotColors, Constants } from '../constants.js';
 
 export const name = 'guildMemberAdd';
@@ -8,7 +8,7 @@ export async function execute(member, client) {
   const guildService = client.database.GuildService;
   try {
     let guild = member.guild;
-    let guildData = await guildService.fetchGuild(guild.id); // Get guild document from database
+    let guildData = await guildService.get(guild.id); // Get guild document from database
 
     // Ensure welcome messages enabled
     const welcomeProp = guildData?.addons?.welcome;
@@ -52,7 +52,7 @@ export async function execute(member, client) {
       .replace(/{guild.id}/g, `${guild.id}`)
       .replace(/{guild.totalUser}/g, `${guild.memberCount}`);
 
-    const welcomeEmbed = new MessageEmbed()
+    const welcomeEmbed = new EmbedBuilder()
       .setColor(BotColors.default)
       .setTitle(finalTitle)
       .setDescription(finalMsg);

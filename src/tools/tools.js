@@ -9,8 +9,8 @@ export async function resolveChannel(search, guild) {
   }
 
   if (search.includes('<#')) {
-    let firstChannel = search.replace('<#', '');
-    let channelID = firstChannel.replace('>', '');
+    let firstChannel = search.replace('<#/g', '');
+    let channelID = firstChannel.replace('>/g', '');
     let channel = guild.channels.cache.get(channelID);
     if (channel) return channel;
   }

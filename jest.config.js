@@ -1,6 +1,7 @@
 export default {
   testEnvironment: 'node',
   testTimeout: 5000,
+  coverageProvider: 'v8',
   modulePathIgnorePatterns: [
     'index.js',
     'migrate-mongo-config.js',
@@ -14,6 +15,6 @@ export default {
   ],
   globalSetup: './test/setup-global.js',
   setupFilesAfterEnv: [],
-  collectCoverageFrom: ['**/*.js'],
+  collectCoverageFrom: ['**/*.js', '**/*.cjs', '**/*.mjs'],
   coveragePathIgnorePatterns: ['node_modules', 'test'],
 };
