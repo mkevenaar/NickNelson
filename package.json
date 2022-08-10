@@ -34,7 +34,7 @@
   "dependencies": {
     "discord.js": "14.1.2",
     "dotenv": "16.0.1",
-    "mongoose": "6.5.1",
+    "mongoose": "6.5.2",
     "topgg-autoposter": "2.0.1",
     "yargs": "17.5.1"
   },
