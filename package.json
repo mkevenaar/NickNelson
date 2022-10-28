@@ -43,7 +43,7 @@
     "cross-env": "7.0.3",
     "jest": "29.2.2",
     "jest-util": "29.2.1",
-    "mongodb-memory-server": "8.9.3",
+    "mongodb-memory-server": "8.9.4",
     "nodemon": "2.0.20",
     "prettier": "2.7.1"
   }
