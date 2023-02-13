@@ -1797,9 +1797,9 @@ chokidar@^3.5.2:
     fsevents "~2.3.2"
 
 ci-info@^3.2.0:
-  version "3.7.1"
-  resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-3.7.1.tgz#708a6cdae38915d597afdf3b145f2f8e1ff55f3f"
-  integrity sha512-4jYS4MOAaCIStSRwiuxc4B8MYhIe676yO1sYGzARnjXkWpmzZMMYxY6zu8WYWDhSuth5zhrQ1rhNSibyyvv4/w==
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-3.8.0.tgz#81408265a5380c929f0bc665d62256628ce9ef91"
+  integrity sha512-eXTggHWSooYhq49F2opQhuHWgzucfF2YgODK4e1566GQs5BIfP30B0oenwBJHfWxAs2fyPB1s7Mg949zLf61Yw==
 
 cjs-module-lexer@^1.0.0:
   version "1.2.2"
@@ -1956,9 +1956,9 @@ diff-sequences@^29.4.2:
   integrity sha512-R6P0Y6PrsH3n4hUXxL3nns0rbRk6Q33js3ygJBeEpbzLzgcNuJ61+u0RXasFpTKISw99TxUzFnumSnRLsjhLaw==
 
 discord-api-types@^0.37.20, discord-api-types@^0.37.23:
-  version "0.37.32"
-  resolved "https://registry.yarnpkg.com/discord-api-types/-/discord-api-types-0.37.32.tgz#661053cfab02eb4807d26a3800c81949b5ab7607"
-  integrity sha512-oUA4dhrzFOkvIWOc9WvKhPwsezUUVd5v5M7am1uupnRZjOmpE9RJMS0fTCUqNiMRlNAaZwPEy09UZOdIR9CyGQ==
+  version "0.37.33"
+  resolved "https://registry.yarnpkg.com/discord-api-types/-/discord-api-types-0.37.33.tgz#35985992a45dc983f59927cf2ec55b9fc36213bf"
+  integrity sha512-ZMH5RU3q1pvYS+2wGUJ5Zvy8jMGTQ4wCpbDlIQDkbIL/k6kJwBPsXnCg81g2GywlOuf0f8ezakxVSe+sZuY6ig==
 
 discord.js@14.7.1:
   version "14.7.1"
