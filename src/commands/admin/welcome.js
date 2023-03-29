@@ -1,4 +1,4 @@
-import { SlashCommandBuilder, PermissionsBitField } from 'discord.js';
+import { SlashCommandBuilder, PermissionsBitField, ChannelType } from 'discord.js';
 import { botPermissions } from '../../tools/botPermissions.js';
 
 export const permission = new botPermissions()
@@ -73,7 +73,7 @@ export async function execute(interaction, client) {
   }
 
   if (!!channel?.id) {
-    if (channel.type !== 'GUILD_TEXT') {
+    if (channel.type !== ChannelType.GuildText) {
       return await interaction.reply({
         content: 'Only text channels are allowed',
         ephemeral: true,
