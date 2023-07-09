@@ -6,7 +6,7 @@ let reactionService;
 let guildService;
 
 const mockCategory = {
-  _id: mongoose.Types.ObjectId(),
+  _id: new mongoose.Types.ObjectId(),
   guildId: '123',
   name: 'My Category',
   registeredAt: Date.now(),
