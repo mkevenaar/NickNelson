@@ -45,6 +45,6 @@
     "jest-util": "29.6.1",
     "mongodb-memory-server": "8.13.0",
     "nodemon": "3.0.1",
-    "prettier": "2.8.8"
+    "prettier": "3.0.0"
   }
 }
