@@ -1256,9 +1256,9 @@ dotenv@16.3.1:
   integrity sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==
 
 electron-to-chromium@^1.4.535:
-  version "1.4.561"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.561.tgz#816f31d9ae01fe58abbf469fca7e125b16befd85"
-  integrity sha512-eS5t4ulWOBfVHdq9SW2dxEaFarj1lPjvJ8PaYMOjY0DecBaj/t4ARziL2IPpDr4atyWwjLFGQ2vo/VCgQFezVQ==
+  version "1.4.563"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.563.tgz#dabb424202754c1fed2d2938ff564b23d3bbf0d3"
+  integrity sha512-dg5gj5qOgfZNkPNeyKBZQAQitIQ/xwfIDmEQJHCbXaD9ebTZxwJXUsDYcBlAvZGZLi+/354l35J1wkmP6CqYaw==
 
 emittery@^0.13.1:
   version "0.13.1"
@@ -2212,10 +2212,21 @@ mongodb-memory-server@9.0.1:
     mongodb-memory-server-core "9.0.1"
     tslib "^2.6.2"
 
-mongodb@5.9.0, mongodb@^5.9.0:
+mongodb@5.9.0:
   version "5.9.0"
   resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-5.9.0.tgz#5a22065fa8cfaf1d58bf2e3c451cd2c4bfa983a2"
   integrity sha512-g+GCMHN1CoRUA+wb1Agv0TI4YTSiWr42B5ulkiAfLLHitGK1R+PkSAf3Lr5rPZwi/3F04LiaZEW0Kxro9Fi2TA==
+  dependencies:
+    bson "^5.5.0"
+    mongodb-connection-string-url "^2.6.0"
+    socks "^2.7.1"
+  optionalDependencies:
+    "@mongodb-js/saslprep" "^1.1.0"
+
+mongodb@^5.9.0:
+  version "5.9.1"
+  resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-5.9.1.tgz#da03ea253b0972bf8097301fa5f65e34acad18fa"
+  integrity sha512-NBGA8AfJxGPeB12F73xXwozt8ZpeIPmCUeWRwl9xejozTXFes/3zaep9zhzs1B/nKKsw4P3I4iPfXl3K7s6g+Q==
   dependencies:
     bson "^5.5.0"
     mongodb-connection-string-url "^2.6.0"
