@@ -6,7 +6,7 @@
   "private": "true",
   "license": "MIT",
   "engines": {
-    "node": ">=16.9.0",
+    "node": ">=18.0.0",
     "yarn": ">=1.22.15"
   },
   "type": "module",
@@ -32,9 +32,9 @@
     }
   ],
   "dependencies": {
-    "discord.js": "14.13.0",
+    "discord.js": "14.14.1",
     "dotenv": "16.3.1",
-    "mongoose": "7.6.4",
+    "mongoose": "8.0.0",
     "topgg-autoposter": "2.0.1",
     "yargs": "17.7.2"
   },

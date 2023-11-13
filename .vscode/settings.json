@@ -1,17 +1,17 @@
 {
-    "cSpell.words": [
-        "autoposter",
-        "botstats",
-        "crey",
-        "davidzwa",
-        "discordjs",
-        "Dyrant",
-        "guildstats",
-        "Lucxjo",
-        "Ludoviko",
-        "mkevenaar",
-        "nicknelson",
-        "topgg"
-    ],
-    "jest.jestCommandLine": "yarn run test:cov"
+  "cSpell.words": [
+    "autoposter",
+    "botstats",
+    "crey",
+    "davidzwa",
+    "discordjs",
+    "Dyrant",
+    "guildstats",
+    "Lucxjo",
+    "Ludoviko",
+    "mkevenaar",
+    "nicknelson",
+    "topgg"
+  ],
+  "jest.jestCommandLine": "yarn run test:cov"
 }

@@ -25,6 +25,10 @@ export function createDiscordClient() {
       GatewayIntentBits.GuildPresences,
       GatewayIntentBits.GuildMembers,
     ],
+    allowedMentions: {
+      parse: ['users', 'roles'],
+      repliedUser: true,
+    },
   });
   client.commands = new Collection();
   client.selectMenu = new Collection();

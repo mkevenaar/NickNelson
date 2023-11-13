@@ -39,7 +39,7 @@ jobs:
       - name: Install GitReleaseManager
         uses: gittools/actions/gitreleasemanager/setup@v0.10.2
         with:
-          versionSpec: '0.11.x'
+          versionSpec: '0.14.x'
 
       - name: Create release with GitReleaseManager
         uses: gittools/actions/gitreleasemanager/create@v0.10.2
@@ -49,7 +49,7 @@ jobs:
           repository: ${{ steps.repo.outputs._1 }}
           milestone: ${{ steps.gitversion.outputs.majorMinorPatch }}
           name: 'Release ${{ steps.gitversion.outputs.majorMinorPatch }}'
-          assets:  |
+          assets: |
             release.zip
 
       - name: Publish release with GitReleaseManager

@@ -1,7 +1,5 @@
 {
-  "files": [
-    "README.md"
-  ],
+  "files": ["README.md"],
   "imageSize": 100,
   "commit": false,
   "contributors": [
@@ -10,43 +8,28 @@
       "name": "Ludoviko",
       "avatar_url": "https://avatars.githubusercontent.com/u/4950364?v=4",
       "profile": "https://ludoviko.ch",
-      "contributions": [
-        "ideas",
-        "review"
-      ]
+      "contributions": ["ideas", "review"]
     },
     {
       "login": "davidzwa",
       "name": "David Zwart",
       "avatar_url": "https://avatars.githubusercontent.com/u/6005355?v=4",
       "profile": "https://github.com/davidzwa",
-      "contributions": [
-        "code",
-        "bug",
-        "test",
-        "review"
-      ]
+      "contributions": ["code", "bug", "test", "review"]
     },
     {
       "login": "mkevenaar",
       "name": "Maurice Kevenaar",
       "avatar_url": "https://avatars.githubusercontent.com/u/834643?v=4",
       "profile": "https://kevenaar.name/",
-      "contributions": [
-        "infra",
-        "review",
-        "code"
-      ]
+      "contributions": ["infra", "review", "code"]
     },
     {
       "login": "Stones8000",
       "name": "Stones8000",
       "avatar_url": "https://avatars.githubusercontent.com/u/79322708?v=4",
       "profile": "https://github.com/Stones8000",
-      "contributions": [
-        "bug",
-        "ideas"
-      ]
+      "contributions": ["bug", "ideas"]
     }
   ],
   "contributorsPerLine": 7,
