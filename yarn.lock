@@ -603,9 +603,9 @@
     sparse-bitfield "^3.0.3"
 
 "@sapphire/async-queue@^1.5.2", "@sapphire/async-queue@^1.5.3":
-  version "1.5.4"
-  resolved "https://registry.yarnpkg.com/@sapphire/async-queue/-/async-queue-1.5.4.tgz#213e2a7a2df6313b9df791c04d8f5c32ebd3c413"
-  integrity sha512-id65RxAx34DCk8KAVTPWwcephJSkStiS9M15F87+zvK2gK47wf7yeRIo8WiuKeXQS6bsyo/uQ/t0QW1cLmSb+A==
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/@sapphire/async-queue/-/async-queue-1.5.5.tgz#2b18d402bb920b65b13ad4ed8dfb6c386300dd84"
+  integrity sha512-cvGzxbba6sav2zZkH8GPf2oGk9yYoD5qrNWdu9fRehifgnFZJMV+nuy2nON2roRO4yQQ+v7MK/Pktl/HgfsUXg==
 
 "@sapphire/shapeshift@^4.0.0":
   version "4.0.0"
@@ -621,9 +621,9 @@
   integrity sha512-jjmJywLAFoWeBi1W7994zZyiNWPIiqRRNAmSERxyg93xRGzNYvGjlZ0gR6x0F4gPRi2+0O6S71kOZYyr3cxaIQ==
 
 "@sapphire/snowflake@^3.5.3":
-  version "3.5.4"
-  resolved "https://registry.yarnpkg.com/@sapphire/snowflake/-/snowflake-3.5.4.tgz#b7fa8c8889cdb298f66a263b476016c4b668ce12"
-  integrity sha512-YeQY5xNMj3zbwEIZYzyM/7heSjjDbje7B2jfbnoyUsBPMNL4+TO+Zd1pp8v0OzCLNpPaYIZdwcvEScKXthhsPA==
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@sapphire/snowflake/-/snowflake-3.5.5.tgz#33a60ab4231e3cab29e8a0077f342125f2c8d1bd"
+  integrity sha512-xzvBr1Q1c4lCe7i6sRnrofxeO1QTP/LKQ6A6qy0iB4x5yfiSfARMEQEghojzTNALDTcv8En04qYNIco9/K9eZQ==
 
 "@sinclair/typebox@^0.27.8":
   version "0.27.8"
