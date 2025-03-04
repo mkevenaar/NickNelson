@@ -712,9 +712,9 @@
     "@types/istanbul-lib-report" "*"
 
 "@types/node@*":
-  version "22.13.8"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.13.8.tgz#57e2450295b33a6518d6fd4f65f47236d3e41d8d"
-  integrity sha512-G3EfaZS+iOGYWLLRCEAXdWK9my08oHNZ+FHluRiggIYJPOXzhOiDgpVCUHaUvyIC5/fj7C/p637jdzC666AOKQ==
+  version "22.13.9"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.13.9.tgz#5d9a8f7a975a5bd3ef267352deb96fb13ec02eca"
+  integrity sha512-acBjXdRJ3A6Pb3tqnw9HZmyR3Fiol3aGxRCK1x3d+6CDAMjl7I649wpSd+yNURCjbOUGu9tqtLKnTGxmK6CyGw==
   dependencies:
     undici-types "~6.20.0"
 
@@ -1198,9 +1198,9 @@ dotenv@16.4.7:
   integrity sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==
 
 electron-to-chromium@^1.5.73:
-  version "1.5.109"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.109.tgz#905a573d2b4cbb31412a2de6267fb22cf45e097e"
-  integrity sha512-AidaH9JETVRr9DIPGfp1kAarm/W6hRJTPuCnkF+2MqhF4KaAgRIcBc8nvjk+YMXZhwfISof/7WG29eS4iGxQLQ==
+  version "1.5.111"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.111.tgz#c4c4b37536192157a586df9dc1fa984cd7857ee2"
+  integrity sha512-vJyJlO95wQRAw6K2ZGF/8nol7AcbCOnp8S6H91mwOOBbXoS9seDBYxCTPYAFsvXLxl3lc0jLXXe9GLxC4nXVog==
 
 emittery@^0.13.1:
   version "0.13.1"
@@ -2142,16 +2142,7 @@ mongodb-memory-server@10.1.4:
     mongodb-memory-server-core "10.1.4"
     tslib "^2.7.0"
 
-mongodb@^6.9.0:
-  version "6.14.0"
-  resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-6.14.0.tgz#b260bcf6070c091b43c748f4c35f06c5d852786f"
-  integrity sha512-AlM6alTx98vcnk/jMMmoYuBrm4qpe1/VrbwvL2SXEHjdtJ1ZbVZmrpyjUx9mqS94e9HcemzpLn+CxzhmT7b0uw==
-  dependencies:
-    "@mongodb-js/saslprep" "^1.1.9"
-    bson "^6.10.3"
-    mongodb-connection-string-url "^3.0.0"
-
-mongodb@~6.14.0:
+mongodb@^6.9.0, mongodb@~6.14.0:
   version "6.14.1"
   resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-6.14.1.tgz#ab1084c00eba5f736b9ac8a93055d7d3ad0725a8"
   integrity sha512-GnHWIm4GtgREkssWRv9vYKNvqwbLd8WL5hCW3nCqzI2OxEZ6Q5g6vc3J6L1Grz0x1hx1wmYAprLlRr3kzBLcJg==
