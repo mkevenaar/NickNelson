@@ -11,8 +11,8 @@ WORKDIR /usr/src/bot
 
 COPY .yarn/releases /usr/src/bot/.yarn/releases
 COPY package.json yarn.lock .yarnrc.yml /usr/src/bot/
+
 RUN ["yarn", "workspaces", "focus", "--all", "--production"]
-RUN ["yarn", "install", "--immutable"]
 
 COPY . /usr/src/bot
 
