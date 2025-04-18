@@ -9,7 +9,8 @@ ENV MONGODB "mongodb://localhost:27017/NickNelson"
 RUN mkdir -p /usr/src/bot
 WORKDIR /usr/src/bot
 
-COPY .yarn package.json yarn.lock .yarnrc.yml /usr/src/bot/
+COPY .yarn/releases /usr/src/bot/.yarn/releases
+COPY package.json yarn.lock .yarnrc.yml /usr/src/bot/
 RUN ["yarn", "install", "--frozen-lockfile", "--prod"]
 
 COPY . /usr/src/bot
