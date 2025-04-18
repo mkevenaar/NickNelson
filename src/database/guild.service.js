@@ -14,7 +14,7 @@ export class GuildService {
   static async create(guildId) {
     let guildEntry = new GuildModel({
       id: guildId,
-      registeredAt: Date.now,
+      registeredAt: Date.now(),
     });
     await guildEntry.save();
     return guildEntry;
