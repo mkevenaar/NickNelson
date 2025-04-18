@@ -9,7 +9,7 @@ jobs:
   release:
     name: Release
     if: startsWith(github.ref, 'refs/heads/release')
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4.2.2
@@ -30,7 +30,7 @@ jobs:
       - name: Install GitVersion
         uses: gittools/actions/gitversion/setup@v3.2.0
         with:
-          versionSpec: '5.x'
+          versionSpec: '6.x'
 
       - name: Use GitVersion
         uses: gittools/actions/gitversion/execute@v3.2.0
@@ -39,7 +39,7 @@ jobs:
       - name: Install GitReleaseManager
         uses: gittools/actions/gitreleasemanager/setup@v3.2.0
         with:
-          versionSpec: '0.14.x'
+          versionSpec: '0.17.x'
 
       - name: Create release with GitReleaseManager
         uses: gittools/actions/gitreleasemanager/create@v3.2.0
@@ -58,7 +58,7 @@ jobs:
           token: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
           owner: ${{ steps.repo.outputs._0 }}
           repository: ${{ steps.repo.outputs._1 }}
-          tagName: ${{ steps.gitversion.outputs.majorMinorPatch }}
+          milestone: ${{ steps.gitversion.outputs.majorMinorPatch }}
 
       - name: Close release with GitReleaseManager
         uses: gittools/actions/gitreleasemanager/close@v3.2.0

@@ -52,17 +52,14 @@ export async function execute(member, client) {
       .replace(/{guild.id}/g, `${guild.id}`)
       .replace(/{guild.totalUser}/g, `${guild.memberCount}`);
 
-    const goodbyeEmbed = new EmbedBuilder()
-      .setColor(BotColors.default)
-      .setTitle(finalTitle)
-      .setDescription(finalMsg);
+    const goodbyeEmbed = new EmbedBuilder().setColor(BotColors.default).setTitle(finalTitle);
 
     const trimmedImagePath = goodbyeImage?.trim();
     if (!!trimmedImagePath?.length) {
       goodbyeEmbed.setImage(trimmedImagePath);
     }
 
-    return goodbyeChannel.send({ embeds: [goodbyeEmbed] });
+    return goodbyeChannel.send({ content: finalMsg, embeds: [goodbyeEmbed] });
   } catch (e) {
     console.log(e);
   }

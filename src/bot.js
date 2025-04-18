@@ -155,10 +155,7 @@ export async function initBot() {
 // Connect to the database
 async function connectWithRetry(MONGODB) {
   return mongoose
-    .connect(MONGODB, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    })
+    .connect(MONGODB, {})
     .then(() => {
       console.log('Connected to MongoDB');
     })

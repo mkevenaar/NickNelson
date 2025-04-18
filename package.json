@@ -3,11 +3,9 @@
   "version": "0.3.0-dev",
   "description": "A discord bot for our HeartStopper server",
   "main": "src/index.js",
-  "private": "true",
   "license": "MIT",
   "engines": {
-    "node": ">=18.0.0",
-    "yarn": ">=1.22.15"
+    "node": ">=22.0.0"
   },
   "type": "module",
   "scripts": {
@@ -46,5 +44,6 @@
     "mongodb-memory-server": "10.1.4",
     "nodemon": "3.1.9",
     "prettier": "3.5.3"
-  }
+  },
+  "packageManager": "yarn@4.9.1"
 }

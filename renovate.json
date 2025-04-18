@@ -1,8 +1,11 @@
 {
-  "extends": ["config:base"],
+  "extends": ["config:recommended"],
   "assignees": ["mkevenaar"],
   "labels": ["renovate"],
-  "lockFileMaintenance": { "enabled": true, "extends": ["schedule:daily"] },
+  "lockFileMaintenance": {
+    "enabled": true,
+    "extends": ["schedule:daily"]
+  },
   "packageRules": [
     {
       "matchDatasources": ["docker"],

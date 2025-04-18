@@ -4,7 +4,7 @@ import {
   ActionRowBuilder,
   EmbedBuilder,
   ButtonBuilder,
-  SelectMenuBuilder,
+  StringSelectMenuBuilder,
   ButtonStyle,
 } from 'discord.js';
 import { botPermissions } from '../../tools/botPermissions.js';
@@ -23,7 +23,7 @@ export async function execute(interaction, client) {
     .addFields([{ name: 'Help!', value: 'Please select a category below to continue' }]);
 
   const selectRow = new ActionRowBuilder().addComponents(
-    new SelectMenuBuilder()
+    new StringSelectMenuBuilder()
       .setCustomId('help')
       .setPlaceholder('Please select a category')
       .addOptions(await findCategories())

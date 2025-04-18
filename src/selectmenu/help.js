@@ -2,7 +2,7 @@ import {
   ActionRowBuilder,
   EmbedBuilder,
   ButtonBuilder,
-  SelectMenuBuilder,
+  StringSelectMenuBuilder,
   ButtonStyle,
 } from 'discord.js';
 import { BotColors, HelpUrls } from '../constants.js';
@@ -53,7 +53,7 @@ export async function execute(interaction, client) {
   });
 
   const selectRow = new ActionRowBuilder().addComponents(
-    new SelectMenuBuilder()
+    new StringSelectMenuBuilder()
       .setCustomId('help')
       .setPlaceholder('Please select a category')
       .addOptions(categories)
