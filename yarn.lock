@@ -981,11 +981,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 22.15.0
-  resolution: "@types/node@npm:22.15.0"
+  version: 22.15.2
+  resolution: "@types/node@npm:22.15.2"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10c0/f60c716f473ec7cbb6fffd8488d29a9ea697f4f5d71c1ebca72e17cdce1c7df054c295122a2589463c44490d875f485f9251ada3c3167bdbe4fbe8a677059780
+  checksum: 10c0/39da31d5fc63b14fabd217bb8a921c4a7fc3d99f233440209f9fc2d5d736e8773f7efc65223e2fd0e8db8390b0baab9c0cd2e951c2ece8b237f07313ab3cf295
   languageName: node
   linkType: hard
 
@@ -2999,11 +2999,11 @@ __metadata:
   linkType: hard
 
 "magic-bytes.js@npm:^1.10.0":
-  version: 1.11.0
-  resolution: "magic-bytes.js@npm:1.11.0"
+  version: 1.12.0
+  resolution: "magic-bytes.js@npm:1.12.0"
   dependencies:
     rimraf: "npm:^6.0.1"
-  checksum: 10c0/19b85aac6df237f7f49c3081b978e3753792c1fe0d43f7695af6a508e3360eb4b9faf7f51be3b510d3188a7120d2b8482f5e95b41f2ba907f6a07773c15b8388
+  checksum: 10c0/6b79c31f9bfd8d07266b009bc189c195b74b6b2f2c5c6a71bf8816a3b4841f5b8324c067634a5590c11f49f9c0a8cdd88dca2bb5fd11106e316e57407f10a681
   languageName: node
   linkType: hard
 
