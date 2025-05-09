@@ -979,11 +979,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 22.15.15
-  resolution: "@types/node@npm:22.15.15"
+  version: 22.15.17
+  resolution: "@types/node@npm:22.15.17"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10c0/3b0c12531c9057ddcbe1cdd869ca6c2f3ea753f1cb3de0a482ca70c3d86f0dbb1d28339aecd8a0c133febda4f4355c012ed9be6ab866297fc23db360fa218dde
+  checksum: 10c0/fb92aa10b628683c5b965749f955bc2322485ecb0ea6c2f4cae5f2c7537a16834607e67083a9e9281faaae8d7dee9ada8d6a5c0de9a52c17d82912ef00c0fdd4
   languageName: node
   linkType: hard
 
@@ -1655,9 +1655,9 @@ __metadata:
   linkType: hard
 
 "discord-api-types@npm:^0.38.1":
-  version: 0.38.3
-  resolution: "discord-api-types@npm:0.38.3"
-  checksum: 10c0/fa9c8e2c2791ba88e4616f456cba64755047c1e3f536c876aefd0f2794bccf066bc26ae4e9c5087fd526754af7f34b0eaffd2c18c09b6edbd81a361a21c27de0
+  version: 0.38.4
+  resolution: "discord-api-types@npm:0.38.4"
+  checksum: 10c0/d4eb95da78a519bdddc4ce71a94cd972904136084b51bff4c031fb0e528121471db1a228fd47ce5fbe4a38c36a15e2a867296412856dd046820898d584bca1de
   languageName: node
   linkType: hard
 
@@ -1697,9 +1697,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.149":
-  version: 1.5.150
-  resolution: "electron-to-chromium@npm:1.5.150"
-  checksum: 10c0/898c232d5678a1e50f254b93902042e7287c6435ec8adab2a0f35e9f11f343eac901b799babaac92ec455a36f35ac0321847a391470629dd0060a681f850797d
+  version: 1.5.151
+  resolution: "electron-to-chromium@npm:1.5.151"
+  checksum: 10c0/9b3d73836a784af4fd113676b87b0d233ae51984cd4d4396f7252c7369e2f897afeca9fb53910c314e74a4b5d22b6faa4450e95304ceeb1c4fd04e8356030d4b
   languageName: node
   linkType: hard
 
