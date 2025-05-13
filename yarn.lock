@@ -1655,9 +1655,9 @@ __metadata:
   linkType: hard
 
 "discord-api-types@npm:^0.38.1":
-  version: 0.38.4
-  resolution: "discord-api-types@npm:0.38.4"
-  checksum: 10c0/d4eb95da78a519bdddc4ce71a94cd972904136084b51bff4c031fb0e528121471db1a228fd47ce5fbe4a38c36a15e2a867296412856dd046820898d584bca1de
+  version: 0.38.5
+  resolution: "discord-api-types@npm:0.38.5"
+  checksum: 10c0/41d9ca8b33c4ddc3cd0e90cac9dcf8fbb9db4dfdcf3ddb14e0d25979d2f42636031c96c2b791944693e24ef4ad49745933985da367416e2834721889a8d765fa
   languageName: node
   linkType: hard
 
@@ -1697,9 +1697,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.149":
-  version: 1.5.151
-  resolution: "electron-to-chromium@npm:1.5.151"
-  checksum: 10c0/9b3d73836a784af4fd113676b87b0d233ae51984cd4d4396f7252c7369e2f897afeca9fb53910c314e74a4b5d22b6faa4450e95304ceeb1c4fd04e8356030d4b
+  version: 1.5.152
+  resolution: "electron-to-chromium@npm:1.5.152"
+  checksum: 10c0/99c58dc8fc6b22ea64f118599663a0d336aa28693fbd275d06f3e2c1d1a6c954fcb88f5b2390223267bb3487940d3e587b6acac8b1b2ebc4dc65c44cd7739c7c
   languageName: node
   linkType: hard
 
@@ -3808,11 +3808,11 @@ __metadata:
   linkType: hard
 
 "semver@npm:^7.3.5, semver@npm:^7.5.3, semver@npm:^7.5.4, semver@npm:^7.6.3":
-  version: 7.7.1
-  resolution: "semver@npm:7.7.1"
+  version: 7.7.2
+  resolution: "semver@npm:7.7.2"
   bin:
     semver: bin/semver.js
-  checksum: 10c0/fd603a6fb9c399c6054015433051bdbe7b99a940a8fb44b85c2b524c4004b023d7928d47cb22154f8d054ea7ee8597f586605e05b52047f048278e4ac56ae958
+  checksum: 10c0/aca305edfbf2383c22571cb7714f48cadc7ac95371b4b52362fb8eeffdfbc0de0669368b82b2b15978f8848f01d7114da65697e56cd8c37b0dab8c58e543f9ea
   languageName: node
   linkType: hard
 
