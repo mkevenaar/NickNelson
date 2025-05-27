@@ -34,7 +34,7 @@
     "dotenv": "16.5.0",
     "mongoose": "8.15.1",
     "topgg-autoposter": "2.0.2",
-    "yargs": "17.7.2"
+    "yargs": "18.0.0"
   },
   "devDependencies": {
     "all-contributors-cli": "6.26.1",
