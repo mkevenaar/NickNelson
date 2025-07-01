@@ -758,12 +758,12 @@ __metadata:
   linkType: hard
 
 "@jridgewell/gen-mapping@npm:^0.3.5":
-  version: 0.3.9
-  resolution: "@jridgewell/gen-mapping@npm:0.3.9"
+  version: 0.3.11
+  resolution: "@jridgewell/gen-mapping@npm:0.3.11"
   dependencies:
     "@jridgewell/sourcemap-codec": "npm:^1.5.0"
     "@jridgewell/trace-mapping": "npm:^0.3.24"
-  checksum: 10c0/94d89ac50bbeacf118b3b98ce300c068e4754d2dea9abc43340a80885c94160236e322722a89aa761257f1232a91ed2da77ee6d0636c29ea94a794d2d9f9243e
+  checksum: 10c0/c97fbae1ea1cbc5d18a0e53da9b3438f808bc5744b40ef26f670e391f873daa6db7c8ae7ecec2386c9af14811bf3e06c46bf391a67f5dc630ebeefe153765d42
   languageName: node
   linkType: hard
 
@@ -775,19 +775,19 @@ __metadata:
   linkType: hard
 
 "@jridgewell/sourcemap-codec@npm:^1.4.14, @jridgewell/sourcemap-codec@npm:^1.5.0":
-  version: 1.5.1
-  resolution: "@jridgewell/sourcemap-codec@npm:1.5.1"
-  checksum: 10c0/e06b12ef3d58e988635511199da1e4f4870ea6561727b1265f3cd0e91e4b1d0efbfa12670bc83e00412da132b69ce943f292f1295246c099763646ba549cd957
+  version: 1.5.3
+  resolution: "@jridgewell/sourcemap-codec@npm:1.5.3"
+  checksum: 10c0/540e6d84f69e54b2569247fa3eb8cf7848689ebb15f67f7e8736c8b0e4e8a90b06e6c38e45a916e92f682efed9e1345b3dd9594bc5eb2633c1e50ad799edd6dc
   languageName: node
   linkType: hard
 
 "@jridgewell/trace-mapping@npm:^0.3.12, @jridgewell/trace-mapping@npm:^0.3.18, @jridgewell/trace-mapping@npm:^0.3.24, @jridgewell/trace-mapping@npm:^0.3.25":
-  version: 0.3.26
-  resolution: "@jridgewell/trace-mapping@npm:0.3.26"
+  version: 0.3.28
+  resolution: "@jridgewell/trace-mapping@npm:0.3.28"
   dependencies:
     "@jridgewell/resolve-uri": "npm:^3.1.0"
     "@jridgewell/sourcemap-codec": "npm:^1.4.14"
-  checksum: 10c0/06cfa517ce67c40812281bcafb205adbe509e3c4a178dc733dc04542ed166e6ffbcaf7784888d6152969fed80845b8d5e17daa7b5047f6d44980edf33fb0f4da
+  checksum: 10c0/ca89e30e4f6ac7481d70ecd1d0aee670b566a9965330a1d9fc52af3e522eaa8beb9a322dc759921b4e1a8c5f5de4a998ea99c4251d6320460e96f7f1ce6a0270
   languageName: node
   linkType: hard
 
@@ -971,11 +971,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 24.0.7
-  resolution: "@types/node@npm:24.0.7"
+  version: 24.0.8
+  resolution: "@types/node@npm:24.0.8"
   dependencies:
     undici-types: "npm:~7.8.0"
-  checksum: 10c0/be3849816dafc54ec79e6be6dafcf60bdb6466beaf0081b941142d260e2b2864855210dfe5b4395c59b276468528695aefcf4f060ac95cc433b2968e80a311f9
+  checksum: 10c0/afc014193a1a58f545be023bd63a47639f09fddcaaf1ce271ae1b0f700d422aae425f453a8f428d98f772e08cc9bc54815da2b46ace2d1d4362f657c4172065f
   languageName: node
   linkType: hard
 
@@ -1647,9 +1647,9 @@ __metadata:
   linkType: hard
 
 "discord-api-types@npm:^0.38.1":
-  version: 0.38.13
-  resolution: "discord-api-types@npm:0.38.13"
-  checksum: 10c0/8bdbdcc1cee37cefa5a643baad16a9d244692bb8f59311b1aff4a6861be89772c1d20ec3c8cb57ead130f06a4d8d115311ffbd5801a17d1fb91b45d4c3a6dc59
+  version: 0.38.14
+  resolution: "discord-api-types@npm:0.38.14"
+  checksum: 10c0/2fdebcf14ea9ab99beabc4269a4a29e71f911f7e43cb11afbe4c30616a9bb02cd969e7ba0d75020892b00c3642f28f73c4fb5d95a03b1ad856b72341bcf0b333
   languageName: node
   linkType: hard
 
@@ -1689,9 +1689,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.173":
-  version: 1.5.177
-  resolution: "electron-to-chromium@npm:1.5.177"
-  checksum: 10c0/cf833a5ef576690e2c04a79dfbd9d73d85ae7215b6d3bd66d858e47940ddda567091688ddee0683454c89733c9acc7a4fb4dcbb2caa8c317639d9eb35074ab06
+  version: 1.5.178
+  resolution: "electron-to-chromium@npm:1.5.178"
+  checksum: 10c0/2734c8ee211fb6c5b4ac55d5797cbf9882a37515c3f9403427b8a97d75413f9e08786d1f5d7aa7dfd433bd53b0ae97fb186bcdd5bb137978eb0fa6a436f07de4
   languageName: node
   linkType: hard
 
