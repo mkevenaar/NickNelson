@@ -978,11 +978,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 24.0.13
-  resolution: "@types/node@npm:24.0.13"
+  version: 24.0.14
+  resolution: "@types/node@npm:24.0.14"
   dependencies:
     undici-types: "npm:~7.8.0"
-  checksum: 10c0/e1f3d4ea8973b1f2f987814ac5343d05ad8b56bf7fa41755295dee0ce0f7b4e2de4f3daef5296429180228970cef0d70f2ad873c61dbafc6f5eeca9d023aba76
+  checksum: 10c0/536b5a816554ad1522e9e0c1d517b317f8478798bd76a332d83690aa42b19b5b263eb295ee25f9d0badb430ee6e36412ee9070cb5e3359f6bdcf7e08f94302f1
   languageName: node
   linkType: hard
 
@@ -1696,9 +1696,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.173":
-  version: 1.5.183
-  resolution: "electron-to-chromium@npm:1.5.183"
-  checksum: 10c0/052cb9d53ff84451ad719a9f6c8c50a66a9128623288b84a389e270a863819ce00b437716294370e28907c461604b0b3d738f1e4a92535bca0f9351b0a8e2180
+  version: 1.5.185
+  resolution: "electron-to-chromium@npm:1.5.185"
+  checksum: 10c0/26820527fc85f64798ec21fcd32d3607efdf4567b701da749bbd1dd407a162373bf18733d7f0b12c56ae71ece721073b45beeba82b7d2692c494fb4b5636c4a8
   languageName: node
   linkType: hard
 
@@ -3553,9 +3553,9 @@ __metadata:
   linkType: hard
 
 "picomatch@npm:^4.0.2":
-  version: 4.0.2
-  resolution: "picomatch@npm:4.0.2"
-  checksum: 10c0/7c51f3ad2bb42c776f49ebf964c644958158be30d0a510efd5a395e8d49cb5acfed5b82c0c5b365523ce18e6ab85013c9ebe574f60305892ec3fa8eee8304ccc
+  version: 4.0.3
+  resolution: "picomatch@npm:4.0.3"
+  checksum: 10c0/9582c951e95eebee5434f59e426cddd228a7b97a0161a375aed4be244bd3fe8e3a31b846808ea14ef2c8a2527a6eeab7b3946a67d5979e81694654f939473ae2
   languageName: node
   linkType: hard
 
