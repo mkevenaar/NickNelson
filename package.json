@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "all-contributors-cli": "6.26.1",
-    "cross-env": "7.0.3",
+    "cross-env": "10.0.0",
     "jest": "30.0.5",
     "jest-util": "30.0.5",
     "mongodb-memory-server": "10.1.4",
