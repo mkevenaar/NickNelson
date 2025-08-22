@@ -1878,9 +1878,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"discord.js@npm:14.22.0":
-  version: 14.22.0
-  resolution: "discord.js@npm:14.22.0"
+"discord.js@npm:14.22.1":
+  version: 14.22.1
+  resolution: "discord.js@npm:14.22.1"
   dependencies:
     "@discordjs/builders": "npm:^1.11.2"
     "@discordjs/collection": "npm:1.5.3"
@@ -1895,7 +1895,7 @@ __metadata:
     magic-bytes.js: "npm:^1.10.0"
     tslib: "npm:^2.6.3"
     undici: "npm:6.21.3"
-  checksum: 10c0/95b375e74fb4176c30cb40687a2c5cb64d33926270a29795a08a56ec28b97cd3081a9d69a7c6d247922eb064d434d682599a571dadab9a1b77d406d2824c8794
+  checksum: 10c0/d67dc90537270b4941aee896f70aafdba440dcd0f5d1d1f2762888b2edb804c1a384ccff48b6159211225091c3b5d8669799846d46147b907569a3591d8064b9
   languageName: node
   linkType: hard
 
@@ -3477,7 +3477,7 @@ __metadata:
   dependencies:
     all-contributors-cli: "npm:6.26.1"
     cross-env: "npm:10.0.0"
-    discord.js: "npm:14.22.0"
+    discord.js: "npm:14.22.1"
     dotenv: "npm:17.2.1"
     jest: "npm:30.0.5"
     jest-util: "npm:30.0.5"
