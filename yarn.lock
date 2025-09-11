@@ -860,12 +860,12 @@ __metadata:
   linkType: hard
 
 "@jridgewell/trace-mapping@npm:^0.3.12, @jridgewell/trace-mapping@npm:^0.3.23, @jridgewell/trace-mapping@npm:^0.3.24, @jridgewell/trace-mapping@npm:^0.3.25, @jridgewell/trace-mapping@npm:^0.3.28":
-  version: 0.3.30
-  resolution: "@jridgewell/trace-mapping@npm:0.3.30"
+  version: 0.3.31
+  resolution: "@jridgewell/trace-mapping@npm:0.3.31"
   dependencies:
     "@jridgewell/resolve-uri": "npm:^3.1.0"
     "@jridgewell/sourcemap-codec": "npm:^1.4.14"
-  checksum: 10c0/3a1516c10f44613b9ba27c37a02ff8f410893776b2b3dad20a391b51b884dd60f97bbb56936d65d2ff8fe978510a0000266654ab8426bdb9ceb5fb4585b19e23
+  checksum: 10c0/4b30ec8cd56c5fd9a661f088230af01e0c1a3888d11ffb6b47639700f71225be21d1f7e168048d6d4f9449207b978a235c07c8f15c07705685d16dc06280e9d9
   languageName: node
   linkType: hard
 
@@ -1392,9 +1392,14 @@ __metadata:
   linkType: hard
 
 "b4a@npm:^1.6.4":
-  version: 1.6.7
-  resolution: "b4a@npm:1.6.7"
-  checksum: 10c0/ec2f004d1daae04be8c5a1f8aeb7fea213c34025e279db4958eb0b82c1729ee25f7c6e89f92a5f65c8a9cf2d017ce27e3dda912403341d1781bd74528a4849d4
+  version: 1.7.0
+  resolution: "b4a@npm:1.7.0"
+  peerDependencies:
+    react-native-b4a: ^0.0.0
+  peerDependenciesMeta:
+    react-native-b4a:
+      optional: true
+  checksum: 10c0/404d762394fecce865dac7eadadd3781c6067385ae60b0ae117dc87caf0fdded5b424c73be5d856dc388a778be3248d5a32f94f66839b7da995b5ab2236eb11b
   languageName: node
   linkType: hard
 
@@ -1872,9 +1877,9 @@ __metadata:
   linkType: hard
 
 "discord-api-types@npm:^0.38.1, discord-api-types@npm:^0.38.16":
-  version: 0.38.23
-  resolution: "discord-api-types@npm:0.38.23"
-  checksum: 10c0/bb543b8866f30e8086c5abd7af6c9480909b0ea3534093ff8e1ddf928d16ce2d41b12914277bd6c6df8efdd5bcdf4663d21baddd66f8c33326669d1ceb7889e8
+  version: 0.38.24
+  resolution: "discord-api-types@npm:0.38.24"
+  checksum: 10c0/25b9c12e1a1a9619887daeb8ac260636df3ed7200b0cb723d8fcdc84c57bc296ef2c2df62f79341b94130dcdc5c82ee8e0ea3891237eb5cca77171abb7e9854a
   languageName: node
   linkType: hard
 
@@ -1914,9 +1919,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.211":
-  version: 1.5.215
-  resolution: "electron-to-chromium@npm:1.5.215"
-  checksum: 10c0/3a45976d1193e57284533096b3bbec218a5d4d85af4f7c133522aae35b14bbf22734f48ccc3f0e43a451441ebc375fa2f4350390fd729dcedb97543692133e39
+  version: 1.5.216
+  resolution: "electron-to-chromium@npm:1.5.216"
+  checksum: 10c0/e0da204143742cd598ad0030cb06c83f778c04fbb0af3fcffd78960043436cfcc99734d87da9a06cbaca6c08b09b4fc0d26d56a0ede762184034e788f5b7e5ac
   languageName: node
   linkType: hard
 
