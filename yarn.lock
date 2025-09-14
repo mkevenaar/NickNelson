@@ -1496,11 +1496,11 @@ __metadata:
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.8.2":
-  version: 2.8.2
-  resolution: "baseline-browser-mapping@npm:2.8.2"
+  version: 2.8.3
+  resolution: "baseline-browser-mapping@npm:2.8.3"
   bin:
     baseline-browser-mapping: dist/cli.js
-  checksum: 10c0/78f8877175bb615791edce1d993052202285f1706946d49bcda7ef09a2e7c9007e1432676ac314f4670d9173779668f51e0c2043efa9a2f1f0d61a548e30e392
+  checksum: 10c0/710db4cf8eeb0bb5b7edec686523c2cb0ad193402e5a89d06bbf613048a568c1152797d0e8894bd1b5a089f045e532b5a41257be2a59d4effe81474b085a4f4a
   languageName: node
   linkType: hard
 
@@ -1828,14 +1828,14 @@ __metadata:
   linkType: hard
 
 "debug@npm:4, debug@npm:4.x, debug@npm:^4, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1, debug@npm:^4.3.4, debug@npm:^4.4.1":
-  version: 4.4.1
-  resolution: "debug@npm:4.4.1"
+  version: 4.4.3
+  resolution: "debug@npm:4.4.3"
   dependencies:
     ms: "npm:^2.1.3"
   peerDependenciesMeta:
     supports-color:
       optional: true
-  checksum: 10c0/d2b44bc1afd912b49bb7ebb0d50a860dc93a4dd7d946e8de94abc957bb63726b7dd5aa48c18c2386c379ec024c46692e15ed3ed97d481729f929201e671fcd55
+  checksum: 10c0/d79136ec6c83ecbefd0f6a5593da6a9c91ec4d7ddc4b54c883d6e71ec9accb5f67a1a5e96d00a328196b5b5c86d365e98d8a3a70856aaf16b4e7b1985e67f5a6
   languageName: node
   linkType: hard
 
