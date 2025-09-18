@@ -1067,11 +1067,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 24.5.1
-  resolution: "@types/node@npm:24.5.1"
+  version: 24.5.2
+  resolution: "@types/node@npm:24.5.2"
   dependencies:
     undici-types: "npm:~7.12.0"
-  checksum: 10c0/5f0cb038be789b58170e616452ba1f8ebb85bf2fbce58a7e32b1eb08391f64f5e31a9cdbccefbfcd9e6d73b66b564b5e037a1d678ab20213559a32e1d7b6ce17
+  checksum: 10c0/96baaca6564d39c6f7f6eddd73ce41e2a7594ef37225cd52df3be36fad31712af8ae178387a72d0b80f2e2799e7fd30c014bc0ae9eb9f962d9079b691be00c48
   languageName: node
   linkType: hard
 
@@ -1489,18 +1489,18 @@ __metadata:
   linkType: hard
 
 "bare-events@npm:^2.2.0":
-  version: 2.6.1
-  resolution: "bare-events@npm:2.6.1"
-  checksum: 10c0/948aabf7380120445f7f7b01bd3911c28ad72a8eaa08f6e308bd470b303593d3639309d1a4e5e5c1ab99503a45a18152f474f065be3698bfe68a27ca21f64e37
+  version: 2.7.0
+  resolution: "bare-events@npm:2.7.0"
+  checksum: 10c0/0057d26ee21c60bb304cae689dad343e2b3be2a17af26ec26d995c440b6f2c544aab294276626ced1dac9d35b4c5653d0a076a759190c69e1923dbd3e60f5e99
   languageName: node
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.8.3":
-  version: 2.8.4
-  resolution: "baseline-browser-mapping@npm:2.8.4"
+  version: 2.8.5
+  resolution: "baseline-browser-mapping@npm:2.8.5"
   bin:
     baseline-browser-mapping: dist/cli.js
-  checksum: 10c0/d85c8e9b919d4f7d5b46cf3d89e6a8be6e74086934ff6f362b720be8e06656021a0207e2ba1efe8ae2563dec893a76ad15633e06f3e153984fab8118e2dc4ae7
+  checksum: 10c0/550987bd4fa37e421b1c1a4dd2cd5381ba72351c6baaf6239ca479e8ae5090bbb57e26110606926d9907567dc2ebd3e048615c95572acaccd12586eb110195fd
   languageName: node
   linkType: hard
 
@@ -1929,9 +1929,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.218":
-  version: 1.5.219
-  resolution: "electron-to-chromium@npm:1.5.219"
-  checksum: 10c0/17178bea8b008afe3856a1e8449740d59a3562b329e78f6ea98048beb2ada6c9380761043e89a3b63484433850a91444f5c063edaaf57b751720cd7cec982a45
+  version: 1.5.221
+  resolution: "electron-to-chromium@npm:1.5.221"
+  checksum: 10c0/d8d8c146d9e53251c85829bdf4f212b55459b8b260e714a55789b244f6d9319ecdeb3b1e27f347461bf40b4c8707bbfd3322e2603afe643c05995eb1ffb9e058
   languageName: node
   linkType: hard
 
