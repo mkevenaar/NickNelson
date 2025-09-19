@@ -869,7 +869,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mongodb-js/saslprep@npm:^1.1.9":
+"@mongodb-js/saslprep@npm:^1.1.9, @mongodb-js/saslprep@npm:^1.3.0":
   version: 1.3.0
   resolution: "@mongodb-js/saslprep@npm:1.3.0"
   dependencies:
@@ -1496,11 +1496,11 @@ __metadata:
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.8.3":
-  version: 2.8.5
-  resolution: "baseline-browser-mapping@npm:2.8.5"
+  version: 2.8.6
+  resolution: "baseline-browser-mapping@npm:2.8.6"
   bin:
     baseline-browser-mapping: dist/cli.js
-  checksum: 10c0/550987bd4fa37e421b1c1a4dd2cd5381ba72351c6baaf6239ca479e8ae5090bbb57e26110606926d9907567dc2ebd3e048615c95572acaccd12586eb110195fd
+  checksum: 10c0/ea628db5048d1e5c0251d4783e0496f5ce8de7a0e20ea29c8876611cb0acf58ffc76bf6561786c6388db22f130646e3ecb91eebc1c03954552a21d38fa38320f
   languageName: node
   linkType: hard
 
@@ -1887,9 +1887,9 @@ __metadata:
   linkType: hard
 
 "discord-api-types@npm:^0.38.1, discord-api-types@npm:^0.38.16":
-  version: 0.38.25
-  resolution: "discord-api-types@npm:0.38.25"
-  checksum: 10c0/20d3c041852cbd818b5c951f89b4e38c67dcf8d95cb58f92dae515392c4436962367fe39f3345954a1b8c5abe1dbfde1097c5cb8cd0263339ef0792d6efc53c3
+  version: 0.38.26
+  resolution: "discord-api-types@npm:0.38.26"
+  checksum: 10c0/9531a57ebcf35906b29edde1a5f9461735cc20295695a8f7aaef6cb130e6c640ad4970c1550ffa3d5a917ca2134e1ae37ffd5b191dd989b23d001bc285be4a87
   languageName: node
   linkType: hard
 
@@ -1929,9 +1929,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.218":
-  version: 1.5.221
-  resolution: "electron-to-chromium@npm:1.5.221"
-  checksum: 10c0/d8d8c146d9e53251c85829bdf4f212b55459b8b260e714a55789b244f6d9319ecdeb3b1e27f347461bf40b4c8707bbfd3322e2603afe643c05995eb1ffb9e058
+  version: 1.5.222
+  resolution: "electron-to-chromium@npm:1.5.222"
+  checksum: 10c0/a81eb8d2b171236884faf9b5dd382c66d9250283032cb89a3e555d788bf3956f7f4f6bf7bf30b3daf9e5c945ef837bfcd1be21b3f41cfe186ed2f25da13c9af3
   languageName: node
   linkType: hard
 
@@ -3335,7 +3335,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongodb-connection-string-url@npm:^3.0.0":
+"mongodb-connection-string-url@npm:^3.0.0, mongodb-connection-string-url@npm:^3.0.2":
   version: 3.0.2
   resolution: "mongodb-connection-string-url@npm:3.0.2"
   dependencies:
@@ -3376,12 +3376,12 @@ __metadata:
   linkType: hard
 
 "mongodb@npm:^6.9.0":
-  version: 6.19.0
-  resolution: "mongodb@npm:6.19.0"
+  version: 6.20.0
+  resolution: "mongodb@npm:6.20.0"
   dependencies:
-    "@mongodb-js/saslprep": "npm:^1.1.9"
+    "@mongodb-js/saslprep": "npm:^1.3.0"
     bson: "npm:^6.10.4"
-    mongodb-connection-string-url: "npm:^3.0.0"
+    mongodb-connection-string-url: "npm:^3.0.2"
   peerDependencies:
     "@aws-sdk/credential-providers": ^3.188.0
     "@mongodb-js/zstd": ^1.1.0 || ^2.0.0
@@ -3405,7 +3405,7 @@ __metadata:
       optional: true
     socks:
       optional: true
-  checksum: 10c0/b25d6bedbb3d85b059fc6aa1e48d585722945b5fdf96cf6767a48069c13636e5e1d004908b1f095f580d0d03c8973c37f55325ce659a8c7f35c7414be23627fc
+  checksum: 10c0/a42d5a04cd2dc195c80293cdc2deb8efd1887559f3a37ffa42bade0d7709a980b6655bf38dd3e774dd68ad063a2c0c577fca9d5bcae1cafa2582083cf39e1e6c
   languageName: node
   linkType: hard
 
