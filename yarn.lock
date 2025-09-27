@@ -870,11 +870,11 @@ __metadata:
   linkType: hard
 
 "@mongodb-js/saslprep@npm:^1.1.9, @mongodb-js/saslprep@npm:^1.3.0":
-  version: 1.3.0
-  resolution: "@mongodb-js/saslprep@npm:1.3.0"
+  version: 1.3.1
+  resolution: "@mongodb-js/saslprep@npm:1.3.1"
   dependencies:
     sparse-bitfield: "npm:^3.0.3"
-  checksum: 10c0/d51bbeaf04bbd9c019bbd9178c035ae3e3f0d64f6cfc85bc5e745aefdcedc0b4fa1b8dc139a7fe07804943bd36043bfc5a6f1a72c5e547a689078af1f7d0f168
+  checksum: 10c0/69bf42150b0263efd3717bb779e0a5fd01e157865eacf02bb2299703ca64dba7eebf2c0b0e719fb60651aebd68b673be3e5439a5de94fd7c9d49869358ae37d5
   languageName: node
   linkType: hard
 
@@ -1392,14 +1392,14 @@ __metadata:
   linkType: hard
 
 "b4a@npm:^1.6.4":
-  version: 1.7.2
-  resolution: "b4a@npm:1.7.2"
+  version: 1.7.3
+  resolution: "b4a@npm:1.7.3"
   peerDependencies:
     react-native-b4a: "*"
   peerDependenciesMeta:
     react-native-b4a:
       optional: true
-  checksum: 10c0/98f0aac5d80357c73e9cb8669b31fc17713000d86e302cff8b4e68982c3eec844d1057d39d1cdb2ed96c82c26bbb6068c3672b09dbeaca499b6172f7f7f26b00
+  checksum: 10c0/ac16d186e00fa0d16de1f1a4af413953bc762d50d5a0e382aaa744a13886600313b7293403ad77fc83f6b1489c3fc2610494d1026754a51d1b7cdac2115a7598
   languageName: node
   linkType: hard
 
