@@ -1631,9 +1631,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001746":
-  version: 1.0.30001747
-  resolution: "caniuse-lite@npm:1.0.30001747"
-  checksum: 10c0/cef0c7fff34d4c0ac3edc33660f07785301c98858bb4a6b8702b7b09ca2b0fd5457a7772af7b9fc3591fdd13862f649e57eed824f4cb6cf4aedf563e58fc7d0c
+  version: 1.0.30001748
+  resolution: "caniuse-lite@npm:1.0.30001748"
+  checksum: 10c0/4a6e4495560519d6db73a62804cceafed108cfdda1ab78bcc0d588a921ed54554254647b8f4a410e97f8843eb020ec01dfcead7fd504a43b120b8f1a06dc7647
   languageName: node
   linkType: hard
 
@@ -1688,9 +1688,9 @@ __metadata:
   linkType: hard
 
 "ci-info@npm:^4.2.0":
-  version: 4.3.0
-  resolution: "ci-info@npm:4.3.0"
-  checksum: 10c0/60d3dfe95d75c01454ec1cfd5108617dd598a28a2a3e148bd7e1523c1c208b5f5a3007cafcbe293e6fd0a5a310cc32217c5dc54743eeabc0a2bec80072fc055c
+  version: 4.3.1
+  resolution: "ci-info@npm:4.3.1"
+  checksum: 10c0/7dd82000f514d76ddfe7775e4cb0d66e5c638f5fa0e2a3be29557e898da0d32ac04f231217d414d07fb968b1fbc6d980ee17ddde0d2c516f23da9cfff608f6c1
   languageName: node
   linkType: hard
 
