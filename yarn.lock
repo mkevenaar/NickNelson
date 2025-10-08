@@ -388,18 +388,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@discordjs/builders@npm:^1.11.2":
-  version: 1.11.3
-  resolution: "@discordjs/builders@npm:1.11.3"
+"@discordjs/builders@npm:^1.12.0":
+  version: 1.12.1
+  resolution: "@discordjs/builders@npm:1.12.1"
   dependencies:
     "@discordjs/formatters": "npm:^0.6.1"
     "@discordjs/util": "npm:^1.1.1"
     "@sapphire/shapeshift": "npm:^4.0.0"
-    discord-api-types: "npm:^0.38.16"
+    discord-api-types: "npm:^0.38.26"
     fast-deep-equal: "npm:^3.1.3"
     ts-mixer: "npm:^6.0.4"
     tslib: "npm:^2.6.3"
-  checksum: 10c0/e92f1cb6f673d6210310e50d8152f377a2a3be57d08d1f61b502f674316ac4935f9a4b009a6e33e229a66ebb96df53cc075dc03631a48a72e53b074bada09099
+  checksum: 10c0/3b44b87829a71e9fb78bd0289e8aa26452f3aad159a5cf8c66a9e83059f1ba26fb40afe16d00d19ea207f21592f57c606dc59aa6e6e33c1617aef79731a6eedd
   languageName: node
   linkType: hard
 
@@ -1884,31 +1884,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"discord-api-types@npm:^0.38.1, discord-api-types@npm:^0.38.16":
+"discord-api-types@npm:^0.38.1, discord-api-types@npm:^0.38.16, discord-api-types@npm:^0.38.26, discord-api-types@npm:^0.38.29":
   version: 0.38.29
   resolution: "discord-api-types@npm:0.38.29"
   checksum: 10c0/8e0c08af47c0b9a5cbcca85b46e59e0549a4400966a6d86b55d0151dc71e04621c07330bcc64ce523acfc617072bb086db2c4c52c2968f49091477246b6b69d8
   languageName: node
   linkType: hard
 
-"discord.js@npm:14.22.1":
-  version: 14.22.1
-  resolution: "discord.js@npm:14.22.1"
+"discord.js@npm:14.23.0":
+  version: 14.23.0
+  resolution: "discord.js@npm:14.23.0"
   dependencies:
-    "@discordjs/builders": "npm:^1.11.2"
+    "@discordjs/builders": "npm:^1.12.0"
     "@discordjs/collection": "npm:1.5.3"
     "@discordjs/formatters": "npm:^0.6.1"
     "@discordjs/rest": "npm:^2.6.0"
     "@discordjs/util": "npm:^1.1.1"
     "@discordjs/ws": "npm:^1.2.3"
     "@sapphire/snowflake": "npm:3.5.3"
-    discord-api-types: "npm:^0.38.16"
+    discord-api-types: "npm:^0.38.29"
     fast-deep-equal: "npm:3.1.3"
     lodash.snakecase: "npm:4.1.1"
     magic-bytes.js: "npm:^1.10.0"
     tslib: "npm:^2.6.3"
     undici: "npm:6.21.3"
-  checksum: 10c0/d67dc90537270b4941aee896f70aafdba440dcd0f5d1d1f2762888b2edb804c1a384ccff48b6159211225091c3b5d8669799846d46147b907569a3591d8064b9
+  checksum: 10c0/b0b8b395593206ed666ed7f53d2ccbc7c92ad3c7c57b0c95ed86247d956238c8397831e72e7e024b9f04c042bad921bab38e7381fb78b0a9d09da036929807ce
   languageName: node
   linkType: hard
 
@@ -3490,7 +3490,7 @@ __metadata:
   dependencies:
     all-contributors-cli: "npm:6.26.1"
     cross-env: "npm:10.1.0"
-    discord.js: "npm:14.22.1"
+    discord.js: "npm:14.23.0"
     dotenv: "npm:17.2.3"
     jest: "npm:30.2.0"
     jest-util: "npm:30.2.0"
