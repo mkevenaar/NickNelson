@@ -1487,18 +1487,23 @@ __metadata:
   linkType: hard
 
 "bare-events@npm:^2.7.0":
-  version: 2.7.0
-  resolution: "bare-events@npm:2.7.0"
-  checksum: 10c0/0057d26ee21c60bb304cae689dad343e2b3be2a17af26ec26d995c440b6f2c544aab294276626ced1dac9d35b4c5653d0a076a759190c69e1923dbd3e60f5e99
+  version: 2.8.0
+  resolution: "bare-events@npm:2.8.0"
+  peerDependencies:
+    bare-abort-controller: "*"
+  peerDependenciesMeta:
+    bare-abort-controller:
+      optional: true
+  checksum: 10c0/fb65fd7d3707289e22313174f1f8f675987df0820e7fc51ea6c33fa5b33d2a71a3c336f335eb70008b62fd791858e24b39138df269cd26bbbbde76e61a10ba30
   languageName: node
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.8.9":
-  version: 2.8.15
-  resolution: "baseline-browser-mapping@npm:2.8.15"
+  version: 2.8.16
+  resolution: "baseline-browser-mapping@npm:2.8.16"
   bin:
     baseline-browser-mapping: dist/cli.js
-  checksum: 10c0/ec561bd72bdaecc22401f3b971fa3d9ace340c8b375d1eb07362abcba25e0d7b27a6e26a73b48f1df5ec5bcf429e3639958a9b9c77604a89ffcb727449d20ea6
+  checksum: 10c0/e38a861f44236cfc5ba8bf9d4a024d37682e73efc3df3377e170a8a44303f466c0fce7fdc641029df27e47adb270b2f7cf29550b9be7dcdbeec18bc62858c9e9
   languageName: node
   linkType: hard
 
@@ -2072,9 +2077,9 @@ __metadata:
   linkType: hard
 
 "exponential-backoff@npm:^3.1.1":
-  version: 3.1.2
-  resolution: "exponential-backoff@npm:3.1.2"
-  checksum: 10c0/d9d3e1eafa21b78464297df91f1776f7fbaa3d5e3f7f0995648ca5b89c069d17055033817348d9f4a43d1c20b0eab84f75af6991751e839df53e4dfd6f22e844
+  version: 3.1.3
+  resolution: "exponential-backoff@npm:3.1.3"
+  checksum: 10c0/77e3ae682b7b1f4972f563c6dbcd2b0d54ac679e62d5d32f3e5085feba20483cf28bd505543f520e287a56d4d55a28d7874299941faf637e779a1aa5994d1267
   languageName: node
   linkType: hard
 
