@@ -1499,11 +1499,11 @@ __metadata:
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.8.19":
-  version: 2.8.20
-  resolution: "baseline-browser-mapping@npm:2.8.20"
+  version: 2.8.21
+  resolution: "baseline-browser-mapping@npm:2.8.21"
   bin:
     baseline-browser-mapping: dist/cli.js
-  checksum: 10c0/6e2a5141e4a95e24bdf8539a9cb92ed4f6fb3974713ef8d8d1a7de9ec571ad1d38d7f90cd061496ad7790bdbf50cc21d9398e19647c065af4065540becd0a277
+  checksum: 10c0/61f69897e6c6f429991a08c2228ff5398eb2397124f9458ea3d1f1b09d79141cbe6bc11df55c12b3d95da7f25cae576dd17323509edcefd5e9373ecab0085808
   languageName: node
   linkType: hard
 
@@ -1932,9 +1932,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.238":
-  version: 1.5.242
-  resolution: "electron-to-chromium@npm:1.5.242"
-  checksum: 10c0/ce128fad613ab50ef4f06a1d2a5d5a69ad2daadd19da118dc39633bb701263793f3008f1fda623c32e97025a17a5783bd30b6c23d2a10eb5d7637ae0dcc821a9
+  version: 1.5.243
+  resolution: "electron-to-chromium@npm:1.5.243"
+  checksum: 10c0/04a609027a63cb9527d9963fb230b5456d678f88278c919374c35e766be42d19b6b28c25c94ae366e31d154e611a670f3e0890f2526c69e215e51709565a3ecc
   languageName: node
   linkType: hard
 
@@ -3550,9 +3550,9 @@ __metadata:
   linkType: hard
 
 "node-releases@npm:^2.0.26":
-  version: 2.0.26
-  resolution: "node-releases@npm:2.0.26"
-  checksum: 10c0/033539b947ad329e0c996e563a97cdf295163ecbfd500edc3e5bc19d1a854d9515fcaae3967ac07243aff5378f572f18b36c5f50c3aa1fc3aac43fc9c4924e4d
+  version: 2.0.27
+  resolution: "node-releases@npm:2.0.27"
+  checksum: 10c0/f1e6583b7833ea81880627748d28a3a7ff5703d5409328c216ae57befbced10ce2c991bea86434e8ec39003bd017f70481e2e5f8c1f7e0a7663241f81d6e00e2
   languageName: node
   linkType: hard
 
