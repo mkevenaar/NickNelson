@@ -888,11 +888,11 @@ __metadata:
   linkType: hard
 
 "@mongodb-js/saslprep@npm:^1.3.0":
-  version: 1.3.2
-  resolution: "@mongodb-js/saslprep@npm:1.3.2"
+  version: 1.4.0
+  resolution: "@mongodb-js/saslprep@npm:1.4.0"
   dependencies:
     sparse-bitfield: "npm:^3.0.3"
-  checksum: 10c0/88adf0281c063c4726839fc6cbd71d3ccd7be22e53922c298b24816c949154d3f664576996bc027907bf5d22ab5b2147946410496111b54ea47c00387e94dc77
+  checksum: 10c0/867771c45616fe6b5150603a3981956497b64b16ebc55d5a2f38c5d5ff33ab5365d5ef7a38c473c2a04364d7c464b8762636a759cdc1646e14424e87e9474101
   languageName: node
   linkType: hard
 
@@ -1653,9 +1653,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001759":
-  version: 1.0.30001759
-  resolution: "caniuse-lite@npm:1.0.30001759"
-  checksum: 10c0/b0f415960ba34995cda18e0d25c4e602f6917b9179290a76bdd0311423505b78cc93e558a90c98a22a1cc6b1781ab720ef6beea24ec7e29a1c1164ca72eac3a2
+  version: 1.0.30001760
+  resolution: "caniuse-lite@npm:1.0.30001760"
+  checksum: 10c0/cee26dff5c5b15ba073ab230200e43c0d4e88dc3bac0afe0c9ab963df70aaa876c3e513dde42a027f317136bf6e274818d77b073708b74c5807dfad33c029d3c
   languageName: node
   linkType: hard
 
