@@ -3392,9 +3392,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongodb-memory-server-core@npm:10.4.2":
-  version: 10.4.2
-  resolution: "mongodb-memory-server-core@npm:10.4.2"
+"mongodb-memory-server-core@npm:10.4.3":
+  version: 10.4.3
+  resolution: "mongodb-memory-server-core@npm:10.4.3"
   dependencies:
     async-mutex: "npm:^0.5.0"
     camelcase: "npm:^6.3.0"
@@ -3408,17 +3408,17 @@ __metadata:
     tar-stream: "npm:^3.1.7"
     tslib: "npm:^2.8.1"
     yauzl: "npm:^3.2.0"
-  checksum: 10c0/11a53087b722f2c258da255619172d83abe8c7f90853c8f9c41e20bbb1828005c08c25a4261eed6cd787227e6729b0a78f1bfdc6dcf0b148409bd5ca57ab672f
+  checksum: 10c0/02496082bef40c6cdc148b472b8dd37e0081c92d937f346e3429d734b2d198d4974fe88f264aa9dd383203fb9dab5ddb9ed887d23da2c4da6ec17b50995deabe
   languageName: node
   linkType: hard
 
-"mongodb-memory-server@npm:10.4.2":
-  version: 10.4.2
-  resolution: "mongodb-memory-server@npm:10.4.2"
+"mongodb-memory-server@npm:10.4.3":
+  version: 10.4.3
+  resolution: "mongodb-memory-server@npm:10.4.3"
   dependencies:
-    mongodb-memory-server-core: "npm:10.4.2"
+    mongodb-memory-server-core: "npm:10.4.3"
     tslib: "npm:^2.8.1"
-  checksum: 10c0/110f5fdaea54657f5ec27c20d97dfebc903376374b8ad09d12e0178b832b96d36a4d5c9528a7006b22f430874812567cecc32ab3def5dfd91813847f3c34151f
+  checksum: 10c0/61794598b821f7e011c19fe5e15b895994d61951fad2171cb7502c70e9609073e625f0df9d44874737cf1420a28115e08159c8ce8ba4df9458bf04e51a6a748e
   languageName: node
   linkType: hard
 
@@ -3577,7 +3577,7 @@ __metadata:
     dotenv: "npm:17.2.3"
     jest: "npm:30.2.0"
     jest-util: "npm:30.2.0"
-    mongodb-memory-server: "npm:10.4.2"
+    mongodb-memory-server: "npm:10.4.3"
     mongoose: "npm:8.20.4"
     nodemon: "npm:3.1.11"
     prettier: "npm:3.7.4"
