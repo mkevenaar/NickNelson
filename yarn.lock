@@ -3128,10 +3128,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"kareem@npm:3.0.0":
-  version: 3.0.0
-  resolution: "kareem@npm:3.0.0"
-  checksum: 10c0/64a131c65153b67ff0a7a912243e5fe46e37c833cd539b9b72792c9422ca577dd5d846fa734b8db93acb767990620c12aefdebfebf28e744d53664bdb8f89bac
+"kareem@npm:3.2.0":
+  version: 3.2.0
+  resolution: "kareem@npm:3.2.0"
+  checksum: 10c0/15b840a20c4c3cecda33a794dfcf603f3c124a37ba6d13c084ac92ab8d3680b5366dd0f99589dfc218591cbbdaa390c0544d79fcda85b6c3e4b733755bcb54ef
   languageName: node
   linkType: hard
 
@@ -3490,17 +3490,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongoose@npm:9.1.6":
-  version: 9.1.6
-  resolution: "mongoose@npm:9.1.6"
+"mongoose@npm:9.2.0":
+  version: 9.2.0
+  resolution: "mongoose@npm:9.2.0"
   dependencies:
-    kareem: "npm:3.0.0"
+    kareem: "npm:3.2.0"
     mongodb: "npm:~7.0"
     mpath: "npm:0.9.0"
     mquery: "npm:6.0.0"
     ms: "npm:2.1.3"
     sift: "npm:17.1.3"
-  checksum: 10c0/55bff111c6924d18237239b4856c7f227b652191340722d437577b61bb1198f01d77e7feefeb9e3cc2a22ac1f27785f42401fb2d181d96ec0d243a38b5f044ef
+  checksum: 10c0/9bd25bb548ab35f9b1e04e5f0fd8099acd108b1e3997e2d1bffe6c2901eea556a4bd0f800991fddccc284c666facbf2000e80bd5778092d7a88a9662f22c099a
   languageName: node
   linkType: hard
 
@@ -3575,7 +3575,7 @@ __metadata:
     jest: "npm:30.2.0"
     jest-util: "npm:30.2.0"
     mongodb-memory-server: "npm:11.0.1"
-    mongoose: "npm:9.1.6"
+    mongoose: "npm:9.2.0"
     nodemon: "npm:3.1.11"
     prettier: "npm:3.8.1"
     topgg-autoposter: "npm:2.0.2"
