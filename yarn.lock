@@ -1401,14 +1401,14 @@ __metadata:
   linkType: hard
 
 "b4a@npm:^1.6.4":
-  version: 1.7.3
-  resolution: "b4a@npm:1.7.3"
+  version: 1.7.4
+  resolution: "b4a@npm:1.7.4"
   peerDependencies:
     react-native-b4a: "*"
   peerDependenciesMeta:
     react-native-b4a:
       optional: true
-  checksum: 10c0/ac16d186e00fa0d16de1f1a4af413953bc762d50d5a0e382aaa744a13886600313b7293403ad77fc83f6b1489c3fc2610494d1026754a51d1b7cdac2115a7598
+  checksum: 10c0/d6d427bbcb04c07c91c9a57a7cf04832f57301450faa5121abaef799ec9c599da097eb43f7bbdd62657660b8a8f1754b8ca9a604b618d094f1d3bca896e1e703
   languageName: node
   linkType: hard
 
@@ -1916,9 +1916,9 @@ __metadata:
   linkType: hard
 
 "discord-api-types@npm:^0.38.1, discord-api-types@npm:^0.38.16, discord-api-types@npm:^0.38.33":
-  version: 0.38.38
-  resolution: "discord-api-types@npm:0.38.38"
-  checksum: 10c0/fa2b8269d893c332ddf25eae847ffe9287c4a178104995d99f44722ddb82fee8eabef90f989833cb534c55169503cbfe20634f8002dc0a9a6844d2d29bb5d9d2
+  version: 0.38.39
+  resolution: "discord-api-types@npm:0.38.39"
+  checksum: 10c0/22c92339e57f119be3ebce6dc19acf2164243e3a6dfca17143baf0757908f58324dd797e40f131b1491a43dad603cd6eb2002cefa895c8f6912a04c8bf8b51f7
   languageName: node
   linkType: hard
 
@@ -4383,11 +4383,11 @@ __metadata:
   linkType: hard
 
 "text-decoder@npm:^1.1.0":
-  version: 1.2.3
-  resolution: "text-decoder@npm:1.2.3"
+  version: 1.2.6
+  resolution: "text-decoder@npm:1.2.6"
   dependencies:
     b4a: "npm:^1.6.4"
-  checksum: 10c0/569d776b9250158681c83656ef2c3e0a5d5c660c27ca69f87eedef921749a4fbf02095e5f9a0f862a25cf35258379b06e31dee9c125c9f72e273b7ca1a6d1977
+  checksum: 10c0/990fe5fa5e2f33c305d5ea7e4b058fd5534298c66d4bd9aaceafa9a1c244b0857ceeba0da04669981f2bcaf08e14bf51bf80955a851102176ec4822f61069963
   languageName: node
   linkType: hard
 
