@@ -3288,7 +3288,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:^3.0.4, minimatch@npm:^3.1.1, minimatch@npm:^3.1.2":
+"minimatch@npm:^3.0.4, minimatch@npm:^3.1.1":
   version: 3.1.2
   resolution: "minimatch@npm:3.1.2"
   dependencies:
@@ -3576,7 +3576,7 @@ __metadata:
     jest-util: "npm:30.2.0"
     mongodb-memory-server: "npm:11.0.1"
     mongoose: "npm:9.2.1"
-    nodemon: "npm:3.1.11"
+    nodemon: "npm:3.1.13"
     prettier: "npm:3.8.1"
     topgg-autoposter: "npm:2.0.2"
     yargs: "npm:18.0.0"
@@ -3631,14 +3631,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nodemon@npm:3.1.11":
-  version: 3.1.11
-  resolution: "nodemon@npm:3.1.11"
+"nodemon@npm:3.1.13":
+  version: 3.1.13
+  resolution: "nodemon@npm:3.1.13"
   dependencies:
     chokidar: "npm:^3.5.2"
     debug: "npm:^4"
     ignore-by-default: "npm:^1.0.1"
-    minimatch: "npm:^3.1.2"
+    minimatch: "npm:^10.2.1"
     pstree.remy: "npm:^1.1.8"
     semver: "npm:^7.5.3"
     simple-update-notifier: "npm:^2.0.0"
@@ -3647,7 +3647,7 @@ __metadata:
     undefsafe: "npm:^2.0.5"
   bin:
     nodemon: bin/nodemon.js
-  checksum: 10c0/f3c17897146f680eaf93f5e1f53b1fd4acbd61e4f7526ec6cbcc993d1c14cee8c722c41b30aa8b101447f672d38e6d7b17c97e77540df191d724826bb16ce474
+  checksum: 10c0/dd1cf1124de807d52f853c7d069ef7678ac8da705c272ff242695bd2c99f2d57e285483b280af96531fd5aed59dd709e9d1755e919f572828056d14089020978
   languageName: node
   linkType: hard
 
