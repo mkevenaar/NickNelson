@@ -1907,9 +1907,9 @@ __metadata:
   linkType: hard
 
 "discord-api-types@npm:^0.38.1, discord-api-types@npm:^0.38.16, discord-api-types@npm:^0.38.33":
-  version: 0.38.39
-  resolution: "discord-api-types@npm:0.38.39"
-  checksum: 10c0/22c92339e57f119be3ebce6dc19acf2164243e3a6dfca17143baf0757908f58324dd797e40f131b1491a43dad603cd6eb2002cefa895c8f6912a04c8bf8b51f7
+  version: 0.38.40
+  resolution: "discord-api-types@npm:0.38.40"
+  checksum: 10c0/f626ee5b247a9a7655611a7a4075ad79f528272a9ccb7b4dc95ea375a3f0796a79a935164cba80f42cbc7dc683677dd226b07d6a94720650307cf8b396073b13
   languageName: node
   linkType: hard
 
@@ -1949,9 +1949,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.263":
-  version: 1.5.286
-  resolution: "electron-to-chromium@npm:1.5.286"
-  checksum: 10c0/5384510f9682d7e46f98fa48b874c3901d9639de96e9e387afce1fe010fbac31376df0534524edc15f66e9902bfacee54037a5e598004e9c6a617884e379926d
+  version: 1.5.302
+  resolution: "electron-to-chromium@npm:1.5.302"
+  checksum: 10c0/014413f2b4ec3a0e043c68f6c07a760d230b14e36b8549c5b124f386a6318d9641e69be2aa0df1877395dd99922745c1722c8ecb3d72205f0f3b3b3dc44c8442
   languageName: node
   linkType: hard
 
