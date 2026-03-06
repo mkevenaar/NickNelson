@@ -1078,11 +1078,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 25.3.3
-  resolution: "@types/node@npm:25.3.3"
+  version: 25.3.5
+  resolution: "@types/node@npm:25.3.5"
   dependencies:
     undici-types: "npm:~7.18.0"
-  checksum: 10c0/63e1d3816a9f4a706ab5d588d18cb98aa824b97748ff585537d327528e9438f58f69f45c7762e7cd3a1ab32c1619f551aabe8075d13172f9273cf10f6d83ab91
+  checksum: 10c0/4cf0834a6f6933bf0aca6afead117ae3db3b8f02a5f7187a24f871db0fb9344e5e46573ba387bc53b7505e1e219c4c535cbe67221ced95bb5ad98573223b19d0
   languageName: node
   linkType: hard
 
@@ -1977,9 +1977,9 @@ __metadata:
   linkType: hard
 
 "discord-api-types@npm:^0.38.1, discord-api-types@npm:^0.38.16, discord-api-types@npm:^0.38.33":
-  version: 0.38.40
-  resolution: "discord-api-types@npm:0.38.40"
-  checksum: 10c0/f626ee5b247a9a7655611a7a4075ad79f528272a9ccb7b4dc95ea375a3f0796a79a935164cba80f42cbc7dc683677dd226b07d6a94720650307cf8b396073b13
+  version: 0.38.41
+  resolution: "discord-api-types@npm:0.38.41"
+  checksum: 10c0/2038a883166b5e4ca29c4b3c77f7ed5fe1f147f8c90101cb6c1963c7d4f69e8a38f6676f4a975c85e55d232ef09f3ac54ffb028f1256442ba8fafd8044bb1db4
   languageName: node
   linkType: hard
 
