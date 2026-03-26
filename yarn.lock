@@ -1554,20 +1554,23 @@ __metadata:
   linkType: hard
 
 "bare-stream@npm:^2.6.4":
-  version: 2.10.0
-  resolution: "bare-stream@npm:2.10.0"
+  version: 2.11.0
+  resolution: "bare-stream@npm:2.11.0"
   dependencies:
     streamx: "npm:^2.25.0"
     teex: "npm:^1.0.1"
   peerDependencies:
+    bare-abort-controller: "*"
     bare-buffer: "*"
     bare-events: "*"
   peerDependenciesMeta:
+    bare-abort-controller:
+      optional: true
     bare-buffer:
       optional: true
     bare-events:
       optional: true
-  checksum: 10c0/d4eab67fc6762d626ed8473dda3c30a7d2d1edf0c0f4f9bf53d23317287be1b43ea162e53871eb64af870d70cc642230a776cb056d093f36f375e69ef47c4537
+  checksum: 10c0/1abdae0faa365ebbc6376ecf50adc6794939959e3b05f6a03cbe5817393507363358d790b2aa274208d170a1857994fb76e91e0a676f6cbe97bea239a47263bc
   languageName: node
   linkType: hard
 
@@ -2021,9 +2024,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.263":
-  version: 1.5.322
-  resolution: "electron-to-chromium@npm:1.5.322"
-  checksum: 10c0/f8f338389879aae117143a7e28601b8129a51ff82bc641303c0def61ec68833828ca39f5252de30c0b0faf2139ce45ec16a126a6e02df4e7a1db9a138c5b024c
+  version: 1.5.325
+  resolution: "electron-to-chromium@npm:1.5.325"
+  checksum: 10c0/6721520cac7a0ae51e6511bd2a79c425e0fc09935a367ac933549e94de136c504a7ee1fc7136812051e93c0c5b95deea40336aea658c2b591ac5761fab8caf30
   languageName: node
   linkType: hard
 
@@ -3377,11 +3380,11 @@ __metadata:
   linkType: hard
 
 "minipass-flush@npm:^1.0.5":
-  version: 1.0.5
-  resolution: "minipass-flush@npm:1.0.5"
+  version: 1.0.6
+  resolution: "minipass-flush@npm:1.0.6"
   dependencies:
-    minipass: "npm:^3.0.0"
-  checksum: 10c0/2a51b63feb799d2bb34669205eee7c0eaf9dce01883261a5b77410c9408aa447e478efd191b4de6fc1101e796ff5892f8443ef20d9544385819093dbb32d36bd
+    minipass: "npm:^7.1.3"
+  checksum: 10c0/ece3c2dab3bde9d47f3c29336ed972c4b3cf9008319d43acfefba9a24ef2354244c057300126f3077daf76cb931b9cb6076e5fb63ce5f12e8e60bbaa23cd5815
   languageName: node
   linkType: hard
 
