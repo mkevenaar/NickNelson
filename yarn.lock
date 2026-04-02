@@ -987,11 +987,11 @@ __metadata:
   linkType: hard
 
 "@sinonjs/fake-timers@npm:^15.0.0":
-  version: 15.2.0
-  resolution: "@sinonjs/fake-timers@npm:15.2.0"
+  version: 15.2.2
+  resolution: "@sinonjs/fake-timers@npm:15.2.2"
   dependencies:
     "@sinonjs/commons": "npm:^3.0.1"
-  checksum: 10c0/4e5529670f2c564dd5beab08b7f1946a07aa9fe86ff75729bc6137f1bf68060c282bea8bc4e2094edd5ad75397f37ae2b924bea0e59908d41a1ec2733748b19f
+  checksum: 10c0/cd3702db58a2389cf3468f5dffe64d2fc4d5c5585ae1fc20e4e3f323f4a95b69e3dfd6622705791bdc3628be42a578de6dd3022ed793c346b80dc553a4d7b307
   languageName: node
   linkType: hard
 
@@ -1728,9 +1728,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001782":
-  version: 1.0.30001782
-  resolution: "caniuse-lite@npm:1.0.30001782"
-  checksum: 10c0/f11685de4ce1f0bc16d385fc0a07b0877da0b14af8bf510cee6a3cdfe9da1602360e1f11320e92d4f5d63cd6bec8b43539de25ee78ff94bdb7ec0fa3cce5200c
+  version: 1.0.30001784
+  resolution: "caniuse-lite@npm:1.0.30001784"
+  checksum: 10c0/d6ff48177e48819a9041edab27d1ce9089b1ab9ba76f681b4925710dba5b00ff0347f70c6a99269d97fddc59e9f6947d219155b6bf4c1da9dd642503a03e5ce4
   languageName: node
   linkType: hard
 
@@ -2024,9 +2024,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.328":
-  version: 1.5.329
-  resolution: "electron-to-chromium@npm:1.5.329"
-  checksum: 10c0/a275d7dd7ef26b98d304d37831684614b575d91d5186d3764e7c10114677ba84f4b9ee54a7ef326f63f2dbb2ca883582e3ef9925d9aee8562e1982fa42c94c43
+  version: 1.5.331
+  resolution: "electron-to-chromium@npm:1.5.331"
+  checksum: 10c0/a7687f3bb4df4640bfeac08d1586531624917452bbbbeb67ccf2b07f111e584321e60945da080df664cbb57f272307d7867c8b93e279150ce8385f13d5178c96
   languageName: node
   linkType: hard
 
@@ -3224,9 +3224,9 @@ __metadata:
   linkType: hard
 
 "lodash@npm:^4.11.2, lodash@npm:^4.17.19, lodash@npm:^4.17.21":
-  version: 4.17.23
-  resolution: "lodash@npm:4.17.23"
-  checksum: 10c0/1264a90469f5bb95d4739c43eb6277d15b6d9e186df4ac68c3620443160fc669e2f14c11e7d8b2ccf078b81d06147c01a8ccced9aab9f9f63d50dcf8cace6bf6
+  version: 4.18.1
+  resolution: "lodash@npm:4.18.1"
+  checksum: 10c0/757228fc68805c59789e82185135cf85f05d0b2d3d54631d680ca79ec21944ec8314d4533639a14b8bcfbd97a517e78960933041a5af17ecb693ec6eecb99a27
   languageName: node
   linkType: hard
 
