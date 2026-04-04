@@ -1081,11 +1081,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 25.5.0
-  resolution: "@types/node@npm:25.5.0"
+  version: 25.5.2
+  resolution: "@types/node@npm:25.5.2"
   dependencies:
     undici-types: "npm:~7.18.0"
-  checksum: 10c0/70c508165b6758c4f88d4f91abca526c3985eee1985503d4c2bd994dbaf588e52ac57e571160f18f117d76e963570ac82bd20e743c18987e82564312b3b62119
+  checksum: 10c0/11e41a85401724cd1a4de6fb7bd4264ec46db10c09fc8cf8d41de4ede0a7063db458348f859ead4ec0929906aa26aaf45a5fef3aa59742ca0521cda9cee52377
   languageName: node
   linkType: hard
 
@@ -1584,11 +1584,11 @@ __metadata:
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.10.12":
-  version: 2.10.13
-  resolution: "baseline-browser-mapping@npm:2.10.13"
+  version: 2.10.14
+  resolution: "baseline-browser-mapping@npm:2.10.14"
   bin:
     baseline-browser-mapping: dist/cli.cjs
-  checksum: 10c0/3296604492f600927a9f519c81164522ac26456e63eb7b6816e39bfbb184494b48c58490639f2c0e35be97969d3a03613fddddbfdd3074710592369ed36957d5
+  checksum: 10c0/1e595ab3bfb7fa2b453abe93f430b0a3ecbcbdbb3f331689670b93670bf1e329028740a881a423f7c27f8296d506880b25aac60fee7a86c851bcc5eaf80aa0f8
   languageName: node
   linkType: hard
 
