@@ -43,7 +43,7 @@
     "jest-util": "30.3.0",
     "mongodb-memory-server": "11.0.1",
     "nodemon": "3.1.14",
-    "prettier": "3.8.1"
+    "prettier": "3.8.2"
   },
   "packageManager": "yarn@4.13.0"
 }
