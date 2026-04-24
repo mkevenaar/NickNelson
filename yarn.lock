@@ -870,11 +870,11 @@ __metadata:
   linkType: hard
 
 "@mongodb-js/saslprep@npm:^1.3.0":
-  version: 1.4.8
-  resolution: "@mongodb-js/saslprep@npm:1.4.8"
+  version: 1.4.9
+  resolution: "@mongodb-js/saslprep@npm:1.4.9"
   dependencies:
     sparse-bitfield: "npm:^3.0.3"
-  checksum: 10c0/a2584aeec2489a54bc3bc566005cb9396acf5fbc02b163007efd2d6050c94eea18e5dde208f099e1c2540aa975b0f42d95396b0d6042558a948ae82b0189cd8e
+  checksum: 10c0/f88438bb3f0141034b7d86e81721bb1a2ebaad675ba60aaa5baa150530a6fa45efecda774bbcc11467d2faae3f4bc71bb767ae14d34222c4a2e8ce2d042a5513
   languageName: node
   linkType: hard
 
@@ -1970,9 +1970,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.328":
-  version: 1.5.343
-  resolution: "electron-to-chromium@npm:1.5.343"
-  checksum: 10c0/752f2babd9058c3da97f71fee4af97dde1ad57afb52c2e459c499508a92102bde605a2af54536c5d276c39cabe409b4d46caf8840f92db721631f39fd70c810c
+  version: 1.5.344
+  resolution: "electron-to-chromium@npm:1.5.344"
+  checksum: 10c0/36624a59b2da4cb2bdee3085f5fc814bc0ba5830162a26f45c4b189177455869fd9d9c2e05fa28e69a45fb95c04d3e995962ff0e1658f552dcbe147a731c4f1d
   languageName: node
   linkType: hard
 
