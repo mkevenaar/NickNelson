@@ -1624,7 +1624,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bson@npm:^7.1.1, bson@npm:^7.2.0":
+"bson@npm:^7.2.0":
   version: 7.2.0
   resolution: "bson@npm:7.2.0"
   checksum: 10c0/f6d074d910a23e9fe2d6b6c2d1095ceab11f99e2b2e351062b396d5ea5c31ae276544582374e3c0c25e579d62c9187797c75460e48e8813306dc1d23ca1b0107
@@ -3277,7 +3277,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongodb@npm:^7.0.0":
+"mongodb@npm:^7.0.0, mongodb@npm:~7.2":
   version: 7.2.0
   resolution: "mongodb@npm:7.2.0"
   dependencies:
@@ -3311,51 +3311,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongodb@npm:~7.1":
-  version: 7.1.1
-  resolution: "mongodb@npm:7.1.1"
-  dependencies:
-    "@mongodb-js/saslprep": "npm:^1.3.0"
-    bson: "npm:^7.1.1"
-    mongodb-connection-string-url: "npm:^7.0.0"
-  peerDependencies:
-    "@aws-sdk/credential-providers": ^3.806.0
-    "@mongodb-js/zstd": ^7.0.0
-    gcp-metadata: ^7.0.1
-    kerberos: ^7.0.0
-    mongodb-client-encryption: ">=7.0.0 <7.1.0"
-    snappy: ^7.3.2
-    socks: ^2.8.6
-  peerDependenciesMeta:
-    "@aws-sdk/credential-providers":
-      optional: true
-    "@mongodb-js/zstd":
-      optional: true
-    gcp-metadata:
-      optional: true
-    kerberos:
-      optional: true
-    mongodb-client-encryption:
-      optional: true
-    snappy:
-      optional: true
-    socks:
-      optional: true
-  checksum: 10c0/bfbf3e4aba3645078afc229c50d685c0f319867a64d072a926c6faf1ff2efbd7426ada03fbc30a7300a789fed09f003816d0ec9d95307c896d56f5f81b62a2bd
-  languageName: node
-  linkType: hard
-
-"mongoose@npm:9.5.0":
-  version: 9.5.0
-  resolution: "mongoose@npm:9.5.0"
+"mongoose@npm:9.6.0":
+  version: 9.6.0
+  resolution: "mongoose@npm:9.6.0"
   dependencies:
     kareem: "npm:3.3.0"
-    mongodb: "npm:~7.1"
+    mongodb: "npm:~7.2"
     mpath: "npm:0.9.0"
     mquery: "npm:6.0.0"
     ms: "npm:2.1.3"
     sift: "npm:17.1.3"
-  checksum: 10c0/58f173149830b9057ff1b36daded183fd22594388fbb1719335d1d5de7869be97fb54ff655cf3ca813ae610f71eb58df93ade1c06d2bc73523e83361f49666c7
+  checksum: 10c0/4d88b342debae32c2679a8a189300c95ccaa156ea8dafee407e454dfe83810ceb10f6e7c9eb328d93bafe8981b750624d5bee90c19279cbb43766f8766c1a612
   languageName: node
   linkType: hard
 
@@ -3423,7 +3389,7 @@ __metadata:
     jest: "npm:30.3.0"
     jest-util: "npm:30.3.0"
     mongodb-memory-server: "npm:11.0.1"
-    mongoose: "npm:9.5.0"
+    mongoose: "npm:9.6.0"
     nodemon: "npm:3.1.14"
     prettier: "npm:3.8.3"
     topgg-autoposter: "npm:2.0.2"
