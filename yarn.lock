@@ -3313,9 +3313,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongoose@npm:9.6.1":
-  version: 9.6.1
-  resolution: "mongoose@npm:9.6.1"
+"mongoose@npm:9.6.2":
+  version: 9.6.2
+  resolution: "mongoose@npm:9.6.2"
   dependencies:
     kareem: "npm:3.3.0"
     mongodb: "npm:~7.2"
@@ -3323,7 +3323,7 @@ __metadata:
     mquery: "npm:6.0.0"
     ms: "npm:2.1.3"
     sift: "npm:17.1.3"
-  checksum: 10c0/5ad1903d492fd98d59e091594dc48eb0396ff1e54e40c3321a41c174cdef5d256d3e4701698a48bcab814d0b81f601479d2a74952023a89930ca8a92f717e229
+  checksum: 10c0/9f74a8452da824fdb3a5810b5641421be351c51892d7c45dc8077dd75a97138786429d53ea4aac2723973ebfe1e9f26802211a8f96635e5eadf04dbfe5e3afe0
   languageName: node
   linkType: hard
 
@@ -3391,7 +3391,7 @@ __metadata:
     jest: "npm:30.4.1"
     jest-util: "npm:30.4.1"
     mongodb-memory-server: "npm:11.1.0"
-    mongoose: "npm:9.6.1"
+    mongoose: "npm:9.6.2"
     nodemon: "npm:3.1.14"
     prettier: "npm:3.8.3"
     topgg-autoposter: "npm:2.0.2"
