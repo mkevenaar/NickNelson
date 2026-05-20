@@ -45,5 +45,5 @@
     "nodemon": "3.1.14",
     "prettier": "3.8.3"
   },
-  "packageManager": "yarn@4.14.1"
+  "packageManager": "yarn@4.15.0"
 }
