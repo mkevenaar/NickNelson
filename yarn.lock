@@ -1543,8 +1543,8 @@ __metadata:
   linkType: hard
 
 "bare-stream@npm:^2.6.4":
-  version: 2.13.1
-  resolution: "bare-stream@npm:2.13.1"
+  version: 2.13.2
+  resolution: "bare-stream@npm:2.13.2"
   dependencies:
     streamx: "npm:^2.25.0"
     teex: "npm:^1.0.1"
@@ -1559,7 +1559,7 @@ __metadata:
       optional: true
     bare-events:
       optional: true
-  checksum: 10c0/2c35e0b4e56667265e9023e9f51b77652ce043fd6611497575871ce62e833760dd3e5919ccc0cebe1af40959c4350035162b47541a1277d6488709f61f199754
+  checksum: 10c0/b2d8d89cb53ea5f8081d0f2f1c42c35c49263f1ef52d6c2b3d24e31b0f84b261a6d5a0b3c2bd0f47bc52cea78d563a36b019e50c1ec76ae7d73988e5b4f9c25c
   languageName: node
   linkType: hard
 
@@ -1573,11 +1573,11 @@ __metadata:
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.10.12":
-  version: 2.10.35
-  resolution: "baseline-browser-mapping@npm:2.10.35"
+  version: 2.10.36
+  resolution: "baseline-browser-mapping@npm:2.10.36"
   bin:
     baseline-browser-mapping: dist/cli.cjs
-  checksum: 10c0/e92c222d626293925e89c3d5b4a9359f985796e28c37d473ad55b33ef7ed5f9b26cfebbc8620df57512b66049f87120403776f2e603b1a686c469c96047db2b0
+  checksum: 10c0/e9a739b48149341a8922355111a88130f1a9aa336f920fb31008f7bca7149b0fd250d50c8fd6247cd17719ac2a27befa71d0b45f96a772ba8aafe40a9a5f0924
   languageName: node
   linkType: hard
 
@@ -1692,9 +1692,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001782":
-  version: 1.0.30001797
-  resolution: "caniuse-lite@npm:1.0.30001797"
-  checksum: 10c0/8357f6a70432ad1f1dd39ceeabe6fa7597c76ff45cda2994e4aca3e625bdeb3154b4dfd90b984d343883b2fe4e6abf901739f9f11aa2dfd0254c1de3282ccb76
+  version: 1.0.30001799
+  resolution: "caniuse-lite@npm:1.0.30001799"
+  checksum: 10c0/f24f9834edc7b60188f368ce44714695c3901bc4acb7f2a977dd9b7b697e39ddc0f9947fad6224a955b789f36a73432cb888d620aa7280d728f582d3bd8927a7
   languageName: node
   linkType: hard
 
