@@ -871,11 +871,11 @@ __metadata:
   linkType: hard
 
 "@mongodb-js/saslprep@npm:^1.4.11":
-  version: 1.4.13
-  resolution: "@mongodb-js/saslprep@npm:1.4.13"
+  version: 1.5.0
+  resolution: "@mongodb-js/saslprep@npm:1.5.0"
   dependencies:
     sparse-bitfield: "npm:^3.0.3"
-  checksum: 10c0/f379e6d35a09bc3495cf88e483dc3349d076261b6101fab46435f8d5cd40b8095dd0d770183bc69536383c4a3a86905abd71ddb77f3bfdf5c27a7bf5b82101ff
+  checksum: 10c0/4ec18504e567f494159b9649c5b30c0be88380cfee3a3c4e1ef33bd70a070adf3bbb8ab9946d4aab52e929b07322257621d139205300c78cd9da1e9d021008e6
   languageName: node
   linkType: hard
 
