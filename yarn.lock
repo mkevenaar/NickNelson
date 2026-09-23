@@ -3353,9 +3353,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongodb-memory-server-core@npm:11.2.0":
-  version: 11.2.0
-  resolution: "mongodb-memory-server-core@npm:11.2.0"
+"mongodb-memory-server-core@npm:11.3.0":
+  version: 11.3.0
+  resolution: "mongodb-memory-server-core@npm:11.3.0"
   dependencies:
     async-mutex: "npm:^0.5.0"
     camelcase: "npm:^6.3.0"
@@ -3363,27 +3363,61 @@ __metadata:
     find-cache-dir: "npm:^3.3.2"
     follow-redirects: "npm:^1.16.0"
     https-proxy-agent: "npm:^7.0.6"
-    mongodb: "npm:^7.2.0"
+    mongodb: "npm:~7.5.0"
     new-find-package-json: "npm:^2.0.0"
-    semver: "npm:^7.7.3"
-    tar-stream: "npm:^3.1.8"
+    semver: "npm:^7.8.5"
+    tar-stream: "npm:^3.2.1"
     tslib: "npm:^2.8.1"
-    yauzl: "npm:^3.3.1"
-  checksum: 10c0/ef1a0761678d9f95c793e8a96ef486c91fa8d854bedf5d3b739116180ae799bb890bb11d612f6abd3fda6962e3d0de7bbecca14865e344211219f441d81f98e7
+    yauzl: "npm:^3.4.0"
+  checksum: 10c0/e455c4640697423b9dc759b4d52b6ce830f5b210ed7cb6d7f3084e477e36f81476af3709359e9656ff545caf9404426345dbebf337165f465d19b7fcfd00a527
   languageName: node
   linkType: hard
 
-"mongodb-memory-server@npm:11.2.0":
-  version: 11.2.0
-  resolution: "mongodb-memory-server@npm:11.2.0"
+"mongodb-memory-server@npm:11.3.0":
+  version: 11.3.0
+  resolution: "mongodb-memory-server@npm:11.3.0"
   dependencies:
-    mongodb-memory-server-core: "npm:11.2.0"
+    mongodb-memory-server-core: "npm:11.3.0"
     tslib: "npm:^2.8.1"
-  checksum: 10c0/14197657e0d93611fcd56cfa909bdb5e26815d10a7d2932ec3a53c465aa889cdba40623863c0de791b89613b396165947ac162fd7083e6005786b54137410698
+  checksum: 10c0/20218b049e784fa8146e604504bc4fde9f4ec0f45c33c98158108d3af6f9a35fbda6b450efe85a998650c9ce209fd2072488b0e98ec6062c9b781de1ff5f72e6
   languageName: node
   linkType: hard
 
-"mongodb@npm:^7.2.0, mongodb@npm:~7.6":
+"mongodb@npm:~7.5.0":
+  version: 7.5.0
+  resolution: "mongodb@npm:7.5.0"
+  dependencies:
+    "@mongodb-js/saslprep": "npm:^1.4.11"
+    bson: "npm:^7.2.0"
+    mongodb-connection-string-url: "npm:^7.0.1"
+  peerDependencies:
+    "@aws-sdk/credential-providers": ^3.806.0
+    "@mongodb-js/zstd": ^7.0.0
+    gcp-metadata: ^7.0.1
+    kerberos: ^7.0.0
+    mongodb-client-encryption: ^7.2.0
+    snappy: ^7.3.2
+    socks: ^2.8.6
+  peerDependenciesMeta:
+    "@aws-sdk/credential-providers":
+      optional: true
+    "@mongodb-js/zstd":
+      optional: true
+    gcp-metadata:
+      optional: true
+    kerberos:
+      optional: true
+    mongodb-client-encryption:
+      optional: true
+    snappy:
+      optional: true
+    socks:
+      optional: true
+  checksum: 10c0/468db2b24fa3e497d6212bc3073c008b46ebffdace1197be5982c976d61e962e85727ac4443c6c8b59a9baed10d14ed589b6ea9234e87727469d7a19e82f9cd0
+  languageName: node
+  linkType: hard
+
+"mongodb@npm:~7.6":
   version: 7.6.0
   resolution: "mongodb@npm:7.6.0"
   dependencies:
@@ -3495,7 +3529,7 @@ __metadata:
     dotenv: "npm:17.4.2"
     jest: "npm:30.5.2"
     jest-util: "npm:30.5.1"
-    mongodb-memory-server: "npm:11.2.0"
+    mongodb-memory-server: "npm:11.3.0"
     mongoose: "npm:9.10.1"
     nodemon: "npm:3.1.14"
     prettier: "npm:3.9.8"
@@ -3922,7 +3956,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.3.5, semver@npm:^7.5.3, semver@npm:^7.5.4, semver@npm:^7.7.2, semver@npm:^7.7.3":
+"semver@npm:^7.3.5, semver@npm:^7.5.3, semver@npm:^7.5.4, semver@npm:^7.7.2, semver@npm:^7.8.5":
   version: 7.8.5
   resolution: "semver@npm:7.8.5"
   bin:
@@ -4169,7 +4203,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tar-stream@npm:^3.1.8":
+"tar-stream@npm:^3.2.1":
   version: 3.2.1
   resolution: "tar-stream@npm:3.2.1"
   dependencies:
@@ -4712,7 +4746,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yauzl@npm:^3.3.1":
+"yauzl@npm:^3.4.0":
   version: 3.4.0
   resolution: "yauzl@npm:3.4.0"
   dependencies:
