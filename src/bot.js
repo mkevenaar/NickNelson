@@ -6,6 +6,7 @@ import { resolveChannel, convertTime } from './tools/tools.js';
 import { Constants } from './constants.js';
 import { readdirSync } from 'fs';
 import { GuildService } from './database/guild.service.js';
+import { UserService } from './database/user.service.js';
 
 const sourceFolder = Constants.sourceFolder;
 const eventsFolder = Constants.eventsFolder;
