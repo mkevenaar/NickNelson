@@ -1605,8 +1605,8 @@ __metadata:
   linkType: hard
 
 "bare-fs@npm:^4.8.2":
-  version: 4.8.4
-  resolution: "bare-fs@npm:4.8.4"
+  version: 4.8.5
+  resolution: "bare-fs@npm:4.8.5"
   dependencies:
     bare-events: "npm:^2.5.4"
     bare-path: "npm:^3.0.0"
@@ -1618,7 +1618,7 @@ __metadata:
   peerDependenciesMeta:
     bare-buffer:
       optional: true
-  checksum: 10c0/c342d872cb27d25ae68af34811c414fd3797d3b9092843a85991fa7b1e2bb5672b3eb0bda8c4303561d6a2358717cbba89696a15a1a8ecd7cbb3045446d36b40
+  checksum: 10c0/47729633e7970a8e09dce442f00d2df6bfe281e26bee597703b6891860760904d24ca735b15d3aca100e718135e07df448960528bdc1f444794c505931be3b3b
   languageName: node
   linkType: hard
 
@@ -1662,11 +1662,11 @@ __metadata:
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.11.37":
-  version: 2.11.38
-  resolution: "baseline-browser-mapping@npm:2.11.38"
+  version: 2.11.39
+  resolution: "baseline-browser-mapping@npm:2.11.39"
   bin:
     baseline-browser-mapping: dist/cli.cjs
-  checksum: 10c0/f9b9576f79e4c15a2e7cd2173380922ec82db65a5815fd7a01dc4081cc25ffb25002c07e25076831adec19bf5dcfe11acd0f73473a308e40bb070bc4a98762cb
+  checksum: 10c0/e5f58a4636d90e449aefc7d845310999c5427c337e828d55f629a8be8fcde253d37f294754a89263f08430d54cfb4f8f55792b58dc290394ddaa2869b551517f
   languageName: node
   linkType: hard
 
@@ -2062,9 +2062,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.486":
-  version: 1.5.491
-  resolution: "electron-to-chromium@npm:1.5.491"
-  checksum: 10c0/dd5ab8236c73c54a55be0d66579dffd04614fe4291775b51b2fd5b17b853075ec416354da5993c801c6b21b4a709c64bc29098dcd839d09b0c1b2bc41624f496
+  version: 1.5.492
+  resolution: "electron-to-chromium@npm:1.5.492"
+  checksum: 10c0/c0ea729b8b0a6b3c5c3dd9ebce109833e80383e21e0ec6423d130263b976277cf93d3c5e1129bc7d3338a36e3ba24457ec789bbc20dc96f29cd2d716ec383d0a
   languageName: node
   linkType: hard
 
