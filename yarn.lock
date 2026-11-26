@@ -2296,7 +2296,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.16.0":
+"follow-redirects@npm:^1.16.3":
   version: 1.16.3
   resolution: "follow-redirects@npm:1.16.3"
   peerDependenciesMeta:
@@ -3303,33 +3303,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongodb-memory-server-core@npm:11.3.0":
-  version: 11.3.0
-  resolution: "mongodb-memory-server-core@npm:11.3.0"
+"mongodb-memory-server-core@npm:11.4.0":
+  version: 11.4.0
+  resolution: "mongodb-memory-server-core@npm:11.4.0"
   dependencies:
     async-mutex: "npm:^0.5.0"
     camelcase: "npm:^6.3.0"
     debug: "npm:^4.4.3"
     find-cache-dir: "npm:^3.3.2"
-    follow-redirects: "npm:^1.16.0"
+    follow-redirects: "npm:^1.16.3"
     https-proxy-agent: "npm:^7.0.6"
     mongodb: "npm:~7.5.0"
     new-find-package-json: "npm:^2.0.0"
     semver: "npm:^7.8.5"
     tar-stream: "npm:^3.2.1"
-    tslib: "npm:^2.8.1"
+    tslib: "npm:^2.9.1"
     yauzl: "npm:^3.4.0"
-  checksum: 10c0/e455c4640697423b9dc759b4d52b6ce830f5b210ed7cb6d7f3084e477e36f81476af3709359e9656ff545caf9404426345dbebf337165f465d19b7fcfd00a527
+  checksum: 10c0/7f6c629cfca555e02addb25b26088bfc5e85d62abd1e5fc15491656c53afe138da4272c8aafd9c69ed39d9a8ec95a809be056395df2422c59354462d6f0ea41a
   languageName: node
   linkType: hard
 
-"mongodb-memory-server@npm:11.3.0":
-  version: 11.3.0
-  resolution: "mongodb-memory-server@npm:11.3.0"
+"mongodb-memory-server@npm:11.4.0":
+  version: 11.4.0
+  resolution: "mongodb-memory-server@npm:11.4.0"
   dependencies:
-    mongodb-memory-server-core: "npm:11.3.0"
-    tslib: "npm:^2.8.1"
-  checksum: 10c0/20218b049e784fa8146e604504bc4fde9f4ec0f45c33c98158108d3af6f9a35fbda6b450efe85a998650c9ce209fd2072488b0e98ec6062c9b781de1ff5f72e6
+    mongodb-memory-server-core: "npm:11.4.0"
+    tslib: "npm:^2.9.1"
+  checksum: 10c0/a3dcb10549a75d5f02c7c69ae1894fffaa83efef2b7e441a34691415466160b130d7aef38ccbb9b4a9cb1b2836c317fd1066fda43ab03cd597789ddb3ed0af2c
   languageName: node
   linkType: hard
 
@@ -3480,7 +3480,7 @@ __metadata:
     dotenv: "npm:18.0.10"
     jest: "npm:30.5.2"
     jest-util: "npm:30.5.1"
-    mongodb-memory-server: "npm:11.3.0"
+    mongodb-memory-server: "npm:11.4.0"
     mongoose: "npm:9.12.2"
     nodemon: "npm:3.1.14"
     prettier: "npm:3.10.1"
@@ -4299,7 +4299,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.4.0, tslib@npm:^2.6.2, tslib@npm:^2.6.3, tslib@npm:^2.8.1":
+"tslib@npm:^2.4.0, tslib@npm:^2.6.2, tslib@npm:^2.6.3, tslib@npm:^2.9.1":
   version: 2.9.1
   resolution: "tslib@npm:2.9.1"
   checksum: 10c0/8ff46e7a4d19fa62c23483c89cf5ccc3906e742ef6e6d60bd3826b686143b300b4f6f04161cc1cf31a6b11fe70e1058ae4d4e4a108b5c68326d469684736a83c
